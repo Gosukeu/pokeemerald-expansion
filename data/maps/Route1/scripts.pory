@@ -1,0 +1,724 @@
+raw `
+Route1_MapScripts::
+	.byte 0
+
+`
+
+script Trainer1_Route_1 {
+	trainerbattle_single(Route1TrainerKid, intro_text, lose_text, CLEARFLAGKID)
+	msgbox(Route1Trainer_Postbattle, MSGBOX_DEFAULT)
+	end
+	
+}
+script CLEARFLAGKID {
+	clearflag(FLAG_LOST_KID)
+	setvar(VAR_LOST_KID, 1)
+}
+script Trainer2_Route_1 {
+	trainerbattle_single(Route2TrainerKid, intro_text2, lose_text2)
+	msgbox(Route1Trainer2_Postbattle, MSGBOX_DEFAULT)
+	end
+	
+}
+
+script Trainer3_Route_1 {
+	trainerbattle_single(Route3TrainerKid, intro_text3, lose_text3)
+	msgbox(format("You’re really strong! I bet you’ve got what it takes to challenge the Gym Leader in the next city!"), MSGBOX_AUTOCLOSE)
+	end
+	
+}
+text intro_text3 {
+	format("HEY")
+}
+text lose_text3 {
+	format("HEY")
+}
+text Route1Trainer3_Postbattle {
+	format("HEY")
+}
+
+text Route1Trainer2_Postbattle {
+	format("I need to train my bugs more. Next time, I won't lose!")
+	
+}
+
+text lose_text2 {
+	format("My bugs... squashed... Nooo!")
+	
+}
+text intro_text2 {
+	format("Bugs may be small, but they pack a punch! Let's battle!")
+}
+
+text intro_text {
+	format("Hey! You look like a fresh-faced trainer! Let’s see if you’ve got what it takes to start strong!")
+	
+}
+
+text lose_text {
+	format("Ho! My mom asked you to bring me back to my house... I juste love Pokémons and battles")
+	
+}
+
+text Route1Trainer_Postbattle {
+ format("You’re really strong! I bet you’ve got what it takes to challenge the Gym Leader in the next city!")
+	
+}
+
+script RivalBattleTrigger{
+	if(var(VAR_1FST_BATTLE_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, MayBattle)
+    goto_if_eq(VAR_RESULT, FEMALE, BrendanBattle)
+}
+}
+script RivalBattleTrigger1{
+	if(var(VAR_1FST_BATTLE_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, MayBattle1)
+    goto_if_eq(VAR_RESULT, FEMALE, BrendanBattle1)
+}
+}
+script RivalBattleTrigger2{
+	if(var(VAR_1FST_BATTLE_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, MayBattle2)
+    goto_if_eq(VAR_RESULT, FEMALE, BrendanBattle2)
+}
+}
+
+script RivalBattleTrigger3{
+	if(var(VAR_1FST_BATTLE_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, MayBattle3)
+    goto_if_eq(VAR_RESULT, FEMALE, BrendanBattle3)
+}
+}
+script RivalBattleTrigger4{
+	if(var(VAR_1FST_BATTLE_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, MayBattle4)
+    goto_if_eq(VAR_RESULT, FEMALE, BrendanBattle4)
+}
+}
+
+
+
+script MayBattle {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown)
+		waitmovement(6)
+		call(MAY_FUECOCO1)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown)
+		waitmovement(6)
+		call(MAY_TURTWIG1)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown)
+		waitmovement(6)
+		call(MAY_OSHAWOTT1)
+	}      
+	
+}
+movement rivalgoesdown {
+	walk_down * 5
+	
+}
+
+movement rivalgoesdown1 {
+	walk_down
+	walk_right
+	walk_down * 4
+	
+}
+
+script MayBattle1 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown1)
+		waitmovement(6)
+		call(MAY_FUECOCO1)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown1)
+		waitmovement(6)
+		call(MAY_TURTWIG1)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown1)
+		waitmovement(6)
+		call(MAY_OSHAWOTT1)
+	}      
+	
+}
+
+movement rivalgoesdown2 {
+	walk_down * 2
+	walk_right * 2
+	walk_down * 3
+	
+}
+script MayBattle2 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown2)
+		waitmovement(6)
+		call(MAY_FUECOCO2)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown2)
+		waitmovement(6)
+		call(MAY_TURTWIG2)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown2)
+		waitmovement(6)
+		call(MAY_OSHAWOTT2)
+	}      
+	
+}
+
+movement rivalgoesdown3 {
+	walk_down * 2
+	walk_right * 3
+	walk_down * 3
+}
+movement rivalgoesdown4 {
+	walk_down * 2
+	walk_right * 4
+	walk_down * 3
+}
+script MayBattle3 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown3)
+		waitmovement(6)
+		call(MAY_FUECOCO3)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown3)
+		waitmovement(6)
+		call(MAY_TURTWIG3)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown3)
+		waitmovement(6)
+		call(MAY_OSHAWOTT3)
+	}      
+	
+}
+script MayBattle4 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown4)
+		waitmovement(6)
+		call(MAY_FUECOCO4)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown4)
+		waitmovement(6)
+		call(MAY_TURTWIG4)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(6, rivalgoesdown4)
+		waitmovement(6)
+		call(MAY_OSHAWOTT4)
+	}      
+	
+}
+movement BRENDANGOESDOWN {
+	walk_down * 2 
+	walk_right
+	walk_down * 3
+	
+}
+
+script BrendanBattle {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN)
+		waitmovement(7)
+		call(BRENDAN_FUECOCO1)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN)
+		waitmovement(7)
+		call(BRENDAN_TURTWIG1)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN)
+		waitmovement(7)
+		call(BRENAND_OSHAWOTT1)
+	}      
+	
+}
+movement BRENDANGOESDOWN1 {
+	walk_down * 2
+	walk_right * 2
+	walk_down * 3
+	
+}
+script BrendanBattle1 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN1)
+		waitmovement(7)
+		call(BRENDAN_FUECOCO1)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN1)
+		waitmovement(7)
+		call(BRENDAN_TURTWIG1)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN1)
+		waitmovement(7)
+		call(BRENAND_OSHAWOTT1)
+	}      
+	
+}
+
+movement BRENDANGOESDOWN2 {
+	walk_down * 2
+	walk_right * 3
+	walk_down * 3
+	
+}
+script BrendanBattle2 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN2)
+		waitmovement(7)
+		call(BRENDAN_FUECOCO2)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN2)
+		waitmovement(7)
+		call(BRENDAN_TURTWIG2)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN2)
+		waitmovement(7)
+		call(BRENAND_OSHAWOTT2)
+	}      
+	
+}
+movement BRENDANGOESDOWN3 {
+	walk_down * 2
+	walk_right * 4
+	walk_down * 3
+	
+}
+script BrendanBattle3 {
+if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN3)
+		waitmovement(7)
+		call(BRENDAN_FUECOCO3)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN3)
+		waitmovement(7)
+		call(BRENDAN_TURTWIG3)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN3)
+		waitmovement(7)
+		call(BRENAND_OSHAWOTT3)
+	}      
+	
+}
+movement BRENDANGOESDOWN4 {
+	walk_down * 2
+	walk_right * 4
+	walk_down * 3
+	
+}
+script BrendanBattle4 {
+	if(var(VAR_STARTER_MON) == 3){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN4)
+		waitmovement(7)
+		call(BRENDAN_FUECOCO4)
+	}
+	if(var(VAR_STARTER_MON) == 1){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN4)
+		waitmovement(7)
+		call(BRENDAN_TURTWIG4)
+	}      
+   if(var(VAR_STARTER_MON) == 2){
+		lockall
+		applymovement(OBJ_EVENT_ID_PLAYER, PLAYERSURPRISE)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		msgbox(format("Sup {PLAYER}, long time no see! Our boss told me to battle each other every once in a while, cmon isn't that exciting? Ready?"), MSGBOX_AUTOCLOSE)
+	    applymovement(7, BRENDANGOESDOWN4)
+		waitmovement(7)
+		call(BRENAND_OSHAWOTT4)
+	}      
+	
+}
+
+movement PLAYERSURPRISE {
+	emote_exclamation_mark
+	
+}
+
+script BRENDANGOESBACK {
+	lockall
+	applymovement(6, maygoesup)
+	waitmovement(6)
+	removeobject(6)
+	releaseall
+	
+}
+script BRENDAN_FUECOCO1 {
+	trainerbattle_single(brendanfuecoco, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST)
+	end
+	
+}
+script BRENAND_OSHAWOTT1 {
+	trainerbattle_single(brendanoshawott, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST)
+	end
+	
+}
+script BRENDAN_TURTWIG1 {
+	trainerbattle_single(brenednTurtwig, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST)
+	end
+}
+
+script BRENDAN_FUECOCO2 {
+	trainerbattle_single(brendanfuecoco, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST1)
+	end
+	
+}
+script BRENAND_OSHAWOTT2 {
+	trainerbattle_single(brendanoshawott, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST1)
+	end
+	
+}
+script BRENDAN_TURTWIG2 {
+	trainerbattle_single(brenednTurtwig, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST1)
+	end
+}
+script BRENDAN_FUECOCO3 {
+	trainerbattle_single(brendanfuecoco, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST2)
+	end
+	
+}
+script BRENAND_OSHAWOTT3 {
+	trainerbattle_single(brendanoshawott, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST2)
+	end
+	
+}
+script BRENDAN_TURTWIG3 {
+	trainerbattle_single(brenednTurtwig, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST2)
+	end
+}
+script BRENDAN_FUECOCO4 {
+	trainerbattle_single(brendanfuecoco, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST3)
+	end
+	
+}
+script BRENAND_OSHAWOTT4 {
+	trainerbattle_single(brendanoshawott, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST3)
+	end
+	
+}
+script BRENDAN_TURTWIG4 {
+	trainerbattle_single(brenednTurtwig, TURTWIGINTRO, TURTWIGOUTRO, BRENDANGOESBACKTEST3)
+	end
+}
+
+
+script MAYGOESBACKTEST {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(6, maygoesup)
+	waitmovement(6)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+script BRENDANGOESBACKTEST {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(7, maygoesup)
+	waitmovement(7)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+movement maygoesup {
+	walk_up * 4
+	
+}
+script MAY_TURTWIG1 {
+	trainerbattle_single(MAYTurtwig, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST)
+	end
+	
+}
+script MAY_OSHAWOTT1 {
+	trainerbattle_single(MAYOashwott, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST)
+	end
+	
+}
+script MAY_FUECOCO1 {
+	trainerbattle_single(MAYFuecoco, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST)
+	end
+	
+}
+script MAYGOESBACKTEST1 {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(6, maygoesup1)
+	waitmovement(6)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+
+script BRENDANGOESBACKTEST1 {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(7, maygoesup1)
+	waitmovement(7)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+
+movement maygoesup1 {
+	walk_up * 3
+	walk_left * 2
+	walk_up * 2
+	
+}
+
+
+script MAY_TURTWIG2 {
+	trainerbattle_single(MAYTurtwig, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST1)
+	end
+	
+}
+script MAY_OSHAWOTT2 {
+	trainerbattle_single(MAYOashwott, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST1)
+	end
+	
+}
+script MAY_FUECOCO2 {
+	trainerbattle_single(MAYFuecoco, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST1)
+	end
+	
+}
+script MAYGOESBACKTEST2 {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(6, maygoesup2)
+	waitmovement(6)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+script BRENDANGOESBACKTEST2 {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(7, maygoesup2)
+	waitmovement(7)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+movement maygoesup2 {
+	walk_up * 3
+	walk_left * 3
+	walk_up * 2
+	
+}
+
+movement maygoesup3 {
+	walk_up * 3
+	walk_left * 3
+	walk_up * 2
+	
+}
+
+script MAY_TURTWIG3 {
+	trainerbattle_single(MAYTurtwig, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST2)
+	end
+	
+}
+script MAY_OSHAWOTT3 {
+	trainerbattle_single(MAYOashwott, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST2)
+	end
+	
+}
+script MAY_FUECOCO3 {
+	trainerbattle_single(MAYFuecoco, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST2)
+	end
+	
+}
+script MAYGOESBACKTEST3 {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(6, maygoesup3)
+	waitmovement(6)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+script BRENDANGOESBACKTEST3 {
+	lockall
+	setvar(VAR_1FST_BATTLE_RIVAL, 1)
+	applymovement(7, maygoesup3)
+	waitmovement(7)
+	removeobject(6)
+	removeobject(7)
+	releaseall
+	
+}
+
+script MAY_TURTWIG4 {
+	trainerbattle_single(MAYTurtwig, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST3)
+	end
+	
+}
+script MAY_OSHAWOTT4 {
+	trainerbattle_single(MAYOashwott, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST3)
+	end
+	
+}
+script MAY_FUECOCO4 {
+	trainerbattle_single(MAYFuecoco, TURTWIGINTRO, TURTWIGOUTRO, MAYGOESBACKTEST3)
+	end
+	
+}
+
+movement rivalgoesup {
+	walk_up * 8
+	
+}
+
+text TURTWIGOUTRO {
+	format("I guess it was benefitial for both of us... You are god damn talented")
+	
+}
+text TURTWIGINTRO {
+	format("Now let's battle!")
+	
+}

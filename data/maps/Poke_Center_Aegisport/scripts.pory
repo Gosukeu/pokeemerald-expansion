@@ -1,0 +1,19 @@
+mapscripts Poke_Center_Aegisport_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Poke_Center_Aegisport_OnTransition1
+	MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+ 
+script Poke_Center_Aegisport_OnTransition1 {
+   	setrespawn(HEAL_LOCATION_POKE_CENTER_1_AEGISPORT)
+	end 
+}
+ 
+ 
+script Pokemart_Employee_Aegisport1{
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}

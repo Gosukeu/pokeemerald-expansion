@@ -1152,3 +1152,129 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/follower.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/EmberfallTown/scripts.inc"
+
+	.include "data/maps/PyroClave/scripts.inc"
+
+	.include "data/maps/Aegisport/scripts.inc"
+
+	.include "data/maps/New_Professor_Lab/scripts.inc"
+
+	.include "data/maps/Player_House/scripts.inc"
+
+	.include "data/maps/Player_House_2/scripts.inc"
+
+	.include "data/maps/Rival_House/scripts.inc"
+
+	.include "data/maps/Rival_House_2/scripts.inc"
+
+	.include "data/maps/DailyGifter/scripts.inc"
+
+	.include "data/maps/Poke_Center_EmberfallTown/scripts.inc"
+
+	.include "data/maps/Poke_Mart_EmberfallTown/scripts.inc"
+
+	.include "data/maps/Emberfall_Town_House_1/scripts.inc"
+
+	.include "data/maps/EmberfallTown_Second_House/scripts.inc"
+
+	.include "data/maps/Poke_Center_Aegisport/scripts.inc"
+
+	.include "data/maps/Poke_Mart/scripts.inc"
+
+	.include "data/maps/Fischer_House_Aegisport/scripts.inc"
+
+	.include "data/maps/Ship_Yard_Aegisport/scripts.inc"
+
+	.include "data/maps/Ship_Yard_Aegisport2F/scripts.inc"
+
+	.include "data/maps/Poke_Center_1_AEGISPORT/scripts.inc"
+
+	.include "data/maps/Aegisport_Cave/scripts.inc"
+
+	.include "data/maps/Aegisport_TRADE_HISUAN_FORM/scripts.inc"
+
+	.include "data/maps/Aegisport_SHIPHOLE/scripts.inc"
+
+	.include "data/maps/Aegisport_LOSTKID/scripts.inc"
+
+	.include "data/maps/Aegisport_house_1/scripts.inc"
+
+	.include "data/maps/Aegisport_house_2/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/TRADING_HOUSE/scripts.inc"
+
+	.include "data/maps/MSG_HOUSE/scripts.inc"
+
+	.include "data/maps/TundrawoodCity/scripts.inc"
+
+	.include "data/maps/GATEWAYHOUSE/scripts.inc"
+
+	.include "data/maps/POKE_CENTER_TUNDRA/scripts.inc"
+
+	.include "data/maps/POKE_MART_TUNDRA/scripts.inc"
+
+	.include "data/maps/TUNDRAWOODMUSEUM/scripts.inc"
+
+	.include "data/maps/MUSEUM2F/scripts.inc"
+
+	.include "data/maps/TundrawoodCityContest/scripts.inc"
+
+	.include "data/maps/TundrawoodCityContest1/scripts.inc"
+
+	.include "data/maps/TundraWood_Gym_Water/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/TundroWood_House1/scripts.inc"
+
+	.include "data/maps/Tundrawood_House_2/scripts.inc"
+
+	.include "data/maps/TUNDRAWOOD2F/scripts.inc"
+
+	.include "data/maps/SHOPPINGMALL1F/scripts.inc"
+
+	.include "data/maps/SHOPPINGMALL2F/scripts.inc"
+
+	.include "data/maps/SHOPPINGMALL3F/scripts.inc"
+
+	.include "data/maps/SHOPPINGMALL4F/scripts.inc"
+
+	.include "data/maps/SHOPPINGMALL5F/scripts.inc"
+
+	.include "data/maps/SHOPPINGMALLROOFTOP/scripts.inc"
+
+	.include "data/maps/TundrawoodCity_Restaurant/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_1/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_2/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_3/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_4/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_5/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_6_Plain_Road/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_7/scripts.inc"
+
+	.include "data/maps/Cave_Under_The_Plateau_8/scripts.inc"
+
+	.include "data/maps/Cave_010/scripts.inc"
+
+	.include "data/maps/BIG_CAVE_1/scripts.inc"
+
+	.include "data/maps/REGICE/scripts.inc"
+
+	.include "data/maps/REGIROCK/scripts.inc"
+
+	.include "data/maps/Registeel/scripts.inc"
+
+	.include "data/maps/Ocean_1/scripts.inc"

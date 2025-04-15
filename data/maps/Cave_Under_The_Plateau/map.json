@@ -1,0 +1,55 @@
+{
+  "id": "MAP_CAVE_UNDER_THE_PLATEAU",
+  "name": "Cave_Under_The_Plateau",
+  "layout": "LAYOUT_CAVE_UNDER_THE_PLATEAU",
+  "music": "MUS_RG_SEVII_CAVE",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 43,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_TUNDRAWOOD_CITY",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU_2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 30,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU_3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU_1",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

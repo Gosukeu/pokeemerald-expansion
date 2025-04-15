@@ -778,6 +778,15 @@ static const struct MenuAction MultichoiceList_BerryPlot[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_COOKINGRECIPEE[] =
+{
+    {gText_FIRSTrecipee},
+    {gText_SECONDErecipee},
+    {gText_THIRDrecipee},
+    {gText_FORTHrecipee},
+    
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -906,6 +915,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_COOK_RECIPEE]               = MULTICHOICE(MultichoiceList_COOKINGRECIPEE),
 };
 
 const u8 *const gStdStrings[] =
@@ -1012,3 +1022,4 @@ static const u8 *const sWirelessOptions_NoRecordMixBerryCrush[] =
     CableClub_Text_YouMayBattleHere,
     CableClub_Text_CancelSelectedItem,
 };
+

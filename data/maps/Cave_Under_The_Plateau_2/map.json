@@ -1,0 +1,41 @@
+{
+  "id": "MAP_CAVE_UNDER_THE_PLATEAU_2",
+  "name": "Cave_Under_The_Plateau_2",
+  "layout": "LAYOUT_CAVE_UNDER_THE_PLATEAU_2",
+  "music": "MUS_LILYCOVE",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 38,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU_3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

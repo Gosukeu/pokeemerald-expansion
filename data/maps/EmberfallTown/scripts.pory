@@ -1,0 +1,790 @@
+raw `
+EmberfallTown_MapScripts::
+	.byte 0
+
+`
+
+
+
+script AEGISLASH {
+    lockall
+    faceplayer
+    applymovement(2, exlamationmovement)
+    waitmovement(2)
+    releaseall
+
+}
+
+
+
+script PokeCenter_Employee{
+    lockall
+    faceplayer
+    msgbox("Would you like me to heal your party?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        special(HealPlayerParty)
+        msgbox("Your party has been restored!")
+        msgbox("Come again soon.")
+        waitmessage
+        releaseall
+        end
+    }
+    else{
+        lockall
+        msgbox("Have a nice day", MSGBOX_NPC)
+        releaseall
+    }
+}
+
+
+
+ 
+script Mom_Start_Game_Dialogue {
+    if (var(VAR_NEW0) == 0) {
+        applymovement(OBJ_EVENT_ID_PLAYER, FaceMom)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        applymovement(1, MomGreeting)
+        waitmovement(1)
+        msgbox(format("Did you sleep well? The boss is looking for you! Hurry and pick a Pokémon from the lab."),MSGBOX_AUTOCLOSE)             
+        applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
+        applymovement(1, Momgoesback)
+        waitmovement(1)
+        setvar(VAR_NEW0, 1)
+        setvar(VAR_MOM_STARTER_CHOICE_SPEECH, 0)
+        releaseall
+    }
+    
+}
+
+movement Momgoesback {
+    walk_left * 5
+    face_up
+    
+}
+
+movement MomGreeting {
+    walk_right * 5
+    face_player
+    
+}
+movement FaceMom {
+    face_left
+    
+}
+
+script Mom_Start_Game_Dialogue1 {
+    if (var(VAR_NEW0) == 0) {
+        applymovement(OBJ_EVENT_ID_PLAYER, FaceMom)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        applymovement(1, MomGreeting1)
+        waitmovement(1)
+        msgbox(format("Did you sleep well? The boss is looking for you! Hurry and pick a Pokémon from the lab."),MSGBOX_AUTOCLOSE)
+        applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
+        applymovement(1, Momgoesback1)
+        waitmovement(1)
+        setvar(VAR_NEW0, 1)
+        setvar(VAR_MOM_STARTER_CHOICE_SPEECH, 0)
+        releaseall
+    }
+    
+    
+}
+
+movement Momgoesback1 {
+    walk_left * 7
+    face_up
+    
+}
+
+movement MomGreeting1 {
+    walk_right * 7
+    face_player
+    
+}
+
+
+script Mom_Start_Game_Dialogue2 {
+    if (var(VAR_NEW0) == 0) {
+        applymovement(OBJ_EVENT_ID_PLAYER, FaceMom)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        applymovement(1, MomGreeting2)
+        waitmovement(1)
+        msgbox(format("Did you sleep well? The boss is looking for you! Hurry and pick a Pokémon from the lab."),MSGBOX_AUTOCLOSE)
+        applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
+        applymovement(1, momgoesback2)
+        waitmovement(1)
+        setvar(VAR_NEW0, 1)
+        setvar(VAR_MOM_STARTER_CHOICE_SPEECH, 0)
+        releaseall
+    }
+    
+}
+
+movement momgoesback2 {
+    walk_left * 2
+    walk_up
+    walk_left * 4
+    face_up
+}
+
+movement MomGreeting2 {
+    walk_right * 5
+    walk_down
+    walk_right
+    face_player
+    
+}
+
+
+
+
+script Mom_speech {
+
+    if(var(VAR_MOM_STARTER_CHOICE_SPEECH) == 0){
+    lockall
+    applymovement(1, MOMFACERIGHT)
+    waitmovement(1)
+    msgbox(format("I will always be proud of you son!"),MSGBOX_AUTOCLOSE)
+    applymovement(1, MOMFACEUP)
+    waitmovement(1)
+    releaseall
+
+}
+    
+    if(var(VAR_STARTER_MON) == 1){
+    lockall
+    applymovement(1, MOMFACERIGHT)
+    waitmovement(1)
+    msgbox(format("Turtwig is such a strong Pokémon , i am glad you chose it."),MSGBOX_AUTOCLOSE)
+    applymovement(1, MOMFACEUP)
+    waitmovement(1)
+    releaseall
+
+}
+
+if(var(VAR_MOM_STARTER_CHOICE_SPEECH) == 2){
+    lockall
+    applymovement(1, MOMFACERIGHT)
+    waitmovement(1)
+    msgbox(format("Oshawott is such a strong Pokémon , i am glad you chose it."),MSGBOX_AUTOCLOSE)
+    applymovement(1, MOMFACEUP)
+    waitmovement(1)
+    releaseall
+
+}
+
+if(var(VAR_MOM_STARTER_CHOICE_SPEECH) == 3){
+    lockall
+    applymovement(1, MOMFACERIGHT)
+    waitmovement(1)
+    msgbox(format("Fuecoco is such a strong Pokémon , i am glad you chose it."),MSGBOX_AUTOCLOSE)
+    applymovement(1, MOMFACEUP)
+    waitmovement(1)
+    releaseall
+
+}
+
+}
+
+
+
+movement MOMFACERIGHT {
+    faceplayer
+}
+
+movement MOMFACEUP {
+    face_up
+}
+
+
+script BED{
+    lockall
+    msgbox("Do you want to rest?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        special(HealPlayerParty)
+        msgbox("You party has been restored.")
+        waitmessage
+        releaseall
+        
+    }
+    else{
+   msgbox(format("Have a good day"),MSGBOX_AUTOCLOSE)
+
+        
+    }
+}
+
+ 
+ 
+
+script Trigger_Go_Get_Your_Starters {
+    if(var(VAR_UNUSED_0x40FF) == 0) {
+        lockall
+        msgbox(format("You must choose a Pokémon!"))
+        applymovement(OBJ_EVENT_ID_PLAYER, Knockback)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        releaseall
+    }
+    
+    else {
+        releaseall
+        
+    }
+}
+
+movement Knockback {
+    face_left
+    walk_left
+    walk_left
+}
+
+
+
+
+script GivePokedex {
+
+    if(var(VAR_UNUSED_0x40FF)){
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER , GivePokdexMovement)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(1, Professor_Pokdex)
+    waitmovement(1)
+    msgbox(format("Here, {PLAYER}! I ordered this for my research, but I think you should have this Pokédex!"), MSGBOX_AUTOCLOSE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    setflag(FLAG_SYS_POKEDEX_GET)
+	message("{PLAYER} received the POKéDEX!$")
+    waitfanfare
+    closemessage
+    special(SetUnlockedPokedexFlags)
+    msgbox(format"Also take these with you.", MSGBOX_AUTOCLOSE)
+    giveitem(ITEM_POKE_BALL, 5)
+    msgbox(format("These allow you to catch your own Pokemon in tall grass so you can collect research for the Pokedex!"), MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(1, Professor_goes_back)
+    waitmovement(1)
+    releaseall
+    return
+
+    }
+
+    else {
+        releaseall
+    }
+
+}
+
+
+movement Professor_goes_back {
+    face_down
+    
+}
+
+
+
+
+movement GivePokdexMovement {
+    face_right
+    
+}
+
+movement Professor_Pokdex {
+    face_left
+    
+}
+
+
+script GivePokedex1 {
+
+    if(var(VAR_UNUSED_0x40FF)){
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER , GivePokdexMovement)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(1, Professor_Pokdex1)
+    waitmovement(1)
+    msgbox(format("Here,{PLAYER}, I ordered this for my research , but I think you should have this Pokedex!"), MSGBOX_AUTOCLOSE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    setflag(FLAG_SYS_POKEDEX_GET)
+	message("{PLAYER} received the POKéDEX!$")
+    waitfanfare
+    closemessage
+    special(SetUnlockedPokedexFlags)
+    msgbox(format"Also take these with you.", MSGBOX_AUTOCLOSE)
+    giveitem(ITEM_POKE_BALL, 5)
+    msgbox(format("These allow you to catch your own Pokemon in tall grass so you can collect research for the Pokedex!"), MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(1, Professor_goes_back1)
+    waitmovement(1)
+    releaseall
+    return
+
+    }
+
+    else {
+        releaseall
+    }
+
+}
+
+movement Professor_goes_back1 {
+    walk_right
+    face_down
+    
+}
+
+
+
+movement Professor_Pokdex1 {
+    walk_left
+    
+}
+
+
+
+script GivePokedex2 {
+
+    if(var(VAR_UNUSED_0x40FF)){
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER , GivePokdexMovement)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(1, Professor_Pokdex2)
+    waitmovement(1)
+    msgbox(format("Here,{PLAYER}, I ordered this for my research , but I think you should have this Pokedex!"), MSGBOX_AUTOCLOSE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    setflag(FLAG_SYS_POKEDEX_GET)
+	message("{PLAYER} received the POKéDEX!$")
+    waitfanfare
+    closemessage
+    special(SetUnlockedPokedexFlags)
+    msgbox(format"Also take these with you.", MSGBOX_AUTOCLOSE)
+    giveitem(ITEM_POKE_BALL, 5)
+    msgbox(format("These allow you to catch your own Pokemon in tall grass so you can collect research for the Pokedex!"), MSGBOX_DEFAULT)
+    waitmessage
+    applymovement(1, Professor_goes_back2)
+    waitmovement(1)
+    releaseall
+    return
+
+    }
+
+    else {
+        releaseall
+    }
+
+}
+
+movement Professor_goes_back2 {
+    walk_right
+    walk_right
+    face_down
+    
+}
+
+movement Professor_Pokdex2 {
+    walk_left
+    walk_left
+    
+}
+
+
+
+script Old_Man {
+    lockall
+    faceplayer
+    msgbox(format("My wife used to stand by that window every morning, watching the world wake up. She always said the sunrise was a promise of a new day... Now, I watch it alone, hoping she still sees it, wherever she is."))
+    releaseall
+}
+
+
+script Trigger_Exp_Share_All {
+    setflag(FLAG_EXP_SHARE_ALL)
+    releaseall
+    
+}
+
+
+script TEAM_MEMBER {
+    
+    
+    if(var(VAR_ROUTE133_STATE) == 0){
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("For our island, carry its spirit with you. Let the fire in your heart burn as fiercely as our land’s molten core."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You leave as one of us, but your journey will shape you. Never forget wherever you go, you are the pride of our island."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("For our chief, for our island go forth and carve your own path! Let the world know the strength of those born from fire and stone."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(1, Face_DOWN_Team_MAGMA)
+    applymovement(2, Face_DOWN_Team_MAGMA)
+    applymovement(3, Face_DOWN_Team_MAGMA)
+    applymovement(4, Face_DOWN_Team_MAGMA)
+    applymovement(5, Face_DOWN_Team_MAGMA)
+    applymovement(6, Face_DOWN_Team_MAGMA)
+    applymovement(OBJ_EVENT_ID_PLAYER, Player_Face_UP)
+    msgbox(format("Without further ado, on behalf the team, we wish you best luck!"), MSGBOX_AUTOCLOSE)
+    setflag(FLAG_TEAM_MAGMA_Leave)
+    applymovement(2, MAGMAMEMBERWALKUPCRAZY)
+    removeobject(2)
+    applymovement(6, MAGMAMEMBERWALKUPCRAZY)
+    removeobject(6)
+    applymovement(1, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(1)
+    removeobject(1)
+    applymovement(5, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(5)
+    removeobject(5)
+    applymovement(3, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(3)
+    removeobject(3)
+    applymovement(4, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(4)
+    removeobject(4)
+    setvar(VAR_ROUTE133_STATE, 2)
+    releaseall
+    
+  
+}
+}
+
+
+
+
+movement Player_Face_UP {
+    face_up
+    
+}
+
+movement  Face_DOWN_Team_MAGMA{
+    face_down
+    
+}
+
+script TEAM_MEMBER1 {
+    
+    
+    if(var(VAR_ROUTE133_STATE) == 0){
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH_custom)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("For our island, carry its spirit with you. Let the fire in your heart burn as fiercely as our land’s molten core."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You leave as one of us, but your journey will shape you. Never forget wherever you go, you are the pride of our island."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("For our chief, for our island go forth and carve your own path! Let the world know the strength of those born from fire and stone."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+     applymovement(1, Face_DOWN_Team_MAGMA)
+    applymovement(2, Face_DOWN_Team_MAGMA)
+    applymovement(3, Face_DOWN_Team_MAGMA)
+    applymovement(4, Face_DOWN_Team_MAGMA)
+    applymovement(5, Face_DOWN_Team_MAGMA)
+    applymovement(6, Face_DOWN_Team_MAGMA)
+    applymovement(OBJ_EVENT_ID_PLAYER, Player_Face_UP)
+    msgbox(format("Without further ado, on behalf the team, we wish you best luck!"), MSGBOX_AUTOCLOSE)
+    setflag(FLAG_TEAM_MAGMA_Leave)
+    applymovement(2, MAGMAMEMBERWALKUPCRAZY)
+    removeobject(2)
+    applymovement(6, MAGMAMEMBERWALKUPCRAZY)
+    removeobject(6)
+    applymovement(1, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(1)
+    removeobject(1)
+    applymovement(5, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(5)
+    removeobject(5)
+    applymovement(3, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(3)
+    removeobject(3)
+    applymovement(4, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(4)
+    removeobject(4)
+    setvar(VAR_ROUTE133_STATE, 2)
+    releaseall
+    
+  
+}
+}
+
+script TEAM_MEMBER2 {
+    
+    
+    if(var(VAR_ROUTE133_STATE) == 0){
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH_custom1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("For our island, carry its spirit with you. Let the fire in your heart burn as fiercely as our land’s molten core."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You leave as one of us, but your journey will shape you. Never forget wherever you go, you are the pride of our island."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, TEAM_MEMBER_WALKTROUGH1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("For our chief, for our island go forth and carve your own path! Let the world know the strength of those born from fire and stone."), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(1, Face_DOWN_Team_MAGMA)
+    applymovement(2, Face_DOWN_Team_MAGMA)
+    applymovement(3, Face_DOWN_Team_MAGMA)
+    applymovement(4, Face_DOWN_Team_MAGMA)
+    applymovement(5, Face_DOWN_Team_MAGMA)
+    applymovement(6, Face_DOWN_Team_MAGMA)
+    applymovement(OBJ_EVENT_ID_PLAYER, Player_Face_UP)
+    msgbox(format("Without further ado, on behalf the team, we wish you best luck!"), MSGBOX_AUTOCLOSE)
+    setflag(FLAG_TEAM_MAGMA_Leave)
+    applymovement(2, MAGMAMEMBERWALKUPCRAZY)
+    removeobject(2)
+    applymovement(6, MAGMAMEMBERWALKUPCRAZY)
+    removeobject(6)
+    applymovement(1, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(1)
+    removeobject(1)
+    applymovement(5, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(5)
+    removeobject(5)
+    applymovement(3, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(3)
+    removeobject(3)
+    applymovement(4, MAGMAMEMBERWALKUPCRAZY)
+    waitmovement(4)
+    removeobject(4)
+    setvar(VAR_ROUTE133_STATE, 2)
+    releaseall
+    
+  
+}
+}
+
+movement MAGMAMEMBERWALKUPCRAZY {
+    walk_up * 5
+    
+}
+
+movement PlayerMoveDown {
+    walk_down * 2
+
+    
+}
+
+
+
+
+movement Magma1leave2 {
+    walk_left
+    walk_up * 10
+    
+}
+
+movement Magma1leave {
+    walk_right
+    walk_up * 10
+    
+}
+
+movement TEAM_MEMBER_WALKTROUGH_custom1 {
+    walk_left
+    walk_down * 3
+    
+}
+
+
+movement TEAM_MEMBER_WALKTROUGH_custom {
+    walk_down * 3
+    
+}
+
+movement TEAM_MEMBER_WALKTROUGH {
+    walk_right
+    walk_down * 3
+    
+}
+
+movement TEAM_MEMBER_WALKTROUGH1 {
+    walk_down * 2
+    
+}
+
+
+
+script Team_Magma_Boss_Trigger {
+    lockall
+    setflag(FLAG_MAGMA_BOSS)
+    applymovement(7, Exclamationmark)
+    waitmovement(7)
+    applymovement(7, BossMAGMA)
+    waitmovement(7)
+    msgbox(format("You have proven yourself vital to Team Magma's vision. This mission is unlike any before. An island of fire and fury, shaped by a powerful guardian. At its heart stands a Slugma, no ordinary Pokémon, but the will of PyroClave itself. Now, {PLAYER}, take this Slugma and carry the island’s legacy forward. May its flames guide you."),MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_SLUGMA, 9, ) // need to change slugma stats and maybe create a new item.
+    msgbox("Received Slugma!")
+    playfanfare(MUS_OBTAIN_ITEM)
+    call(NicknamePartyMon)
+    msgbox(format("Ill keep you updated!"), MSGBOX_AUTOCLOSE)
+    applymovement(7, BossMAGMAleave)
+    waitmovement(7)
+    removeobject(7)
+    setvar(VAR_BOSS_MAGMA_1, 2)
+    releaseall
+    }
+
+
+movement BossMAGMAleave {
+    walk_down * 6
+    
+}
+
+movement BossMAGMA {
+    walk_right
+    walk_up * 4
+    
+}
+
+script Team_Magma_Boss_Trigger1 {
+    lockall
+    setflag(FLAG_MAGMA_BOSS)
+    applymovement(7, Exclamationmark)
+    waitmovement(7)
+    applymovement(7, BossMAGMA1)
+    waitmovement(7)
+    msgbox(format("You have proven yourself vital to Team Magma's vision. This mission is unlike any before. An island of fire and fury, shaped by a powerful guardian. At its heart stands a Slugma, no ordinary Pokémon, but the will of PyroClave itself. Now, {PLAYER}, take this Slugma and carry the island’s legacy forward. May its flames guide you."),MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_SLUGMA, 9)
+    msgbox("Received Slugma!")
+    playfanfare(MUS_OBTAIN_ITEM)
+    call(NicknamePartyMon)
+    msgbox(format("Ill keep you updated!"), MSGBOX_AUTOCLOSE)
+    applymovement(7, BossMAGMAleave)
+    waitmovement(7)
+    removeobject(7)
+    setvar(VAR_BOSS_MAGMA_1, 2)
+    releaseall
+}
+
+movement BossMAGMA1 {
+    walk_right * 2 
+    walk_up * 4
+    
+}
+
+
+
+script Team_Magma_Boss_Trigger2 {
+    lockall
+    setflag(FLAG_MAGMA_BOSS)
+    applymovement(7, Exclamationmark)
+    applymovement(7, BossMAGMA1)
+    waitmovement(7)
+    msgbox(format("You have proven yourself vital to Team Magma's vision. This mission is unlike any before. An island of fire and fury, shaped by a powerful guardian. At its heart stands a Slugma, no ordinary Pokémon, but the will of PyroClave itself. Now, {PLAYER}, take this Slugma and carry the island’s legacy forward. May its flames guide you."),MSGBOX_AUTOCLOSE)
+    waitmessage
+    givemon(SPECIES_SLUGMA, 9, )
+    msgbox("Received Slugma!")
+    playfanfare(MUS_OBTAIN_ITEM)
+    call(NicknamePartyMon)
+    msgbox(format("Ill keep you updated!"), MSGBOX_AUTOCLOSE)
+    applymovement(7, BossMAGMAleave)
+    waitmovement(7)
+    removeobject(7)
+    setvar(VAR_BOSS_MAGMA_1, 2)
+    releaseall
+    }
+
+movement Exclamationmark {
+    emote_exclamation_mark
+    
+}
+
+movement BossMAGMA2 {
+     walk_right * 3 
+    walk_up * 4
+    
+}
+
+
+script TRIGGERTPNEWWORLD1 {
+    lockall
+    applymovement(8, SAILORMOVEMENT)
+    waitmovement(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("Are you ready to embark?"), MSGBOX_YESNO)
+
+     if (var(VAR_RESULT) == YES) {
+        msgbox("Get on!", MSGBOX_AUTOCLOSE)
+        warp(MAP_AEGISPORT, 8, 17)
+    
+}
+     else { // If the player says "No" to Sandile
+        msgbox("We should hurry, comback as soon as possible!", MSGBOX_AUTOCLOSE)
+        applymovement(8, SAILORGOESBACK)
+        waitmovement(8)
+    }
+}
+
+
+script TRIGGERTPNEWWORLD2 {
+    lockall
+    applymovement(8, SAILORMOVEMENT1)
+    waitmovement(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("Are you ready to embark?"), MSGBOX_YESNO)
+
+     if (var(VAR_RESULT) == YES) {
+        msgbox("Get on!", MSGBOX_AUTOCLOSE)
+        warp(MAP_AEGISPORT, 8, 17)
+    
+}
+     else { // If the player says "No" to Sandile
+        msgbox("We should hurry, comback as soon as possible!", MSGBOX_AUTOCLOSE)
+        applymovement(8, SAILORGOESBACK)
+        waitmovement(8)
+    }
+}
+
+script TRIGGERTPNEWWORLD3 {
+    lockall
+    applymovement(8, SAILORMOVEMENT2)
+    waitmovement(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("Are you ready to embark?"), MSGBOX_YESNO)
+
+     if (var(VAR_RESULT) == YES) {
+        msgbox("Get on!", MSGBOX_AUTOCLOSE)
+        warp(MAP_AEGISPORT, 8, 17)
+    
+}
+     else { // If the player says "No" to Sandile
+        msgbox("We should hurry, comback as soon as possible!", MSGBOX_AUTOCLOSE)
+        applymovement(8, SAILORGOESBACK)
+        waitmovement(8)
+    }
+}
+
+movement SAILORMOVEMENT2 {
+    face_up
+    
+}
+
+movement SAILORMOVEMENT1 {
+    walk_up * 1
+    
+}
+
+movement SAILORMOVEMENT {
+    walk_up * 2
+    
+}
+
+movement SAILORGOESBACK {
+    walk_down * 2
+    face_up
+    
+}
+

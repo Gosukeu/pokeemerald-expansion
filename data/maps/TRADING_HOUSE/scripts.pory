@@ -1,0 +1,39 @@
+raw `
+TRADING_HOUSE_MapScripts::
+	.byte 0
+
+`
+
+script OLDTRADER {
+    if(var(VAR_OLD_TRADER) == 0){
+        lockall
+        faceplayer
+        msgbox(format("Ahh… You’re a true Pokémon Trainer, I can see it. This Pokémon has been by my side for many years, but my time’s running short. I want it to go to someone who’ll cherish it. Please, take it… and give it a new adventure."), MSGBOX_AUTOCLOSE)
+        givemon(SPECIES_HOOTHOOT, 10, ITEM_SOOTHE_BELL, ITEM_HEAL_BALL, NATURE_CALM)
+        msgbox("Received Hoothoot!")
+        playfanfare(MUS_OBTAIN_ITEM)
+        call(NicknamePartyMon)
+        setvar(VAR_OLD_TRADER, 1)
+        releaseall
+        
+    }
+
+
+    else{
+       
+       lockall
+       faceplayer
+       msgbox(format("How "))
+       releaseall
+    }
+    
+   
+
+    
+
+
+
+    
+}
+
+

@@ -1,0 +1,106 @@
+raw `
+TundrawoodCity_MapScripts::
+	.byte 0
+
+`    
+
+
+script Triggersecretkey {
+   lockall
+   applymovement(9, maxietundra1)
+   waitmovement(9)
+   checkitem(ITEM_SECRET_KEY)
+   if(var(VAR_RESULT) == YES){
+            applymovement(OBJ_EVENT_ID_PLAYER, exlamationmovement)
+            waitmovement(OBJ_EVENT_ID_PLAYER)
+            msgbox(format("Excellent work! This key holds the future of our island. Stay ready I’ll have new orders for you soon!"), MSGBOX_AUTOCLOSE)
+            applymovement(9, maxietundra2back)
+            waitmovement(9)
+            removeobject(9)
+            setvar(VAR_UNUSED_0x40FE, 2)
+            releaseall
+        }
+        if(var(VAR_RESULT) == NO){
+            lockall
+            msgbox(format("I couldn't be clearer! We need this key, don't come back without it!"), MSGBOX_AUTOCLOSE)
+            applymovement(9, maxietundra1back)
+            waitmovement(9)
+            applymovement(OBJ_EVENT_ID_PLAYER, wlakdownplayer)
+            waitmovement(OBJ_EVENT_ID_PLAYER)
+            releaseall
+        }
+
+        else{
+
+        }
+    }
+
+    script Triggersecretkey1 {
+   lockall
+   applymovement(9, maxietundra2)
+   waitmovement(9)
+   checkitem(ITEM_SECRET_KEY)
+   if(var(VAR_RESULT) == YES){
+            applymovement(OBJ_EVENT_ID_PLAYER, exlamationmovement)
+            waitmovement(OBJ_EVENT_ID_PLAYER)
+            msgbox(format("Excellent work! This key holds the future of our island. Stay ready I’ll have new orders for you soon!"), MSGBOX_AUTOCLOSE)
+            applymovement(9, maxietundra2back)
+            waitmovement(9)
+            removeobject(9)
+            setvar(VAR_UNUSED_0x40FE, 2)
+            releaseall
+        }
+        if(var(VAR_RESULT) == NO){
+            lockall
+            msgbox(format("I couldn't be clearer! We need this key, don't come back without it!"), MSGBOX_AUTOCLOSE)
+            applymovement(9, maxietundra1back2)
+            waitmovement(9)
+            applymovement(OBJ_EVENT_ID_PLAYER, wlakdownplayer)
+            waitmovement(OBJ_EVENT_ID_PLAYER)
+            releaseall
+        }
+
+        else{
+
+        }
+    }
+
+
+
+movement maxietundra2 {
+    walk_left
+    walk_down * 5
+    
+}
+
+movement exlamationmovement {
+    emote_exclamation_mark
+    
+}
+
+
+movement maxietundra2back {
+    walk_up * 5
+    
+}
+
+movement wlakdownplayer {
+    walk_down 
+    
+}
+
+movement maxietundra1back {
+    walk_up * 5
+    
+}
+
+movement maxietundra1 {
+    walk_down * 5
+    
+}
+
+movement maxietundra1back2 {
+    walk_right
+    walk_up * 5
+    
+}

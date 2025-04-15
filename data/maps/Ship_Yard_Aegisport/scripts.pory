@@ -1,0 +1,366 @@
+raw `
+Ship_Yard_Aegisport_MapScripts::
+	.byte 0
+
+`
+script Trigger1Shipyard {
+    lockall
+    setflag(FLAG_SHIPYARD_SCIENTIST)
+    applymovement(1, EXLAMATION)
+    applymovement(2, EXLAMATION)
+    applymovement(3, EXLAMATION)
+    applymovement(4, EXLAMATION)
+    applymovement(5, EXLAMATION)
+    applymovement(6, EXLAMATION)
+    msgbox(format("INTRUDER!"), MSGBOX_AUTOCLOSE)
+    applymovement(2, Scientist2)
+    waitmovement(2)
+    removeobject(2)
+    applymovement(1, Scientist1)
+    waitmovement(1)
+    removeobject(1)
+    applymovement(4, Scientist4)
+    waitmovement(4)
+    removeobject(4)
+    removeobject(3)
+    removeobject(5)
+    removeobject(6)
+    setvar(VAR_UNUSED_0x408B, 1)
+    releaseall
+
+
+    
+}
+
+
+script SIGNPRIVATE {
+    lockall
+    msgbox(format("PRIVATE BUILDING"))
+    releaseall
+    
+}
+movement Scientist4 {
+    walk_left * 1
+    walk_up * 2
+}
+
+movement Scientist1 {
+    walk_right * 2
+    walk_up * 3
+    
+}
+
+movement EXLAMATION {
+    emote_exclamation_mark
+    
+}
+
+movement Scientist2 {
+    walk_right * 2
+    walk_up * 8
+    
+}
+
+script SHIPYARD_2V2_1 {
+    if(var(VAR_AQUA_FIGHT_SHIP_YARD) == 0){
+    lockall
+    setflag(FLAG_TEAM_AQUA)
+    applymovement(9, EXLAMATION)
+    applymovement(8, EXLAMATION)
+    msgbox(format("This is a private building owned by the Aqua Team, get out!"), MSGBOX_AUTOCLOSE)
+    applymovement(8, GRUNT_DOWN)
+    waitmovement(8)
+    applymovement(9, GRUNT_DOWN1)
+    waitmovement(9)
+    applymovement(OBJ_EVENT_ID_PLAYER, GRUNT1LOOK)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    call(UniversalTeamAqua2V2Battle)
+    setvar(VAR_AQUA_FIGHT_SHIP_YARD, 1)
+    releaseall
+    
+    
+    
+}
+else{
+
+}
+}
+
+movement GRUNT_DOWN_Leave {
+    walk_down * 2
+    walk_left * 2
+    walk_up * 2
+    
+}
+
+script SHIPYARD_2V2_2 {
+    if(var(VAR_AQUA_FIGHT_SHIP_YARD) == 0){
+    lockall
+    applymovement(9, EXLAMATION)
+    applymovement(8, EXLAMATION)
+    msgbox(format("This is a private building owned by the Aqua Team, get out!"), MSGBOX_AUTOCLOSE)
+    applymovement(8, GRUNT_DOWN2NDSCRIPT)
+    waitmovement(8)
+    applymovement(9, GRUNT_2DOWN2NDSCRPIT)
+    waitmovement(9)
+    applymovement(OBJ_EVENT_ID_PLAYER, GRUNT2LOOK)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    call(UniversalTeamAqua2V2Battle1)
+    applymovement(9, GRUNT_DOWN2NDSCRIPTLEAVE)
+    setvar(VAR_AQUA_FIGHT_SHIP_YARD, 1)
+    releaseall
+    
+    
+    
+}
+ else{
+
+ }
+}
+
+movement GRUNT_DOWN2NDSCRIPTLEAVE {
+    
+}
+
+
+script SHIPYARD_2V2_3 {
+    if(var(VAR_AQUA_FIGHT_SHIP_YARD) == 0){
+    lockall
+    applymovement(8, EXLAMATION)
+    applymovement(9, EXLAMATION)
+    msgbox(format("This is a private building owned by the Aqua Team, get out!"), MSGBOX_AUTOCLOSE)
+    applymovement(8, GRUNT_DOWN2NDSCRIPT1)
+    waitmovement(8)
+    applymovement(9, GRUNT_2DOWN2NDSCRPIT1)
+    waitmovement(9)
+    applymovement(OBJ_EVENT_ID_PLAYER, GRUNT1LOOK1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    call(UniversalTeamAqua2V2Battle2)
+    setvar(VAR_AQUA_FIGHT_SHIP_YARD, 1)
+    releaseall
+    
+    
+    
+}
+
+  else{
+
+  }
+}
+
+movement GRUNT1LOOK1 {
+    face_down
+    
+}
+
+movement GRUNT_2DOWN2NDSCRPIT1 {
+    walk_up
+    walk_left
+    walk_up *  5
+    walk_left * 3
+    face_up
+    
+}
+
+movement GRUNT_DOWN2NDSCRIPT1 {
+    walk_up * 5
+    walk_left * 4 
+    walk_up * 2
+    face_right
+    
+}
+
+
+movement GRUNT_2DOWN2NDSCRPIT {
+    walk_up * 5
+    walk_left * 2
+    face_up
+    
+}
+
+movement GRUNT_DOWN2NDSCRIPT {
+    walk_up * 6
+    walk_left * 2
+    
+}
+
+movement GRUNT2LOOK {
+    face_right
+    
+}
+
+movement GRUNT1LOOK {
+    face_down
+    
+}
+
+movement GRUNT_DOWN {
+    walk_up * 7
+    walk_left
+    
+}
+
+movement GRUNT_DOWN1 {
+    walk_up * 6
+    walk_left
+    face_up
+}
+
+movement AQUA9 {
+    face_up
+    
+}
+
+movement AQUA10 {
+    walk_left
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_up
+    
+}
+
+movement Team_AquaMoveleft {
+    walk_left * 2
+    
+}
+
+script UniversalTeamAqua2V2Battle {
+    trainerbattle_two_trainers(GRUNT_1, AQUA_MEMBER_SHIPYARD_2F_text1, GRUNT_2, AQUA_MEMBER_SHIPYARD_2F_text2)
+    msgbox(format("Lets get out of here!"), MSGBOX_AUTOCLOSE)
+    applymovement(8, GRUNT_DOWN_Leave)
+    waitmovement(8)
+    removeobject(8)
+    applymovement(9, GRUNT_DOWN_Leave1)
+    waitmovement(9)
+    removeobject(9)
+    setvar(VAR_AQUA_FIGHT_SHIP_YARD, 1)
+    end
+}
+
+script UniversalTeamAqua2V2Battle1 {
+    trainerbattle_two_trainers(GRUNT_1, AQUA_MEMBER_SHIPYARD_2F_text1, GRUNT_2, AQUA_MEMBER_SHIPYARD_2F_text2)
+    msgbox(format("Lets get out of here!"), MSGBOX_AUTOCLOSE)
+    applymovement(8, GRUNT_DOWN_Leave3)
+    waitmovement(8)
+    removeobject(8)
+    applymovement(9, GRUNT_DOWN_Leave4)
+    waitmovement(9)
+    removeobject(9)
+    setvar(VAR_AQUA_FIGHT_SHIP_YARD, 1)
+    end
+}
+
+script UniversalTeamAqua2V2Battle2 {
+    trainerbattle_two_trainers(GRUNT_1, AQUA_MEMBER_SHIPYARD_2F_text1, GRUNT_2, AQUA_MEMBER_SHIPYARD_2F_text2)
+    msgbox(format("Lets get out of here!"), MSGBOX_AUTOCLOSE)
+    applymovement(9, GRUNT_DOWN_Leave5)
+    waitmovement(9)
+    removeobject(9)
+    applymovement(8, GRUNT_DOWN_Leave6)
+    waitmovement(8)
+    removeobject(8)
+    setvar(VAR_AQUA_FIGHT_SHIP_YARD, 1)
+    end
+}
+
+movement GRUNT_DOWN_Leave5 {
+    walk_down * 2
+    walk_right * 2
+    walk_up * 2
+
+}
+
+movement GRUNT_DOWN_Leave6{
+    walk_right
+    walk_up 
+}
+
+movement GRUNT_DOWN_Leave4 {
+    walk_left
+    walk_up
+    walk_up
+    walk_right
+    walk_up
+    
+}
+
+movement  GRUNT_DOWN_Leave3 {
+    walk_up
+    walk_left
+    walk_up
+    
+}
+
+movement GRUNT_DOWN_Leave1 {
+    walk_left
+    walk_up
+    
+}
+
+text AQUA_MEMBER_SHIPYARD_2F_text1 {
+    format("You are too strong, don't get your hopes up, we are going to crush you!")
+}
+
+
+text AQUA_MEMBER_SHIPYARD_2F_text2 {
+    format("Just like he said, we are going to neutralize you, it's only a matter of time!")
+    
+}
+
+script MSGBOXSCIENTIST1 {
+    lockall
+    faceplayer
+    msgbox(format("Hah... You think you've won? Team Aqua's plans are already in motion!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+
+script MSGBOXSCIENTIST5 {
+    lockall
+    faceplayer
+    msgbox(format("Laugh all you want, but soon, the world will be covered in water, just as it should be!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+
+script MSGBOXSCIENTIST6 {
+    lockall
+    faceplayer
+    msgbox(format("You... You may have beaten those grunts, but you’re too late! Nothing can stop us now!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+
+script MSGBOXSCIENTIST2 {
+    lockall
+    faceplayer
+    msgbox(format("I'm just a scientist! I have no clue what Team Aqua is planning!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+script MSGBOXSCIENTIST3 {
+    lockall
+    faceplayer
+    msgbox(format("W Wait! You don't understand! I was just following orders! I had no choice!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+script MSGBOXSCIENTIST4 {
+    lockall
+    faceplayer
+    msgbox(format("I don't care what happens to me, but Team Aqua’s vision will become reality"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+
+script MSGBOXSCIENTIST7 {
+    lockall
+    faceplayer
+    msgbox(format("I tried to speak up, but Team Aqua doesn’t take kindly to ‘disloyalty’.."), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}

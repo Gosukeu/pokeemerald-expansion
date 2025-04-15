@@ -1,0 +1,181 @@
+{
+  "id": "MAP_EMBERFALL_TOWN",
+  "name": "EmberfallTown",
+  "layout": "LAYOUT_EMBERFALL_TOWN",
+  "music": "MUS_LITTLEROOT",
+  "region_map_section": "MAPSEC_INDIGO_PLATEAU",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_PYRO_CLAVE",
+      "offset": -4,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 61,
+      "y": 63,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_SHARE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_EXP_SHARE"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 66,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_PROFESSOR_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 58,
+      "elevation": 0,
+      "dest_map": "MAP_PLAYER_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 58,
+      "elevation": 0,
+      "dest_map": "MAP_RIVAL_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 66,
+      "elevation": 0,
+      "dest_map": "MAP_DAILY_GIFTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_POKE_CENTER_EMBERFALL_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_POKE_MART_EMBERFALL_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 67,
+      "elevation": 0,
+      "dest_map": "MAP_EMBERFALL_TOWN_HOUSE_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 48,
+      "y": 66,
+      "elevation": 0,
+      "dest_map": "MAP_EMBERFALL_TOWN_SECOND_HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 62,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 55,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 54,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 61,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 60,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 59,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 58,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 56,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x40FF",
+      "var_value": "0",
+      "script": "Trigger_Go_Get_Your_Starters"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

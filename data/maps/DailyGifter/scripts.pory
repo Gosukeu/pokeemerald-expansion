@@ -1,0 +1,19 @@
+mapscripts DailyGifter_MapScripts {
+    
+}
+
+
+
+
+script GiveDailyItem {
+    if (!flag(FLAG_UNUSED_0x923)) {
+        msgbox("Here is your daily item!")
+        giveitem(ITEM_SITRUS_BERRY)
+        setflag(FLAG_UNUSED_0x923)
+        releaseall
+    } else {
+        msgbox("You've already claimed today's reward!")
+        releaseall
+    }
+    
+}

@@ -1,0 +1,130 @@
+raw `
+NewMap1_MapScripts::
+	.byte 0
+
+`
+
+
+
+
+script gymadvisor {
+    if(flag(FLAG_BADGE01_GET)){
+       lockall
+       faceplayer
+       msgbox(format("Yow! You've even beaten our Gym Leader, the first true test for any trainer! Okay! Check out your Trainer Card. With your first Badge in hand, you're on your way to becoming a true Champion!"), MSGBOX_AUTOCLOSE)
+       releaseall
+    }
+    
+    else{
+        lockall
+        faceplayer
+       msgbox(format("Yo! How's it going, Champion-bound {PLAYER}? Sootopolis's Gym Leader Juan is a master of Water-type Pokémon. To reach Juan, an icy floor will hamper your progress. Listen, I'm sorry, but that's all the advice I have for you. The rest of the way, you have to go for it yourself!"), MSGBOX_AUTOCLOSE)
+        releaseall
+     }
+}
+
+
+script JUANBATTLE {
+   lockall
+   faceplayer
+   trainerbattle_single(TRAINER_FIRST_GYM_BADGE_WATER, JUANINTRO, JUANOUTRO, GYMREWARDJUAN)
+   end
+    
+}
+
+
+script GYMREWARDJUAN {
+   lockall
+   msgbox(format("{PLAYER} received the RAIN BADGE from JUAN"), MSGBOX_AUTOCLOSE)
+   call(Common_EventScript_PlayGymBadgeFanfare)
+   setflag(FLAG_BADGE01_GET)
+   msgbox(format("Having the Water Badge ensures that your Pokémon will obey you up to level 27. It also grants you the ability to use the HM move Surf to cross large bodies of water. And, so you never forget the battle we shared, take this…"), MSGBOX_AUTOCLOSE)
+   giveitem(ITEM_HM_SURF)
+   releaseall 
+}
+
+text JUANINTRO {
+   format("Ah, I see you've made your way through the waves, {PLAYER}! You've come to test your skills against me, the master of Water type Pokémon. I hope you're ready, because in this gym, the tides are always in motion. Let's see if you have what it takes to ride the waves to victory!")
+    
+}
+
+text JUANOUTRO {
+   format("You've proven yourself to be a worthy challenger! Your command of Water type Pokémon is impressive, but it's your heart and spirit that truly shine. With this victory, you have earned the Water Badge! Keep surfing toward your dreams!")
+    
+}
+
+
+script FIRSTBATTLE {
+   trainerbattle_single(F1_WATER_GYM_TRAINER, F1_WATER_GYM_TRAINER_INTRO, F1_WATER_GYM_TRAINER_OUTRO)
+   end
+    
+}
+script SECONDBATTLE {
+   trainerbattle_single(F1_WATER_GYM_TRAINER1, F1_WATER_GYM_TRAINER_INTRO1, F1_WATER_GYM_TRAINER_OUTRO1)
+   end
+    
+}
+text F1_WATER_GYM_TRAINER_INTRO1 {
+   format("The water here is deep, but my skills are deeper! Let’s see if you can swim with the best!")
+    
+}
+text F1_WATER_GYM_TRAINER_OUTRO1 {
+   format("Looks like I was the one who got washed away… You’ve got real potential!")
+    
+}
+script THIRDBATTLE {
+   trainerbattle_single(F1_WATER_GYM_TRAINER2, F1_WATER_GYM_TRAINER_INTRO2, F1_WATER_GYM_TRAINER_OUTRO2)
+   end
+    
+}
+text F1_WATER_GYM_TRAINER_INTRO2 {
+   format("Only those who can ride the tide stand a chance in this Gym. Let’s see if you’re one of them!")
+    
+}
+text F1_WATER_GYM_TRAINER_OUTRO2 {
+ format("You’re like a raging current… too strong to stop!")
+    
+}
+script FORTHBATTLE {
+   trainerbattle_single(F1_WATER_GYM_TRAINER3, F1_WATER_GYM_TRAINER_INTRO3, F1_WATER_GYM_TRAINER_OUTRO3)
+   end
+    
+}
+
+text F1_WATER_GYM_TRAINER_INTRO3 {
+   format("Water flows, surges, and crashes! Can you withstand the force of my Pokémon?")
+    
+}
+text F1_WATER_GYM_TRAINER_OUTRO3 {
+   format("I sank faster than I expected… You’re tougher than you look!")
+    
+}
+
+script fifthBATTLE {
+   trainerbattle_single(F1_WATER_GYM_TRAINER4, F1_WATER_GYM_TRAINER_INTRO4, F1_WATER_GYM_TRAINER_OUTRO4)
+   end
+    
+}
+
+text F1_WATER_GYM_TRAINER_INTRO4 {
+   format("Battling in this Gym is like sailing in a storm-only the strongest make it through!")
+    
+}
+
+text F1_WATER_GYM_TRAINER_OUTRO4 {
+   format("The tide was against me this time, but I’ll keep training!")
+    
+}
+
+
+text F1_WATER_GYM_TRAINER_INTRO {
+   format("So, you think you can handle the waves of this Gym? Let’s see if you can stay afloat in battle!")
+    
+}
+
+text F1_WATER_GYM_TRAINER_OUTRO {
+   format("Whoa… You really made a splash! Guess I need to train harder.")
+    
+}
+
+

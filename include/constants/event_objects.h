@@ -240,13 +240,25 @@
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
-#define OBJ_EVENT_GFX_POKE_BALL                  239
-#define OBJ_EVENT_GFX_OW_MON                     240
+#define OBJ_EVENT_GFX_AEGISLASH                  239
+#define OBJ_EVENT_GFX_SWINUB                     240
+#define OBJ_EVENT_GFX_KROOKODILE                 241
+#define OBJ_EVENT_GFX_BIDOOF                     242
+#define OBJ_EVENT_GFX_KORAIDON                   243
+#define OBJ_EVENT_GFX_CELEBI                     244  
+#define OBJ_EVENT_GFX_KRABBY                     245
+#define OBJ_EVENT_GFX_STARYU                     246
+#define OBJ_EVENT_GFX_SANDSHREW                  247
+#define OBJ_EVENT_GFX_HORSEA                     248
+#define OBJ_EVENT_GFX_CORSOLA                    249
+#define OBJ_EVENT_GFX_SANDILE                    250              
+#define OBJ_EVENT_GFX_POKE_BALL                  251
+#define OBJ_EVENT_GFX_OW_MON                     252
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        241
+#define NUM_OBJ_EVENT_GFX                        253
 
 
 // These are dynamic object gfx ids.
@@ -383,6 +395,18 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_AEGISLASH               0x1125
+#define OBJ_EVENT_PAL_TAG_SWINUB                  0x1126
+#define OBJ_EVENT_PAL_TAG_KROKOODILE              0x1127
+#define OBJ_EVENT_PAL_TAG_BIDOOF                  0x1128
+#define OBJ_EVENT_PAL_TAG_KORAIDON                0x1129
+#define OBJ_EVENT_PAL_TAG_CELEBI                   0x112A
+#define OBJ_EVENT_PAL_TAG_KRABBY                   0x112B
+#define OBJ_EVENT_PAL_TAG_STARYU                   0x112C
+#define OBJ_EVENT_PAL_TAG_SANDSHREW                0x112D
+#define OBJ_EVENT_PAL_TAG_HORSEA                   0x112E
+#define OBJ_EVENT_PAL_TAG_CORSOLA                   0x112F
+#define OBJ_EVENT_PAL_TAG_SANDILE                   0x1130
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

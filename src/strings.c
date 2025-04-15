@@ -1569,3 +1569,8 @@ const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
 const u8 gText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
 const u8 gText_Rename[] = _("RENAME");
+// custom
+const u8 gText_FIRSTrecipee[] = _("Leftovers");
+const u8 gText_SECONDErecipee[] = _("Honey");
+const u8 gText_THIRDrecipee[] = _("Lava Cookie");
+const u8 gText_FORTHrecipee[] = _("Moomoo milk");

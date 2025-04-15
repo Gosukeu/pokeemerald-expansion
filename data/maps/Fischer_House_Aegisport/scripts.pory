@@ -1,0 +1,37 @@
+mapscripts Fischer_House_Aegisport_MapScripts {
+    
+}
+
+script FischerMan_Aegisport {
+    if(var(VAR_FISCHER_MAN) == 0) {
+    lockall
+    faceplayer
+    msgbox(format("Hey there, trainer! Do you want a fishing rod?"), MSGBOX_YESNO)
+    
+    if(var(VAR_RESULT) == YES) {
+    playfanfare(MUS_OBTAIN_ITEM)
+    giveitem(ITEM_OLD_ROD)
+    msgbox(format("Use it near water to fish.And you will encounter mostly water types!"))
+    msgbox(format("If you manage to earn the Water Badge, come back and talk to me. I just might hand you over my best fishing rod!"))
+    setvar(VAR_FISCHER_MAN, 1)
+    releaseall
+    return
+    }
+
+
+    elif (var(VAR_RESULT) == NO){
+    msgbox(format("Oh, I see... Maybe another time."), MSGBOX_AUTOCLOSE)
+    releaseall
+       
+       }
+    }
+
+
+    if(var(VAR_FISCHER_MAN) == 1){
+    lockall
+    msgbox(format("Hey there trainer! If you manage to earn the Water Badge, come back and talk to me!. I just might hand you over my best fishing rod!"), MSGBOX_AUTOCLOSE)
+    
+    
+    
+    }
+}

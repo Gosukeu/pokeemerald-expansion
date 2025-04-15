@@ -236,6 +236,18 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphir
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aegislash;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Swinub;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Krookodile;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bidoof;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Koraidon;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Celebi;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Krabby;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Staryu;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandshrew;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Horsea;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corsola;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandile;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -488,6 +500,18 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+    [OBJ_EVENT_GFX_AEGISLASH] =                  &gObjectEventGraphicsInfo_Aegislash,
+    [OBJ_EVENT_GFX_SWINUB] =                  &gObjectEventGraphicsInfo_Swinub,
+    [OBJ_EVENT_GFX_KROOKODILE] =                  &gObjectEventGraphicsInfo_Krookodile,
+    [OBJ_EVENT_GFX_BIDOOF] =                  &gObjectEventGraphicsInfo_Bidoof,
+    [OBJ_EVENT_GFX_KORAIDON] =                  &gObjectEventGraphicsInfo_Koraidon,
+    [OBJ_EVENT_GFX_CELEBI] =                  &gObjectEventGraphicsInfo_Celebi,
+    [OBJ_EVENT_GFX_KRABBY] =                  &gObjectEventGraphicsInfo_Krabby,
+    [OBJ_EVENT_GFX_STARYU] =                  &gObjectEventGraphicsInfo_Staryu,
+    [OBJ_EVENT_GFX_SANDSHREW] =                  &gObjectEventGraphicsInfo_Sandshrew,
+    [OBJ_EVENT_GFX_HORSEA] =                  &gObjectEventGraphicsInfo_Horsea,
+    [OBJ_EVENT_GFX_CORSOLA] =                  &gObjectEventGraphicsInfo_Corsola,
+    [OBJ_EVENT_GFX_SANDILE] =                  &gObjectEventGraphicsInfo_Sandile,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };
