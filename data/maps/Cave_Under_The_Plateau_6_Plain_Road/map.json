@@ -12,23 +12,24 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_CAVE_UNDER_THE_PLATEAU_7",
-      "offset": 0,
-      "direction": "up"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
     {
       "x": 1,
-      "y": 17,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU_5",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_TUNDRAWOOD_CITY_BEACH_CAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

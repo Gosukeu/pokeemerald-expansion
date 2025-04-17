@@ -1259,6 +1259,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Nidorina[] = INCBIN_U32("graphics/pokemon/nidorina/anim_front.4bpp.lz");
     const u32 gMonPalette_Nidorina[] = INCBIN_U32("graphics/pokemon/nidorina/normal.gbapal.lz");
@@ -12735,6 +12736,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_MiloticMega[] = INCBIN_U32("graphics/pokemon/milotic/mega/front.4bpp.lz");
+    const u32 gMonPalette_MiloticMega[] = INCBIN_U32("graphics/pokemon/milotic/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_MiloticMega[] = INCBIN_U32("graphics/pokemon/milotic/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_MiloticMega[] = INCBIN_U32("graphics/pokemon/milotic/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_MiloticMega[] = INCBIN_U8("graphics/pokemon/milotic/mega/icon.4bpp");
+
 #if P_GENDER_DIFFERENCES
     const u32 gMonFrontPic_MiloticF[] = INCBIN_U32("graphics/pokemon/milotic/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_MiloticF[] = INCBIN_U32("graphics/pokemon/milotic/backf.4bpp.lz");
@@ -12742,6 +12750,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_MiloticF[] = INCBIN_COMP("graphics/pokemon/milotic/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FEEBAS
 
 #if P_FAMILY_CASTFORM

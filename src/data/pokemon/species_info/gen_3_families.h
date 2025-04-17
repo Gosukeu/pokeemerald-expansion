@@ -8034,6 +8034,65 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
     },
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_MILOTIC_MEGA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 60,
+        .baseDefense   = 85,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 130,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .catchRate = 45,
+        .expYield = 219,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_MULTISCALE, ABILITY_MULTISCALE, ABILITY_MULTISCALE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Milotic"),
+        .cryId = CRY_MILOTIC,
+        .natDexNum = NATIONAL_DEX_MILOTIC,
+        .categoryName = _("Tender"),
+        .height = 62,
+        .weight = 1620,
+        .description = COMPOUND_STRING(
+            "It is said to live at the bottom of\n"
+            "large lakes. Considered to be the most\n"
+            "beautiful of all Pokémon, it has been\n"
+            "depicted in paintings and statues."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 360,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_MiloticMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 2,
+        .frontAnimFrames = sAnims_Milotic,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_GLOW_BLUE : ANIM_CIRCULAR_STRETCH_TWICE,
+        .frontAnimDelay = 45,
+        .backPic = gMonBackPic_MiloticMega,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 64) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_MiloticMega,
+        .shinyPalette = gMonShinyPalette_MiloticMega,
+        .iconSprite = gMonIcon_MiloticMega,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        SHADOW(-1, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Milotic)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sMiloticLevelUpLearnset,
+        .teachableLearnset = sMiloticTeachableLearnset,
+        .formSpeciesIdTable = sMiloticFormSpeciesIdTable,
+        .formChangeTable = sMiloticFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FEEBAS
 
 #if P_FAMILY_CASTFORM

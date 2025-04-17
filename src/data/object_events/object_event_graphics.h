@@ -394,6 +394,9 @@ const u16 gObjectEventPalette_CorsolawOW[] = INCBIN_U16("graphics/pokemon/corsol
 // sandile
 const u32 gObjectEventPic_SandileOW[] = INCBIN_U32("graphics/pokemon/sandile/overworld.4bpp");
 const u16 gObjectEventPalette_SandileOW[] = INCBIN_U16("graphics/pokemon/sandile/overworld_normal.gbapal");
+//  rolling spheal
+const u32 gObjectEventPic_RollingSphealOW[] = INCBIN_U32("graphics/pokemon/rollingspheal/spheal.4bpp");
+const u16 gObjectEventPalette_RollingSphealOW[] = INCBIN_U16("graphics/pokemon/rollingspheal/spheal.gbapal");
 // end of custom sprites
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
 const u32 gObjectEventPic_MewOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/mew.4bpp");

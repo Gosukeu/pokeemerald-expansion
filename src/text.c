@@ -269,6 +269,13 @@ static const struct FontInfo sFontInfos[] =
     [FONT_SHORT_NARROWER] = {
         .fontFunction = FontFunc_ShortNarrower,
         .maxLetterWidth = 5,
+        .maxLetterHeight = 14,
+        .letterSpacing = 0,
+        .lineSpacing = 0,
+        .fgColor = 2,
+        .bgColor = 1,
+        .shadowColor = 3,
+    },
     [FONT_BW_SUMMARY_SCREEN] = {
         .fontFunction = FontFunc_BW_Summary_Screen,
         .maxLetterWidth = 6,
@@ -873,6 +880,17 @@ static u16 FontFunc_ShortNarrow(struct TextPrinter *textPrinter)
 }
 
 static u16 FontFunc_ShortNarrower(struct TextPrinter *textPrinter)
+{
+    struct TextPrinterSubStruct *subStruct = (struct TextPrinterSubStruct *)(&textPrinter->subStructFields);
+
+    if (subStruct->hasFontIdBeenSet == FALSE)
+    {
+        subStruct->fontId = FONT_SHORT_NARROWER;
+        subStruct->hasFontIdBeenSet = TRUE;
+    }
+    return RenderText(textPrinter);
+}
+
 static u16 FontFunc_BW_Summary_Screen(struct TextPrinter *textPrinter)
 {
     struct TextPrinterSubStruct *subStruct = (struct TextPrinterSubStruct *)(&textPrinter->subStructFields);

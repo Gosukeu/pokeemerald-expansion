@@ -192,6 +192,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     #include "species_info/gen_9_families.h"
 
     [SPECIES_EGG] =
+    
     {
         .frontPic = gMonFrontPic_Egg,
         .frontPicSize = MON_COORDS_SIZE(24, 24),
@@ -204,6 +205,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_Egg,
         .iconPalIndex = 1,
     },
+
 
     /* You may add any custom species below this point based on the following structure: */
 

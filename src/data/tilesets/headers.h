@@ -847,3 +847,25 @@ const struct Tileset gTileset_SEWER =
     .metatileAttributes = gMetatileAttributes_SEWER,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_cave_beach_secondary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_cave_beach_secondary,
+    .palettes = gTilesetPalettes_cave_beach_secondary,
+    .metatiles = gMetatiles_cave_beach_secondary,
+    .metatileAttributes = gMetatileAttributes_cave_beach_secondary,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_pokecenterlaternative =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_pokecenterlaternative,
+    .palettes = gTilesetPalettes_pokecenterlaternative,
+    .metatiles = gMetatiles_pokecenterlaternative,
+    .metatileAttributes = gMetatileAttributes_pokecenterlaternative,
+    .callback = NULL,
+};

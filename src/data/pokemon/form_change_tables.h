@@ -574,6 +574,15 @@ static const struct FormChange sLucarioFormChangeTable[] = {
 };
 #endif //P_FAMILY_RIOLU
 
+#if P_FAMILY_FEEBAS
+static const struct FormChange sMiloticFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MILOTIC_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_MILOTIC
+
 #if P_FAMILY_SNOVER
 static const struct FormChange sAbomasnowFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS

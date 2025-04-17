@@ -213,3 +213,9 @@ const u16 gMetatileAttributes_TEST[] = INCBIN_U16("data/tilesets/secondary/test/
 
 const u16 gMetatiles_SEWER[] = INCBIN_U16("data/tilesets/secondary/sewer/metatiles.bin");
 const u16 gMetatileAttributes_SEWER[] = INCBIN_U16("data/tilesets/secondary/sewer/metatile_attributes.bin");
+
+const u16 gMetatiles_cave_beach_secondary[] = INCBIN_U16("data/tilesets/secondary/cave_beach_secondary/metatiles.bin");
+const u16 gMetatileAttributes_cave_beach_secondary[] = INCBIN_U16("data/tilesets/secondary/cave_beach_secondary/metatile_attributes.bin");
+
+const u16 gMetatiles_pokecenterlaternative[] = INCBIN_U16("data/tilesets/secondary/pokecenterlaternative/metatiles.bin");
+const u16 gMetatileAttributes_pokecenterlaternative[] = INCBIN_U16("data/tilesets/secondary/pokecenterlaternative/metatile_attributes.bin");

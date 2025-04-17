@@ -28,8 +28,8 @@
       "x": 16,
       "y": 42,
       "elevation": 0,
-      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_TUNDRAWOOD_CITY",
+      "dest_warp_id": "11"
     }
   ],
   "coord_events": [

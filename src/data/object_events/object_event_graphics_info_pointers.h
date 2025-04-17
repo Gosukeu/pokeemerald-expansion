@@ -248,6 +248,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandshrew;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Horsea;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corsola;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandile;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RollingSpheal;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -512,6 +513,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HORSEA] =                  &gObjectEventGraphicsInfo_Horsea,
     [OBJ_EVENT_GFX_CORSOLA] =                  &gObjectEventGraphicsInfo_Corsola,
     [OBJ_EVENT_GFX_SANDILE] =                  &gObjectEventGraphicsInfo_Sandile,
+    [OBJ_EVENT_GFX_ROLLING_SPHEAL] =                  &gObjectEventGraphicsInfo_RollingSpheal,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };

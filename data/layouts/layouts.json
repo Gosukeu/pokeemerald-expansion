@@ -4714,10 +4714,10 @@
     {
       "id": "LAYOUT_POKE_CENTER_TUNDRA",
       "name": "POKE_CENTER_TUNDRA_Layout",
-      "width": 14,
-      "height": 9,
+      "width": 20,
+      "height": 20,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "secondary_tileset": "gTileset_pokecenterlaternative",
       "border_filepath": "data/layouts/POKE_CENTER_TUNDRA/border.bin",
       "blockdata_filepath": "data/layouts/POKE_CENTER_TUNDRA/map.bin"
     },
@@ -4955,7 +4955,7 @@
       "id": "LAYOUT_CAVE_UNDER_THE_PLATEAU_6_PLAIN_ROAD",
       "name": "Cave_Under_The_Plateau_6_Plain_Road_Layout",
       "width": 12,
-      "height": 20,
+      "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Cave_Under_The_Plateau_6_Plain_Road/border.bin",
@@ -5040,6 +5040,26 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Ocean_1/border.bin",
       "blockdata_filepath": "data/layouts/Ocean_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_cave_beach_secondary",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUNDRAWOOD_CITY_BEACH_CAVE",
+      "name": "TundrawoodCity_Beach_Cave_Layout",
+      "width": 60,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_cave_beach_secondary",
+      "border_filepath": "data/layouts/TundrawoodCity_Beach_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/TundrawoodCity_Beach_Cave/map.bin"
     }
   ]
 }

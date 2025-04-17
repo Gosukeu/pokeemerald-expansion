@@ -1278,3 +1278,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Registeel/scripts.inc"
 
 	.include "data/maps/Ocean_1/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/TundrawoodCity_Beach_Cave/scripts.inc"

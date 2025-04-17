@@ -1064,6 +1064,16 @@ static const u16 sLucarioFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RIOLU
 
+#if P_FAMILY_FEEBAS
+static const u16 sMiloticFormSpeciesIdTable[] = {
+    SPECIES_MILOTIC,
+#if P_MEGA_EVOLUTIONS
+SPECIES_MILOTIC_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_FEEBAS
+
 #if P_FAMILY_SNOVER
 static const u16 sAbomasnowFormSpeciesIdTable[] = {
     SPECIES_ABOMASNOW,
