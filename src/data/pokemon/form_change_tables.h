@@ -583,6 +583,33 @@ static const struct FormChange sMiloticFormChangeTable[] = {
 };
 #endif //P_FAMILY_MILOTIC
 
+#if P_FAMILY_NIDORAN
+static const struct FormChange sNidokingFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_NIDOKING_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_NIDORAN
+
+#if P_FAMILY_GROOKEY
+static const struct FormChange sRillaboomMegaFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_RILLABOOM_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_GROOKEY
+
+#if P_FAMILY_OSHAWOTT
+static const struct FormChange sSamurottFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SAMUROTT_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_OSHAWOTT
+
 #if P_FAMILY_SNOVER
 static const struct FormChange sAbomasnowFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS

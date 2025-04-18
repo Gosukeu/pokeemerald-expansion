@@ -1639,9 +1639,11 @@
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    SPECIES_MIMIKYU_BUSTED_TOTEM
 //mega
 #define SPECIES_MILOTIC_MEGA                            1524
+#define SPECIES_NIDOKING_MEGA                           1525
+#define SPECIES_SAMUROTT_MEGA                           1526
+#define SPECIES_RILLABOOM_MEGA                          1527
 
-
-#define SPECIES_EGG                                     (SPECIES_MILOTIC_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_RILLABOOM_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

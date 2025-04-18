@@ -189,7 +189,69 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sRillaboomFormSpeciesIdTable,
         .formChangeTable = sRillaboomFormChangeTable,
     },
-
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_RILLABOOM_MEGA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 125,
+        .baseDefense   = 90,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_NORMAL),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_GRASSY_SURGE, ABILITY_GRASSY_SURGE, ABILITY_GRASSY_SURGE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Rillaboom"),
+        .cryId = CRY_RILLABOOM,
+        .natDexNum = NATIONAL_DEX_RILLABOOM,
+        .categoryName = _("Drummer"),
+        .height = 15,
+        .weight = 582,
+        .description = COMPOUND_STRING(
+            "By drumming, it taps into the power of\n"
+            "its special tree stump. The roots of the\n"
+            "stump follow its direction in battle."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_rillaboomMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SamurottHisui,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_rillaboomMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 8,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_rillaboomMega,
+        .shinyPalette = gMonShinyPalette_rillaboomMega,
+        .iconSprite = gMonIcon_rillaboomMega,
+        .iconPalIndex = 1,
+        SHADOW(2, 8, SHADOW_SIZE_L)
+        FOOTPRINT(Rillaboom)
+        OVERWORLD(
+            sPicTable_Rillaboom,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Rillaboom,
+            gShinyOverworldPalette_Rillaboom
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRillaboomLevelUpLearnset,
+        .teachableLearnset = sRillaboomTeachableLearnset,
+        .formSpeciesIdTable = sRillaboomMegaFormSpeciesIdTable,
+        .formChangeTable = sRillaboomMegaFormChangeTable,
+    },
 #if P_GIGANTAMAX_FORMS
     [SPECIES_RILLABOOM_GMAX] =
     {
@@ -246,6 +308,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sRillaboomFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
+#endif //P_MEGA_FORMS
 #endif //P_FAMILY_GROOKEY
 
 #if P_FAMILY_SCORBUNNY

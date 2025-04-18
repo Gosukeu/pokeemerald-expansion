@@ -8072,8 +8072,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 7,
         .frontPic = gMonFrontPic_MiloticMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 2,
-        .frontAnimFrames = sAnims_Milotic,
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SamurottHisui,
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_GLOW_BLUE : ANIM_CIRCULAR_STRETCH_TWICE,
         .frontAnimDelay = 45,
         .backPic = gMonBackPic_MiloticMega,
@@ -8086,6 +8086,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
         SHADOW(-1, 11, SHADOW_SIZE_M)
         FOOTPRINT(Milotic)
+        OVERWORLD(
+            sPicTable_Milotic,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            gOverworldPalette_Milotic,
+            gShinyOverworldPalette_Milotic
+        )
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,

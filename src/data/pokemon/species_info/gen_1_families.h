@@ -4361,7 +4361,72 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sNidokingLevelUpLearnset,
         .teachableLearnset = sNidokingTeachableLearnset,
     },
-#endif //P_FAMILY_NIDORAN
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_NIDOKING_MEGA] =
+    {
+        .baseHP        = 81,
+        .baseAttack    = 110,
+        .baseDefense   = 85,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_POISON, TYPE_FIGHTING),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Nidoking"),
+        .cryId = CRY_NIDOKING,
+        .natDexNum = NATIONAL_DEX_NIDOKING,
+        .categoryName = _("Formidable"),
+        .height = 15,
+        .weight = 582,
+        .description = COMPOUND_STRING(
+            "A Nidoking's thick tail packs enormously\n"
+            "destructive power capable of toppling\n"
+            "a metal transmission tower. Once it goes\n"
+            "on a rampage, there is no stopping it."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_NidokingMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SamurottHisui,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_NidokingMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 8,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_NidokingMega,
+        .shinyPalette = gMonShinyPalette_NidokingMega,
+        .iconSprite = gMonIcon_NidokingMega,
+        .iconPalIndex = 2,
+        SHADOW(-2, 13, SHADOW_SIZE_L)
+        FOOTPRINT(Nidoking)
+        OVERWORLD(
+            sPicTable_Nidoking,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Nidoking,
+            gShinyOverworldPalette_Nidoking
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sNidokingLevelUpLearnset,
+        .teachableLearnset = sNidokingTeachableLearnset,
+        .formSpeciesIdTable = sNidokingFormSpeciesIdTable,
+        .formChangeTable = sNidokingFormChangeTable,
+    },
+    #endif //P_MEGA_FORMS
+    #endif //P_FAMILY_NIDORAN
 
 #if P_FAMILY_CLEFAIRY
 #if P_UPDATED_TYPES >= GEN_6

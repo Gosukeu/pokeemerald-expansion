@@ -1064,6 +1064,36 @@ static const u16 sLucarioFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RIOLU
 
+#if P_FAMILY_NIDORAN
+static const u16 sNidokingFormSpeciesIdTable[] = {
+    SPECIES_NIDOKING,
+#if P_MEGA_EVOLUTIONS
+SPECIES_NIDOKING_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_NIDORAN
+
+#if P_FAMILY_GROOKEY
+static const u16 sRillaboomMegaFormSpeciesIdTable[] = {
+    SPECIES_RILLABOOM,
+#if P_MEGA_EVOLUTIONS
+SPECIES_RILLABOOM_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_NIDORAN
+
+#if P_FAMILY_OSHAWOTT
+static const u16 sSamurottmegaFormSpeciesIdTable[] = {
+    SPECIES_SAMUROTT,
+#if P_MEGA_EVOLUTIONS
+SPECIES_SAMUROTT_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_OSHAWOTT
+
 #if P_FAMILY_FEEBAS
 static const u16 sMiloticFormSpeciesIdTable[] = {
     SPECIES_MILOTIC,
