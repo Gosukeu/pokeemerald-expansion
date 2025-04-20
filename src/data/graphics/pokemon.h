@@ -1116,6 +1116,14 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Raichu[] = INCBIN_U8("graphics/pokemon/raichu/footprint.1bpp");
 #endif //P_FOOTPRINTS
+
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_raichuMega[] = INCBIN_U32("graphics/pokemon/raichu/mega/front.4bpp.lz");
+    const u32 gMonPalette_raichuMega[] = INCBIN_U32("graphics/pokemon/raichu/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_raichuMega[] = INCBIN_U32("graphics/pokemon/raichu/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_raichuMega[] = INCBIN_U32("graphics/pokemon/raichu/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_raichuMega[] = INCBIN_U8("graphics/pokemon/raichu/mega/icon.4bpp");
+
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Raichu[] = INCBIN_COMP("graphics/pokemon/raichu/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
@@ -1144,6 +1152,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_RaichuAlola[] = INCBIN_U32("graphics/pokemon/raichu/alola/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#endif //MEGA
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PIKACHU
 
@@ -13002,12 +13011,22 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Tropius[] = INCBIN_U8("graphics/pokemon/tropius/footprint.1bpp");
 #endif //P_FOOTPRINTS
+
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_tropiusMega[] = INCBIN_U32("graphics/pokemon/tropius/mega/front.4bpp.lz");
+    const u32 gMonPalette_tropiusMega[] = INCBIN_U32("graphics/pokemon/tropius/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_tropiusMega[] = INCBIN_U32("graphics/pokemon/tropius/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_tropiusMega[] = INCBIN_U32("graphics/pokemon/tropius/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_tropiusMega[] = INCBIN_U8("graphics/pokemon/tropius/mega/icon.4bpp");
+
+
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Tropius[] = INCBIN_COMP("graphics/pokemon/tropius/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u32 gOverworldPalette_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/overworld_normal.gbapal.lz");
     const u32 gShinyOverworldPalette_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //MEGA
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TROPIUS
 
@@ -24713,12 +24732,21 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Skeledirge[] = INCBIN_U8("graphics/pokemon/skeledirge/footprint.1bpp");
 #endif //P_FOOTPRINTS
+
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_skeledirgeMega[] = INCBIN_U32("graphics/pokemon/skeledirge/mega/front.4bpp.lz");
+    const u32 gMonPalette_skeledirgeMega[] = INCBIN_U32("graphics/pokemon/skeledirge/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_skeledirgeMega[] = INCBIN_U32("graphics/pokemon/skeledirge/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_skeledirgeMega[] = INCBIN_U32("graphics/pokemon/skeledirge/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_skeledirgeMega[] = INCBIN_U8("graphics/pokemon/skeledirge/mega/icon.4bpp");
+
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Skeledirge[] = INCBIN_COMP("graphics/pokemon/skeledirge/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u32 gOverworldPalette_Skeledirge[] = INCBIN_U32("graphics/pokemon/skeledirge/overworld_normal.gbapal.lz");
     const u32 gShinyOverworldPalette_Skeledirge[] = INCBIN_U32("graphics/pokemon/skeledirge/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif // MEGA
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_FUECOCO
 

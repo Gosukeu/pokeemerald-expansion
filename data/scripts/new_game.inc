@@ -276,5 +276,15 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_UNUSED_0x49C
 	setflag FLAG_GRUNT_MALE
 	setflag FLAG_GRUNT_FEMALE
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      
+    setflag FLAG_HIDE_APPRENTICE                                      
+    setflag FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN               
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_1                              
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_2                               
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_3                               
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_4                              
+    setflag  FLAG_HIDE_UNION_ROOM_PLAYER_5                             
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_6                              
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_7 
 	call EventScript_ResetAllBerries
 	end

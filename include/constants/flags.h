@@ -748,14 +748,14 @@
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC // kraby 1
 #define FLAG_HIDE_APPRENTICE                                        0x2BD  // kraby 2
-#define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE // kraby 3
-#define FLAG_HIDE_UNION_ROOM_PLAYER_1                               0x2BF // kraby 4
-#define FLAG_HIDE_UNION_ROOM_PLAYER_2                               0x2C0 
-#define FLAG_HIDE_UNION_ROOM_PLAYER_3                               0x2C1
-#define FLAG_HIDE_UNION_ROOM_PLAYER_4                               0x2C2
-#define FLAG_HIDE_UNION_ROOM_PLAYER_5                               0x2C3
-#define FLAG_HIDE_UNION_ROOM_PLAYER_6                               0x2C4
-#define FLAG_HIDE_UNION_ROOM_PLAYER_7                               0x2C5
+#define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE // sabelette
+#define FLAG_HIDE_UNION_ROOM_PLAYER_1                               0x2BF // sabelette
+#define FLAG_HIDE_UNION_ROOM_PLAYER_2                               0x2C0 // horsea
+#define FLAG_HIDE_UNION_ROOM_PLAYER_3                               0x2C1 // horsea
+#define FLAG_HIDE_UNION_ROOM_PLAYER_4                               0x2C2  // sandile
+#define FLAG_HIDE_UNION_ROOM_PLAYER_5                               0x2C3 // staryu
+#define FLAG_HIDE_UNION_ROOM_PLAYER_6                               0x2C4 // corsola
+#define FLAG_HIDE_UNION_ROOM_PLAYER_7                               0x2C5 // corsola
 #define FLAG_HIDE_UNION_ROOM_PLAYER_8                               0x2C6
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0x2C7
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2               0x2C8

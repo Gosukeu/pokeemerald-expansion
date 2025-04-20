@@ -1,8 +1,21 @@
 POKEMONGFXDIR := graphics/pokemon
 OBJEVENTGFXDIR := graphics/object_events/pics
 FLDEFFGFXDIR := graphics/field_effects/pics
-MISCGFXDIR := graphics/misc
+MISCGFXDIR := graphics/misc	
 
+
+$(POKEMONGFXDIR)/potdefleur/potdefleur.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+	
+$(POKEMONGFXDIR)/tree/tree.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/fontaine/fontaine.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/BulbizzareStatue/Bulbausar_Statue.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(POKEMONGFXDIR)/rollingspheal/spheal.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
@@ -4768,8 +4781,6 @@ $(POKEMONGFXDIR)/gourgeist/large/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/gourgeist/super/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(MISCGFXDIR)/emotes.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 # All pokeballs are 16x32
 $(OBJEVENTGFXDIR)/misc/ball_%.4bpp: $(OBJEVENTGFXDIR)/misc/ball_%.png ; $(GFX) $< $@ -mwidth 2 -mheight 4

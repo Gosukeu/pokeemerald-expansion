@@ -397,6 +397,22 @@ const u16 gObjectEventPalette_SandileOW[] = INCBIN_U16("graphics/pokemon/sandile
 //  rolling spheal
 const u32 gObjectEventPic_RollingSphealOW[] = INCBIN_U32("graphics/pokemon/rollingspheal/spheal.4bpp");
 const u16 gObjectEventPalette_RollingSphealOW[] = INCBIN_U16("graphics/pokemon/rollingspheal/spheal.gbapal");
+
+// cactus
+const u32 gObjectEventPic_CactusOW[] = INCBIN_U32("graphics/misc/cactus1.4bpp");
+const u16 gObjectEventPalette_CactusOW[] = INCBIN_U16("graphics/misc/cactus1.gbapal");
+// TREE_TABLE
+const u32 gObjectEventPic_TreeOW[] = INCBIN_U32("graphics/pokemon/tree/tree.4bpp");
+const u16 gObjectEventPalette_TreeOW[] = INCBIN_U16("graphics/pokemon/tree/tree.gbapal");
+// bulbizzare
+const u32 gObjectEventPic_Statue_BulbizzareOW[] = INCBIN_U32("graphics/pokemon/BulbizzareStatue/Bulbausar_Statue.4bpp");
+const u16 gObjectEventPalette_Statue_BulbizzareOW[] = INCBIN_U16("graphics/pokemon/BulbizzareStatue/Bulbausar_Statue.gbapal");
+//fontaine
+const u32 gObjectEventPic_FontaineOW[] = INCBIN_U32("graphics/pokemon/fontaine/fontaine.4bpp");
+const u16 gObjectEventPalette_FontaineOW[] = INCBIN_U16("graphics/pokemon/fontaine/fontaine.gbapal");
+// pot de fleur
+const u32 gObjectEventPic_potdefleurOW[] = INCBIN_U32("graphics/pokemon/potdefleur/potdefleur.4bpp");
+const u16 gObjectEventPalette_potdefleurOW[] = INCBIN_U16("graphics/pokemon/potdefleur/potdefleur.gbapal");
 // end of custom sprites
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
 const u32 gObjectEventPic_MewOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/mew.4bpp");

@@ -5034,8 +5034,8 @@
     {
       "id": "LAYOUT_OCEAN_1",
       "name": "Ocean_1_Layout",
-      "width": 60,
-      "height": 55,
+      "width": 80,
+      "height": 65,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Ocean_1/border.bin",

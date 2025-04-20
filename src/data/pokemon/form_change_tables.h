@@ -601,6 +601,34 @@ static const struct FormChange sRillaboomMegaFormChangeTable[] = {
 };
 #endif //P_FAMILY_GROOKEY
 
+#if P_FAMILY_FUECOCO
+static const struct FormChange sSkeledirgeMegaFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SKELEDIRGE_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_Fuecoco
+
+#if P_FAMILY_PIKACHU
+static const struct FormChange sRaichuMegaFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_RAICHU_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_Pikachu
+
+#if P_FAMILY_TROPIUS
+static const struct FormChange sTropiusMegaFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TROPIUS_MEGA, ITEM_LUCARIONITE},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_TROPIUS
+
+
 #if P_FAMILY_OSHAWOTT
 static const struct FormChange sSamurottFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS

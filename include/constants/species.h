@@ -1642,8 +1642,11 @@
 #define SPECIES_NIDOKING_MEGA                           1525
 #define SPECIES_SAMUROTT_MEGA                           1526
 #define SPECIES_RILLABOOM_MEGA                          1527
+#define SPECIES_SKELEDIRGE_MEGA                         1528
+#define SPECIES_RAICHU_MEGA                             1529
+#define SPECIES_TROPIUS_MEGA                             1530
 
-#define SPECIES_EGG                                     (SPECIES_RILLABOOM_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_TROPIUS_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

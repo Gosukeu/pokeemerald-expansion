@@ -1084,6 +1084,36 @@ SPECIES_RILLABOOM_MEGA,
 };
 #endif //P_FAMILY_NIDORAN
 
+#if P_FAMILY_FUECOCO
+static const u16 sSkeledirgeMegaFormSpeciesIdTable[] = {
+    SPECIES_SKELEDIRGE,
+#if P_MEGA_EVOLUTIONS
+SPECIES_SKELEDIRGE_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_Fuecoco
+
+#if P_FAMILY_PIKACHU
+static const u16 sRaichuMegaFormSpeciesIdTable[] = {
+    SPECIES_RAICHU,
+#if P_MEGA_EVOLUTIONS
+SPECIES_RAICHU_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_PIKACHU
+
+#if P_FAMILY_TROPIUS
+static const u16 sTropiusegaFormSpeciesIdTable[] = {
+    SPECIES_TROPIUS,
+#if P_MEGA_EVOLUTIONS
+SPECIES_TROPIUS_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_TROPIUS
+
 #if P_FAMILY_OSHAWOTT
 static const u16 sSamurottmegaFormSpeciesIdTable[] = {
     SPECIES_SAMUROTT,

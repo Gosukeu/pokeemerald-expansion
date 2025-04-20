@@ -1,4 +1,965 @@
-raw `
-Ocean_1_MapScripts::
-   .byte 0
-`
+
+   raw `
+   Ocean_1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, randomspawnoverworldobject
+	.byte 0
+   `
+
+script randomspawnoverworldobject {
+   random(500)
+// 200 combinaisons de flags Pokémon
+if (var(VAR_RESULT) == 1) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+}
+if (var(VAR_RESULT) == 2) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+}
+if (var(VAR_RESULT) == 3) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+}
+if (var(VAR_RESULT) == 4) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 5) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 6) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 7) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 8) {
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 9) {
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 10) {
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 11) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+}
+if (var(VAR_RESULT) == 12) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+}
+if (var(VAR_RESULT) == 13) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 14) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 15) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 16) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 17) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 18) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 19) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 20) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+}
+if (var(VAR_RESULT) == 21) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 22) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 23) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 24) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 25) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 26) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 27) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 28) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 29) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 30) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 31) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 32) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 33) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 34) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 35) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 36) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 37) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 38) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 39) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 40) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 41) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 42) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 43) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 44) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 45) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 46) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 47) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 48) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 49) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 50) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 51) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 52) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 53) {
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 54) {
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 55) {
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 56) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+}
+if (var(VAR_RESULT) == 57) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 58) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 59) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 60) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 61) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 62) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 63) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 64) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 65) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 66) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 67) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 68) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 69) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 70) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 71) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 72) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 73) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 74) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 75) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 76) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 77) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 78) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 79) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 80) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 81) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 82) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 83) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 84) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 85) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 86) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 87) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 88) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 89) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 90) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 91) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 92) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 93) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 94) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 95) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 96) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 97) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 98) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 99) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 100) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 101) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 102) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 103) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 104) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 105) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 106) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 107) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 108) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 109) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 110) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 111) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 112) {
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+    clearflag(FLAG_HIDE_APPRENTICE)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 113) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 114) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 115) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 116) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 117) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 118) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 119) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 120) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 121) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 122) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 123) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 124) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 125) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 126) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 127) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 128) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 129) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 130) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 131) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 132) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 133) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 134) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+}
+if (var(VAR_RESULT) == 135) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 136) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 137) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 138) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 139) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 140) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 141) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 142) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 143) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 144) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 145) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 146) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 147) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 148) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 149) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 150) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 151) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 152) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 153) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 154) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+}
+if (var(VAR_RESULT) == 155) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 156) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 157) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 158) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 159) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 160) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 161) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 162) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 163) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 164) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+}
+if (var(VAR_RESULT) == 165) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 166) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 167) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 168) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+}
+if (var(VAR_RESULT) == 169) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 170) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 171) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 172) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 173) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 174) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 175) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 176) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 177) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 178) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 179) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 180) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 181) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 182) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 183) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_6)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_1)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 184) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 185) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 186) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_4)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 187) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 188) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 189) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_3)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+if (var(VAR_RESULT) == 190) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN)
+}
+if (var(VAR_RESULT) == 191) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_APPRENTICE)
+}
+if (var(VAR_RESULT) == 192) {
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_7)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_5)
+    clearflag(FLAG_HIDE_UNION_ROOM_PLAYER_2)
+    clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+}

@@ -3682,6 +3682,71 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sRaichuAlolaTeachableLearnset,
         .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
     },
+    #if P_MEGA_EVOLUTIONS
+    [SPECIES_RAICHU_MEGA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 95,
+        .baseDefense   = 70,
+        .baseSpeed     = RAICHU_SPEED,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_PSYCHIC),
+        .catchRate = 75,
+        .expYield = RAICHU_EXP_YIELD,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_SURGE_SURFER, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Raichu"),
+        .cryId = CRY_RAICHU,
+        .natDexNum = NATIONAL_DEX_RAICHU,
+        .categoryName = _("Mouse"),
+        .height = 7,
+        .weight = 210,
+        .description = COMPOUND_STRING(
+            "It uses psychokinesis to control\n"
+            "electricity. It focuses psychic energy\n"
+            "into its tail and rides it like it's surfing.\n"
+            "Another name for this Pokémon is 'hodad'."),
+        .pokemonScale = 426,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 2,
+        .frontPic = gMonFrontPic_raichuMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SamurottHisui,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_raichuMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 8,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_raichuMega,
+        .shinyPalette = gMonShinyPalette_raichuMega,
+        .iconSprite = gMonIcon_raichuMega,
+        .iconPalIndex = 0,
+        SHADOW(6, 7, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Skeledirge)
+        OVERWORLD(
+            sPicTable_Skeledirge,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Skeledirge,
+            gShinyOverworldPalette_Skeledirge
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRaichuLevelUpLearnset,
+        .teachableLearnset = sRaichuTeachableLearnset,
+        .formSpeciesIdTable = sRaichuMegaFormSpeciesIdTable,
+        .formChangeTable = sRaichuMegaFormChangeTable,
+    },
+#endif //P_MEGA_FORM
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PIKACHU
 

@@ -180,32 +180,6 @@
       "trainer_sight_or_berry_tree_id": "ITEM_RELIC_STATUE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_UNUSED_0x494"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_KRABBY",
-      "x": 78,
-      "y": 22,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_KRABBY",
-      "x": 63,
-      "y": 26,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_UP_RIGHT_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN"
     }
   ],
   "warp_events": [
@@ -285,13 +259,6 @@
       "elevation": 0,
       "dest_map": "MAP_TUNDRAWOOD_CITY_RESTAURANT",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 20,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_CAVE_UNDER_THE_PLATEAU_2",
-      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
