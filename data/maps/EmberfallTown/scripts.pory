@@ -46,7 +46,10 @@ script Mom_Start_Game_Dialogue {
         waitmovement(OBJ_EVENT_ID_PLAYER)
         applymovement(1, MomGreeting)
         waitmovement(1)
+        speakername("Mom")
         msgbox(format("Did you sleep well? The boss is looking for you! Hurry and pick a Pokémon from the lab."),MSGBOX_AUTOCLOSE)             
+        waitmessage
+        closemessage 
         applymovement(OBJ_EVENT_ID_PLAYER, Face_DOWN_Team_MAGMA)
         applymovement(1, Momgoesback)
         waitmovement(1)
@@ -88,6 +91,15 @@ script Mom_Start_Game_Dialogue1 {
         releaseall
     }
     
+    
+}
+
+script TESTspeakernam {
+    lockall
+    faceplayer
+    speakername("TEST")
+    msgbox(format("TEST FOR THE MACRO "))
+    releaseall
     
 }
 
