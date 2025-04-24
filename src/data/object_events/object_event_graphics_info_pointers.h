@@ -254,6 +254,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tree;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsStatue_Bulbizzare;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsStatue_Fontaine;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Potdefleur;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TyrantrumStatue;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -524,6 +525,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_STATUE_BULBIZZARE] =                  &gObjectEventGraphicsStatue_Bulbizzare,
     [OBJ_EVENT_GFX_FONTAINE] =                  &gObjectEventGraphicsStatue_Fontaine,
     [OBJ_EVENT_GFX_POTDEFLEUR] =                  &gObjectEventGraphicsInfo_Potdefleur,
+    [OBJ_EVENT_GFX_TYRANTRUM_STATUE] =                  &gObjectEventGraphicsInfo_TyrantrumStatue,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };

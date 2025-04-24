@@ -528,6 +528,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Statue_BulbizzareOW, OBJ_EVENT_PAL_TAG_STATUE_BULBIZZARE},
     {gObjectEventPalette_FontaineOW, OBJ_EVENT_PAL_TAG_FONTAINE},
     {gObjectEventPalette_potdefleurOW, OBJ_EVENT_PAL_TAG_POTDEFLEUR},
+    {gObjectEventPalette_potdefleurOW, OBJ_EVENT_PAL_TAG_TURANTRUMSTATUE},
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
     {gObjectEventPal_UltraBall,             OBJ_EVENT_PAL_TAG_BALL_ULTRA},

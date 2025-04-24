@@ -69,6 +69,18 @@ static const struct SpriteFrameImage sPicTable_AegislashOW[] = {
     overworld_frame(gObjectEventPic_AegislashOW, 4, 4, 5),
 };
 
+static const struct SpriteFrameImage sPicTable_TyrantrumStatueOW[] = {
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 0),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 2),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 4),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 0),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 1),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 2),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 3),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 4),
+    overworld_frame(gObjectEventPic_TYRANTRUMSTATUEOW, 4, 4, 5),
+};
+
 static const struct SpriteFrameImage sPicTable_PotdefleurOW[] = {
     overworld_frame(gObjectEventPic_potdefleurOW, 4, 4, 0),
     overworld_frame(gObjectEventPic_potdefleurOW, 4, 4, 2),

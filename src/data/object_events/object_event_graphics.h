@@ -413,6 +413,9 @@ const u16 gObjectEventPalette_FontaineOW[] = INCBIN_U16("graphics/pokemon/fontai
 // pot de fleur
 const u32 gObjectEventPic_potdefleurOW[] = INCBIN_U32("graphics/pokemon/potdefleur/potdefleur.4bpp");
 const u16 gObjectEventPalette_potdefleurOW[] = INCBIN_U16("graphics/pokemon/potdefleur/potdefleur.gbapal");
+// tyrantrum statue
+const u32 gObjectEventPic_TYRANTRUMSTATUEOW[] = INCBIN_U32("graphics/pokemon/tyrantrumstatue/tyrantrum_exhibit1.4bpp");
+const u16 gObjectEventPalette_TYRANTRUMSTATUEOW[] = INCBIN_U16("graphics/pokemon/tyrantrumstatue/tyrantrum_exhibit1.gbapal");
 // end of custom sprites
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
 const u32 gObjectEventPic_MewOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/mew.4bpp");

@@ -677,8 +677,8 @@
 #define FLAG_RIVAL_2  0x276 // Unused Flag
 #define FLAG_GRUNT_MALE  0x277 // Unused Flag
 #define FLAG_GRUNT_FEMALE  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
+#define FLAG_UNUSED_0x279  0x279 // Dragon scale
+#define FLAG_UNUSED_0x27A  0x27A // AQUA JET
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
@@ -756,8 +756,8 @@
 #define FLAG_HIDE_UNION_ROOM_PLAYER_5                               0x2C3 // staryu
 #define FLAG_HIDE_UNION_ROOM_PLAYER_6                               0x2C4 // corsola
 #define FLAG_HIDE_UNION_ROOM_PLAYER_7                               0x2C5 // corsola
-#define FLAG_HIDE_UNION_ROOM_PLAYER_8                               0x2C6
-#define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0x2C7
+#define FLAG_HIDE_UNION_ROOM_PLAYER_8                               0x2C6  // horsea
+#define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0x2C7 //stary
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2               0x2C8
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_3               0x2C9
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_4               0x2CA

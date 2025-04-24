@@ -4,6 +4,15 @@ FLDEFFGFXDIR := graphics/field_effects/pics
 MISCGFXDIR := graphics/misc	
 
 
+
+
+
+$(POKEMONGFXDIR)/tyrantrumstatue/tyrantrum_exhibit1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 8 -mheight 8
+
+	
+
+
 $(POKEMONGFXDIR)/potdefleur/potdefleur.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

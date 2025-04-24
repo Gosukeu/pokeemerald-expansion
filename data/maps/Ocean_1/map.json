@@ -87,8 +87,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_STARYU",
-      "x": 37,
-      "y": 37,
+      "x": 42,
+      "y": 38,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 15,
@@ -151,8 +151,8 @@
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_6"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TREE",
-      "x": 29,
+      "graphics_id": "OBJ_EVENT_GFX_STARYU",
+      "x": 58,
       "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -161,7 +161,46 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HORSEA",
+      "x": 65,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 15,
+      "movement_range_y": 15,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 25,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DRAGON_SCALE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_UNUSED_0x279"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 34,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_UNUSED_0x27A"
     }
   ],
   "warp_events": [
