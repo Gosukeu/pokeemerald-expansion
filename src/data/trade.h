@@ -1047,7 +1047,263 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
-    }
+    },
+    [INGAME_TRADE_GROWLITH] =
+    {
+        .nickname = _("Growlith"),
+        .species = SPECIES_GROWLITHE_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_GROWLITHE
+    },
+    [INGAME_TRADE_ARCANINE] =
+    {
+        .nickname = _("Arcanine"),
+        .species = SPECIES_ARCANINE_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_ARCANINE
+    },
+    [INGAME_TRADE_VOLTORB] =
+    {
+        .nickname = _("Voltorb"),
+        .species = SPECIES_VOLTORB_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_VOLTORB
+    },
+    [INGAME_TRADE_ELECTRODE] =
+    {
+        .nickname = _("Electrode"),
+        .species = SPECIES_ELECTRODE_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_ELECTRODE
+    },
+    [INGAME_TRADE_TYPHLOSION] =
+    {
+        .nickname = _("Typhlosion"),
+        .species = SPECIES_TYPHLOSION_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TYPHLOSION
+    },
+    [INGAME_TRADE_QWILFISH] =
+    {
+        .nickname = _("Qwilfish"),
+        .species = SPECIES_QWILFISH_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_QWILFISH
+    },
+    [INGAME_TRADE_SNEASEL] =
+    {
+        .nickname = _("Sneasel"),
+        .species = SPECIES_SNEASEL_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SNEASEL
+    },
+    [INGAME_TRADE_SAMUROTT] =
+    {
+        .nickname = _("Samurott"),
+        .species = SPECIES_SAMUROTT_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SAMUROTT
+    },
+    [INGAME_TRADE_LILIGANT] =
+    {
+        .nickname = _("Lilligant"),
+        .species = SPECIES_LILLIGANT_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_LILLIGANT
+    },
+    [INGAME_TRADE_ZORUA] =
+    {
+        .nickname = _("Zorua"),
+        .species = SPECIES_ZORUA_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_ZORUA
+    },
+    [INGAME_TRADE_ZOROARK] =
+    {
+        .nickname = _("Zoroark"),
+        .species = SPECIES_ZOROARK_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_ZOROARK
+    },
+    [INGAME_TRADE_BRAVIARY] =
+    {
+        .nickname = _("Braviary"),
+        .species = SPECIES_BRAVIARY_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_BRAVIARY
+    },
+    [INGAME_TRADE_SLIGGOO] =
+    {
+        .nickname = _("Sliggo"),
+        .species = SPECIES_SLIGGOO_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SLIGGOO
+    },
+    [INGAME_TRADE_GOODRA] =
+    {
+        .nickname = _("Goodra"),
+        .species = SPECIES_GOODRA_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_GOODRA
+    },
+    [INGAME_TRADE_AVALUGG] =
+    {
+        .nickname = _("Avalugg"),
+        .species = SPECIES_AVALUGG_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_AVALUGG
+    },
+    [INGAME_TRADE_DECIDUEYE] =
+    {
+        .nickname = _("Decidueye"),
+        .species = SPECIES_DECIDUEYE_HISUI,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .mailNum = 2,
+        .otName = _("GOSU"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_DECIDUEYE
+    },
+    [INGAME_TRADE_FURFROU] =
+    {
+        .nickname = _("ZYPEE"),
+        .species = SPECIES_FURFROU_PHARAOH_TRIM,
+        .ivs = {25, 25, 25, 25, 25, 25},
+        .abilityNum = 1,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_CHESTO_BERRY,
+        .mailNum = -1,
+        .otName = _("Murphy"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_FURFROU
+    },
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =

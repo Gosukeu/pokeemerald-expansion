@@ -1,0 +1,217 @@
+{
+  "id": "MAP_PYRO_CLAVE",
+  "name": "PyroClave",
+  "layout": "LAYOUT_PYRO_CLAVE",
+  "music": "SE_LAVARIDGE_FALL_WARP",
+  "region_map_section": "MAPSEC_FIVE_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_EMBERFALL_TOWN",
+      "offset": 4,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 57,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEAM_MAGMA_Leave"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 57,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEAM_MAGMA_Leave"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 57,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEAM_MAGMA_Leave"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 59,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEAM_MAGMA_Leave"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 59,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEAM_MAGMA_Leave"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 59,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEAM_MAGMA_Leave"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "x": 56,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_MAGMA_BOSS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 48,
+      "y": 42,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 57,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE133_STATE",
+      "var_value": "0",
+      "script": "TEAM_MEMBER"
+    },
+    {
+      "type": "trigger",
+      "x": 58,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE133_STATE",
+      "var_value": "0",
+      "script": "TEAM_MEMBER1"
+    },
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE133_STATE",
+      "var_value": "0",
+      "script": "TEAM_MEMBER2"
+    },
+    {
+      "type": "trigger",
+      "x": 57,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_BOSS_MAGMA_1",
+      "var_value": "0",
+      "script": "Team_Magma_Boss_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 58,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_BOSS_MAGMA_1",
+      "var_value": "0",
+      "script": "Team_Magma_Boss_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_BOSS_MAGMA_1",
+      "var_value": "0",
+      "script": "Team_Magma_Boss_Trigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 48,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "0",
+      "script": "TRIGGERTPNEWWORLD1"
+    },
+    {
+      "type": "trigger",
+      "x": 48,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "0",
+      "script": "TRIGGERTPNEWWORLD2"
+    },
+    {
+      "type": "trigger",
+      "x": 48,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_CITY_STATE",
+      "var_value": "0",
+      "script": "TRIGGERTPNEWWORLD3"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

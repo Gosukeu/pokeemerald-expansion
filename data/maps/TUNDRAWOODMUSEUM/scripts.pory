@@ -1,0 +1,300 @@
+raw `
+TUNDRAWOODMUSEUM_MapScripts::
+	.byte 0
+
+`
+
+
+
+script MUSEUMNPC {
+	if(var(VAR_MUSEUM) == 0){
+	lockall
+	faceplayer
+	msgbox(format("Hey! Want to take part in the game?"), MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == YES){
+	msgbox(format("It's simple! Gather 6 Relic Statues and bring them back to me. Once you have them all, I'll give you an appropriate reward! You can find those either here in the museum or somewhere in the city. Good luck!"), MSGBOX_AUTOCLOSE)
+	setvar(VAR_MUSEUM, 1)
+	end
+}
+    if(var(VAR_RESULT) == NO){
+		msgbox(format("Feel free to come back if you change your mind!"), MSGBOX_AUTOCLOSE)
+		releaseall
+		end
+	}
+}
+
+   if(var(VAR_MUSEUM) == 1){
+   lockall
+   checkitem(ITEM_RELIC_STATUE, 6)
+   if(var(VAR_RESULT) == YES){
+	lockall
+	msgbox(format("Congratulations! You've gathered all 6 Relic Statues! As promised, here’s your well-earned reward. You've proven your dedication well done!"), MSGBOX_AUTOCLOSE)
+	giveitem(ITEM_ROOT_FOSSIL)
+	msgbox(format("You can ressurect it witht he help of my colleague on my right!"), MSGBOX_AUTOCLOSE)
+	setvar(VAR_MUSEUM, 2)
+	releaseall
+   }
+   if(var(VAR_RESULT) == NO){
+	msgbox(format("You're not there yet! You still need more Relic Statues keep going!"), MSGBOX_AUTOCLOSE)
+	releaseall
+   }
+
+   }
+
+   if(var(VAR_MUSEUM) == 2){
+	lockall
+	faceplayer
+	msgbox(format("Feel free to visit the museum whenever you want!"), MSGBOX_AUTOCLOSE)
+    releaseall
+   }
+
+}
+
+
+
+
+script MOM1 {
+	lockall
+	faceplayer
+	msgbox(format("Look at this place, sweetie. So many beautiful things from the past. Can you believe some of these paintings are hundreds of years old? Imagine how much time it must have taken the artists to create them."), MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script KID1 {
+	lockall
+	faceplayer
+	msgbox(format("Whoa… this place is huge. So many paintings and statues… How do people even make stuff like this?"), MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script ARTIST1 {
+	if(var(VAR_PAINTER_GIFT) == 0){
+	lockall
+	faceplayer
+	msgbox(format("Light… it’s all about the light. The way it bends, the way it touches a surface… If I get that wrong, the whole piece falls apart."), MSGBOX_AUTOCLOSE)
+	giveitem(ITEM_RELIC_STATUE)
+	playfanfare(MUS_OBTAIN_ITEM)
+	setvar(VAR_PAINTER_GIFT, 1)
+	releaseall
+}
+
+else{
+	lockall
+	faceplayer
+	msgbox(format("Light… it’s all about the light. The way it bends, the way it touches a surface… If I get that wrong, the whole piece falls apart."), MSGBOX_AUTOCLOSE)
+	releaseall
+
+}
+}
+
+script GAMEBOYKID {
+	lockall
+	faceplayer
+	msgbox(format("Alright… Mom just went upstairs. That means I’ve got at least what? Ten minutes? Maybe fifteen if she starts talking to someone!."), MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script FATMAN {
+	lockall
+	faceplayer
+	msgbox(format("Man… that’s a lot of paint. Like, how long did this take? Weeks? Months? Imagine working on something for that long and just hoping people don’t walk past it like it’s nothing."), MSGBOX_AUTOCLOSE)
+    releaseall
+	
+}
+
+script SchoolBoy {
+	lockall
+	faceplayer
+	msgbox(format("Whoa… this is HUGE. How did they even make this? Like… this is rock. Solid stone. And they made it look so real?"), MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script Women2F {
+	lockall
+	faceplayer
+	msgbox(format("Oh… these are adorable. Look at them so small, so round. Whoever painted these really captured that innocent, playful look."), MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script  gameboykidmom {
+	lockall
+	faceplayer
+	msgbox(format("I barely stepped away for a minute, and he probably dove straight for that Game Boy. He thinks he’s slick, hiding it under a pillow or behind his backpack. As if I haven’t been catching him doing the same thing for years."), MSGBOX_AUTOCLOSE)
+	
+}
+
+
+script REVIVEFOSSILSALL{
+	lockall
+	msgbox(format("I've been working on a machine that can revive Pokémon from fossils. Would you like to give it a try?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+	
+	checkitem(ITEM_ROOT_FOSSIL)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Root Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_LILEEP, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Lileep!")
+		removeitem(ITEM_ROOT_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+	checkitem(ITEM_DOME_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Dome Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_KABUTO, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Kabuto!")
+		removeitem(ITEM_DOME_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+       checkitem(ITEM_HELIX_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Helix Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_OMANYTE, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Omanyte!")
+		removeitem(ITEM_HELIX_FOSSIL)
+		call(NicknamePartyMon)
+		end
+		}
+		checkitem(ITEM_OLD_AMBER)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Ho that is a root fossil, here."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_AERODACTYL, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Aerodactyl!")
+		removeitem(ITEM_OLD_AMBER)
+		call(NicknamePartyMon)
+		end
+	}
+
+	checkitem(ITEM_CLAW_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Claw Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_ANORITH, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Anorith!")
+		removeitem(ITEM_CLAW_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+	checkitem(ITEM_ARMOR_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Armor Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_SHIELDON, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Shieldon!")
+		removeitem(ITEM_ARMOR_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+	checkitem(ITEM_SKULL_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Skull Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_CRANIDOS, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Cranidos!")
+		removeitem(ITEM_SKULL_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+
+checkitem(ITEM_COVER_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Cover Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_TIRTOUGA, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Tirtouga!")
+		removeitem(ITEM_COVER_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+	checkitem(ITEM_PLUME_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Plume Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_ARCHEN, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Archen!")
+		removeitem(ITEM_PLUME_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+
+checkitem(ITEM_JAW_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Jaw Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_TYRUNT, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Tyrunt!")
+		removeitem(ITEM_JAW_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+	
+checkitem(ITEM_SAIL_FOSSIL)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Sail Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_AMAURA, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Amaura!")
+		removeitem(ITEM_SAIL_FOSSIL)
+		call(NicknamePartyMon)
+		end
+	}
+	checkitem(ITEM_FOSSILIZED_DRAKE)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Drake Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_DRACOZOLT, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Dracozolt!")
+		removeitem(ITEM_FOSSILIZED_DRAKE)
+		call(NicknamePartyMon)
+		end
+	}
+	checkitem(ITEM_FOSSILIZED_DINO)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Dino Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_ARCTOZOLT, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Arctozolt!")
+		removeitem(ITEM_FOSSILIZED_DINO)
+		call(NicknamePartyMon)
+		end
+	}
+		checkitem(ITEM_FOSSILIZED_BIRD)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Bird Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_ARCTOVISH, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Arctovish!")
+		removeitem(ITEM_FOSSILIZED_BIRD)
+		call(NicknamePartyMon)
+		end
+	}
+		checkitem(ITEM_FOSSILIZED_FISH)
+		if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Fish Fossil! Here, take it."), MSGBOX_AUTOCLOSE)
+		givemon(SPECIES_DRACOVISH, 1)
+		playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Received Dracovish!")
+		removeitem(ITEM_FOSSILIZED_FISH)
+		call(NicknamePartyMon)
+		end
+	}
+
+	 else{
+		msgbox(format("Sorry, but you don't have any fossils. Come back when you've found some!"), MSGBOX_AUTOCLOSE)
+	}
+	}
+	
+
+
+
+    else{
+		msgbox(format("If you change your mind, feel free to come back anytime!"), MSGBOX_AUTOCLOSE)
+	}
+}
+

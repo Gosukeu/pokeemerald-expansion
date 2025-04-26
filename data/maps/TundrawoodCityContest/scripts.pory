@@ -1,0 +1,295 @@
+raw `
+TundrawoodCityContest_MapScripts::
+	.byte 0
+
+`
+
+script FISCHERAGAIN {
+    if(var(VAR_FISCHER_MAN) == 1){
+        lockall
+        faceplayer
+        msgbox(format("Ho! I handed you a fisching rod not long ago, did you catch some cool Pokémon?"), MSGBOX_AUTOCLOSE)
+       releaseall 
+    }
+
+
+    if(var(VAR_FISCHER_MAN) == 0) {
+    lockall
+    faceplayer
+    msgbox(format("Hey there, trainer! Do you want a fishing rod?"), MSGBOX_YESNO)
+    
+    if(var(VAR_RESULT) == YES) {
+    playfanfare(MUS_OBTAIN_ITEM)
+    giveitem(ITEM_OLD_ROD)
+    msgbox(format("Use it near water to fish.And you will encounter mostly water types!"))
+    msgbox(format("If you manage to earn the Water Badge, come back and talk to me. I just might hand you over my best fishing rod!"))
+    setvar(VAR_FISCHER_MAN, 1)
+    releaseall
+    return
+    }
+
+
+    elif (var(VAR_RESULT) == NO){
+    msgbox(format("Oh, I see... Maybe another time."), MSGBOX_AUTOCLOSE)
+    releaseall
+       
+       }
+    }
+}   
+
+script LUXURYBALL {
+    if(var(VAR_DAYS) == 0){
+    lockall
+    faceplayer
+    msgbox(format("Sup! Wanna get a Luxury Ball? Pokémon kept in a Luxury Ball gain friendship faster!"), MSGBOX_AUTOCLOSE)
+    giveitem(ITEM_LUXURY_BALL)
+    playfanfare(MUS_OBTAIN_ITEM)
+    setvar(VAR_DAYS, 1)
+    releaseall
+    
+}
+else{
+    msgbox(format("Pokémon kept in a Luxury Ball gain friendship faster."), MSGBOX_AUTOCLOSE)
+}
+
+}
+
+
+script POKEBLOCKCASEANDPOKEBLOCK {
+    if(var(VAR_FANCLUB_FAN_COUNTER) == 0){
+        lockall
+        faceplayer
+        msgbox(format("Hey there, Trainer! You can't enter a Pokémon Contest without a Pokéblock Case. Here, take this one!"), MSGBOX_AUTOCLOSE)
+        giveitem(ITEM_POKEBLOCK_CASE)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox(format("With a Pokéblock Case, you can store Pokéblocks to boost your Pokémon’s Contest stats. Good luck in the Contest Hall!"), MSGBOX_AUTOCLOSE)
+        setvar(VAR_FANCLUB_FAN_COUNTER, 1)
+        releaseall
+     }
+
+     else{
+        lockall
+        faceplayer
+        msgbox(format("It was a pleasure!"), MSGBOX_AUTOCLOSE)
+        releaseall
+
+     }
+
+    
+}
+
+script pokeblock {
+    if(var(VAR_FANCLUB_LOSE_FAN_TIMER) == 0){
+    lockall
+    faceplayer
+    msgbox(format("You look like you're getting into Contests! Here, take some Pokéblocks to help your Pokémon perform better!"), MSGBOX_AUTOCLOSE)
+    checkitem(ITEM_POKEBLOCK_CASE)
+
+    if(var(VAR_RESULT) == YES){
+          lockall
+          faceplayer
+          giveitem(ITEM_OCCA_BERRY, 5)
+          playfanfare(MUS_OBTAIN_ITEM)
+          setvar(VAR_FANCLUB_LOSE_FAN_TIMER, 1)    
+    }  
+
+    else{
+        lockall
+        faceplayer
+        msgbox(format("Oh, you still don’t have a Pokéblock Case? Sorry, but I can only give Pokéblocks to those who have one!"), MSGBOX_AUTOCLOSE)
+        releaseall
+    } 
+
+    
+}
+
+else{
+    lockall
+    faceplayer
+    msgbox(format("I wish you good luck!"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+
+}
+
+script NPC1 {
+    lockall
+    faceplayer
+    msgbox(format("I’ve been training my Pokémon for this moment! We’re going to dazzle the judges!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+script NPC2 {
+    lockall
+    faceplayer
+    msgbox(format("I hope my Pokémon doesn’t mess up… What if it trips during the appeal round?!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+script NPC3 {
+    lockall
+    faceplayer
+    msgbox(format("The judges look for style and confidence. It’s not just about moves it’s about presence!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+script NPC4 {
+    lockall
+    faceplayer
+    msgbox(format("I won a Master Rank Contest once… The key is picking the right moves to impress the crowd!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+script NPC5 {
+    lockall
+    faceplayer
+    msgbox(format("Cute Pokémon always steal the show! I bet a Skitty or Jigglypuff would win easily!"), MSGBOX_AUTOCLOSE)
+    releaseall
+    
+}
+
+
+script TRigger1contesthall {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, exlamationmarkandpushdown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("What??"), MSGBOX_AUTOCLOSE)
+    applymovement(1, NPC1movement)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, playerfacedown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("Are you sure you are willing to face the team aqua?"), MSGBOX_YESNO)
+
+    if(var(VAR_RESULT) == YES){
+        msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+        applymovement(1, NPC1movementgoesback)
+        waitmovement(1)
+        setvar(VAR_DEPT_STORE_FLOOR, 1)
+        releaseall
+    }
+    if(var(VAR_RESULT) == NO){
+        msgbox(format("You dont  need to act asd a hero if you dont have the capacity!"), MSGBOX_AUTOCLOSE)
+        applymovement(1, NPC1movementgoesback)
+        waitmovement(1)
+        applymovement(OBJ_EVENT_ID_PLAYER, exlamationmarkandpushdown1)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        releaseall
+     }
+    
+}
+script TRigger1contesthall1 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, exlamationmarkandpushdown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("What??"), MSGBOX_AUTOCLOSE)
+    applymovement(16, NPC2movement)
+    waitmovement(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, playerfacedown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("Are you sure you are willing to face the team aqua?"), MSGBOX_YESNO)
+
+    if(var(VAR_RESULT) == YES){
+        msgbox(format("Good luck!"), MSGBOX_AUTOCLOSE)
+        applymovement(16, NPC2movementgoesback)
+        waitmovement(16)
+        setvar(VAR_DEPT_STORE_FLOOR, 1)
+        releaseall
+    }
+    if(var(VAR_RESULT) == NO){
+        msgbox(format("You dont  need to act asd a hero if you dont have the capacity!"), MSGBOX_AUTOCLOSE)
+        applymovement(16, NPC2movementgoesback)
+        waitmovement(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, exlamationmarkandpushdown1)
+        waitmovement(OBJ_EVENT_ID_PLAYER)
+        releaseall
+     }
+    
+}
+movement NPC2movementgoesback {
+    walk_down * 2
+    walk_left * 4
+    face_right
+    
+}
+
+movement NPC2movement {
+    walk_right * 4
+    walk_up * 2
+    
+}
+
+
+movement playergoesup {
+    walk_up
+    
+}
+
+script contesthallattendant {
+    lockall
+    msgbox(format("Sorry for the inconvenience, but we’re having technical issues… Team Aqua has taken over the Contest Hall! Please stay back it’s too dangerous!"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+
+movement NPC1movementgoesback {
+    walk_down * 2
+    walk_right
+    
+    
+}
+
+movement playerfacedown {
+    face_down
+    
+}
+movement NPC1movement {
+    walk_up * 2
+    walk_left
+    face_up
+
+    
+}
+
+movement exlamationmarkandpushdown {
+    face_up
+    emote_exclamation_mark
+    
+    
+}
+movement exlamationmarkandpushdown1 {
+    emote_exclamation_mark
+    walk_down
+    
+    
+}
+
+
+script Journalist1 {
+    lockall
+    faceplayer
+    msgbox(format("We're live at the Contest Hall, where Trainers are dazzling the audience with stunning performances!"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+script Journalist2 {
+    lockall
+    faceplayer
+    msgbox(format("A perfect appeal can turn the tide of a contest! Which Pokémon will steal the spotlight today?"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+script BODYGUARD1 {
+    lockall
+    faceplayer
+    msgbox(format("Only registered contestants beyond this point. No unauthorized entry!"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+script BODYGUARD2{
+    lockall
+    faceplayer
+    msgbox(format("Stay alert! We’ve heard rumors of trouble in the Contest Hall lately…"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+script RICHBOY {
+    lockall
+    faceplayer
+    msgbox(format("Contests are all about elegance! My Pokémon are raised to be both powerful and glamorous!"), MSGBOX_AUTOCLOSE)
+    releaseall
+}

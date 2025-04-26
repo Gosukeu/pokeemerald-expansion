@@ -1,0 +1,310 @@
+raw `
+Aegisport_MapScripts::
+	.byte 0
+
+
+`
+
+
+
+
+script Team_Magma_Boss_Trigger_AEGISPORT {
+    lockall
+    setflag(FLAG_MAGMA_BOSS_AEGISPORT)
+    applymovement(1, MAGMABOSSAEGISPORT)
+    waitmovement(1)
+	msgbox(format("Hmph... We need to get access to the Alpha Team Headquarters, you’ll need a special access card. Go find it in the shipyard at the top right of the city. Don’t waste my time!"),MSGBOX_AUTOCLOSE)
+    applymovement(1, BossMAGMAAEGISPORTLEAVE)
+    waitmovement(1)
+	removeobject(1)
+    releaseall
+	setvar(VAR_MAGMA_BOSS_AEGIGLASH, 1)
+    }
+
+	movement MAGMABOSSAEGISPORT {
+		walk_down * 6
+		walk_left 
+		face_player
+		
+	}
+
+	movement BossMAGMAAEGISPORTLEAVE {
+		walk_right
+		walk_up * 6
+		
+	}
+
+	script Team_Magma_Boss_Trigger_AEGISPORT1 {
+    lockall
+    setflag(FLAG_MAGMA_BOSS_AEGISPORT)
+    applymovement(1, MAGMABOSSAEGISPORT1)
+    waitmovement(1)
+	msgbox(format("Hmph... We need to get access to the Alpha Team Headquarters, you’ll need a special access card. Go find it in the shipyard at the top right of the city. Don’t waste my time!"),MSGBOX_AUTOCLOSE)
+    applymovement(1, BossMAGMAAEGISPORTLEAVE)
+    waitmovement(1)
+	removeobject(1)
+    releaseall
+	setvar(VAR_MAGMA_BOSS_AEGIGLASH, 1)
+    }
+
+	movement MAGMABOSSAEGISPORT1 {
+		walk_down * 7
+		walk_left
+		face_player
+	}
+
+
+script OLDGRANNYSHOP{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(GRANNYSHOP)
+    msgbox("Please Come Again.")
+    release
+    end
+}
+raw `
+.align 2
+GRANNYSHOP::
+	.2byte ITEM_HEALTH_FEATHER
+	.2byte ITEM_MUSCLE_FEATHER
+	.2byte ITEM_RESIST_FEATHER
+	.2byte ITEM_GENIUS_FEATHER
+	.2byte ITEM_CLEVER_FEATHER
+    .2byte ITEM_SWIFT_FEATHER
+	.2byte ITEM_TEA
+	pokemartlistend
+`
+
+script OLDWOMEN {
+	lockall
+	msgbox(format("Hey, hey, i am coming."), MSGBOX_AUTOCLOSE)
+	applymovement(1, oldwomen)
+	waitmovement(1)
+	msgbox(format("Come over here."))
+	setvar(VAR_OLD_WOMEN, 1)
+	releaseall
+
+	
+}
+
+movement oldwomen {
+	walk_down
+	walk_right * 2
+	walk_down * 3
+	walk_left * 9
+	walk_up * 4
+	face_down
+	
+}
+script WOMEN1 {
+	lockall
+	msgbox(format("I'v been coming here since 2017, 8 years cant you imagine? The secret? Her tea."), MSGBOX_AUTOCLOSE)
+}
+
+script rooftopscript {
+	lockall
+	msgbox(format("It's always a release to drink that tea, it reinvigorate."), MSGBOX_AUTOCLOSE)
+	releaseall
+	
+}
+
+script MOMTODAUGHTER {
+	lockall
+	msgbox(format("My daughter is passionate about feather, but she doesnt know that these acts as 'evs booster'"), MSGBOX_AUTOCLOSE)
+	releaseall
+}
+
+script DAUGHTER {
+	lockall
+	msgbox(format("I love feather!!!Red, Green, Blue, Yellow."), MSGBOX_AUTOCLOSE)
+	releaseall
+	
+}
+
+script Youngster {
+	lockall
+	faceplayer
+	msgbox(format("Thank You!"), MSGBOX_AUTOCLOSE)
+	releaseall
+	
+}
+
+script TRAINERWHOTRIEDTOTAKEONTHEWATERBADGE1 {
+	if(var(VAR_GATE_HOUSE) == 0){
+	lockall
+	call(TRAINERWHOTRIEDTOTAKEONTHEWATERBADGE)
+	
+}
+  else{
+	lockall
+	faceplayer
+	msgbox(format("Neverstop "), MSGBOX_AUTOCLOSE)
+	releaseall
+  }
+}
+
+script TRAINERWHOTRIEDTOTAKEONTHEWATERBADGE {
+	if(var(VAR_STARTER_MON) == 1){
+	lockall
+	faceplayer
+	msgbox(format("Oh, so you're challenging the Water type Gym Leader? Listen, I’ve battled them before... and lost. But I learned a thing or two. Water Pokémon are weak to Electric and Grass moves, so if you’ve got a strong Thunderbolt or Razor Leaf, you’ll have the upper hand. But watch out! Some of their Pokémon might know Ice type moves to counter Grass types, and they’re surprisingly fast. Be ready, or you’ll end up like me… defeated."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Here"))
+	giveitem(ITEM_MIRACLE_SEED)
+	playfanfare(MUS_OBTAIN_ITEM)
+	setvar(VAR_GATE_HOUSE, 1)
+	releaseall
+}
+  if(var(VAR_STARTER_MON) == 2){
+	lockall
+	faceplayer
+	msgbox(format("Oh, so you're challenging the Water type Gym Leader? Listen, I’ve battled them before... and lost. But I learned a thing or two. Water Pokémon are weak to Electric and Grass moves, so if you’ve got a strong Thunderbolt or Razor Leaf, you’ll have the upper hand. But watch out! Some of their Pokémon might know Ice type moves to counter Grass types, and they’re surprisingly fast. Be ready, or you’ll end up like me… defeated."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Here"))
+	giveitem(ITEM_MYSTIC_WATER)
+	playfanfare(MUS_OBTAIN_ITEM)
+	setvar(VAR_GATE_HOUSE, 1)
+	releaseall
+  }
+  if(var(VAR_STARTER_MON) == 3){
+	lockall
+	faceplayer
+	msgbox(format("Oh, so you're challenging the Water type Gym Leader? Listen, I’ve battled them before... and lost. But I learned a thing or two. Water Pokémon are weak to Electric and Grass moves, so if you’ve got a strong Thunderbolt or Razor Leaf, you’ll have the upper hand. But watch out! Some of their Pokémon might know Ice type moves to counter Grass types, and they’re surprisingly fast. Be ready, or you’ll end up like me… defeated."), MSGBOX_AUTOCLOSE)
+	msgbox(format("Here"))
+	giveitem(ITEM_CHARCOAL)
+	playfanfare(MUS_OBTAIN_ITEM)
+	setvar(VAR_GATE_HOUSE, 1)
+	releaseall
+  }
+
+}
+
+script MOMWHOLOSTHERSON {
+	if(var(VAR_LOST_KID) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Oh, Trainer, I haven't seen my kid in hours! He ran off somewhere, probably playing around. If you see him, could you bring him back home? I'd really appreciate it!"), MSGBOX_AUTOCLOSE)
+		releaseall
+	}
+	if(var(VAR_LOST_KID) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Thank you so much! I was starting to worry. You're a lifesaver!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Here, a Master Ball! My kid found it on the ground and thought it’d be nice to give itto you. Consider it a little thank-you gift!"), MSGBOX_AUTOCLOSE)
+		giveitem(ITEM_MASTER_BALL)
+		playfanfare(MUS_OBTAIN_ITEM)
+		setvar(VAR_LOST_KID, 2)
+		releaseall
+	}
+	
+	if(var(VAR_LOST_KID) == 2){
+		lockall
+		faceplayer
+		msgbox(format("We will never forget what you did!"), MSGBOX_AUTOCLOSE)
+		releaseall
+
+	}
+	
+}
+script BERRYSELLER {
+	if(var(VAR_ROUTE133_STATE) == 0){
+	lockall
+	faceplayer
+	msgbox(format("As you might have seen outisde, i cultivate berries, and sell them!"), MSGBOX_AUTOCLOSE)
+	setvar(VAR_ROUTE133_STATE, 1)
+	message("How may I serve you?")
+    waitmessage
+    pokemart(BERRYSELLERSHOP)
+	msgbox("Please Come Again.")
+    release
+    end
+}
+   if(var(VAR_ROUTE133_STATE) == 1){
+	lockall
+	faceplayer
+	message("How may I serve you?")
+    waitmessage
+    pokemart(BERRYSELLERSHOP)
+	msgbox("Please Come Again.")
+    release
+    end
+
+   }
+
+   else{
+
+   }
+  
+}
+
+raw`
+ 
+.align 2
+BERRYSELLERSHOP::
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_RAWST_BERRY
+	.2byte ITEM_ASPEAR_BERRY
+	.2byte ITEM_LEPPA_BERRY
+	.2byte ITEM_ORAN_BERRY
+    .2byte ITEM_PERSIM_BERRY
+	pokemartlistend
+ 
+`
+script TWINS1 {
+	lockall
+	msgbox(format("My favorite Pokémon is Plusle!"), MSGBOX_AUTOCLOSE)
+	applymovement(2, EXLAMATIOON_SHIP_HOLE)
+	waitmovement(2)
+	msgbox(format("And mine is Minum!"), MSGBOX_AUTOCLOSE)
+	releaseall
+	
+}
+
+script TWINS2 {
+	lockall
+	msgbox(format("My favroite Pokémon is Minum!"), MSGBOX_AUTOCLOSE)
+	applymovement(1, EXLAMATIOON_SHIP_HOLE)
+	waitmovement(1)
+	msgbox(format("And mine is Plusle!"), MSGBOX_AUTOCLOSE)
+	releaseall
+	
+}
+
+
+raw `
+Script_IVChecker::
+	lock
+	faceplayer
+	bufferpartymonnick 0, 0
+	msgbox Text_IVChecker_1, MSGBOX_DEFAULT
+	specialvar VAR_RESULT, GetHpIV
+	buffernumberstring 0, VAR_RESULT
+	specialvar VAR_RESULT, GetAtkIV
+	buffernumberstring 1, VAR_RESULT
+	specialvar VAR_RESULT, GetDefIV
+	buffernumberstring 2, VAR_RESULT
+	msgbox Text_IVChecker_2, MSGBOX_DEFAULT
+	specialvar VAR_RESULT, GetSpAtkIV
+	buffernumberstring 0, VAR_RESULT
+	specialvar VAR_RESULT, GetSpDefIV
+	buffernumberstring 1, VAR_RESULT
+	specialvar VAR_RESULT, GetSpeedIV
+	buffernumberstring 2, VAR_RESULT
+	msgbox Text_IVChecker_3, MSGBOX_DEFAULT
+	release
+	end
+
+Text_IVChecker_1:
+	.string "Your {STR_VAR_1}...$"
+
+Text_IVChecker_2:
+	.string "Its HP IV is {STR_VAR_1}.\p"
+	.string "Its Attack IV is {STR_VAR_2}.\p"
+	.string "Its Defense IV is {STR_VAR_3}.$"
+
+Text_IVChecker_3:
+	.string "Its Special Attack IV is {STR_VAR_1}.\p"
+	.string "Its Special Defense IV is {STR_VAR_2}.\p"
+	.string "Its Speed IV is {STR_VAR_3}.\n"
+	.string "You're welcome.$"
+`

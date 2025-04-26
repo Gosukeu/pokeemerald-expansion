@@ -1,0 +1,237 @@
+
+mapscripts New_Professor_Lab_MapScripts {
+    
+}
+
+
+
+
+script NewProfessor_EventScript_Turtwig {
+    // Check if the player already picked a starter
+    if (flag(FLAG_UNUSED_0x495)) {
+        msgbox("You've already chosen a Pokémon! No more are available.")
+        end
+    }
+
+    showmonpic(SPECIES_TURTWIG, 10, 3)
+    msgbox("Do you want to choose Turtwig?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("Do you want it to be shiny?", MSGBOX_YESNO)
+        givemon(SPECIES_TURTWIG, 5, ITEM_MIRACLE_SEED, isShiny=VAR_RESULT)
+
+        if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Turtwig!")
+            removeobject(4) // Remove Pokéball only if Sandile is given to the party
+            setflag(FLAG_UNUSED_0x022) // Mark the Pokéball as used
+            setflag(FLAG_UNUSED_0x495) // Prevent selecting another starter
+            call(NicknamePartyMon)
+            setflag(FLAG_SYS_POKEMON_GET)
+            setvar(VAR_UNUSED_0x40FF, 2)
+            setvar(VAR_STARTER_MON , 1)
+            setflag(FLAG_SYS_POKEMON_GET)
+            setflag(FLAG_SYS_POKEDEX_GET)
+            setflag(FLAG_RECEIVED_RUNNING_SHOES)
+            setflag(FLAG_SYS_B_DASH)
+            setflag(FLAG_ADVENTURE_STARTED)
+            call(GivePokedex)
+          
+            
+            
+        } 
+        elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Turtwig!")
+            removeobject(4) // Remove Pokéball only if Sandile is sent to the PC
+            setflag(FLAG_UNUSED_0x022) // Mark the Pokéball as used
+            setflag(FLAG_UNUSED_0x495) // Prevent selecting another starter
+            call(NicknameBoxMon)
+            setvar(VAR_UNUSED_0x40FF, 2)
+            setvar(VAR_STARTER_MON , 0)
+            call(GivePokedex)
+            
+            
+            
+           
+        } 
+        else {
+            hidemonpic
+            msgbox("No More Room!") // If Sandile could not be added
+        }
+    } 
+    else { // If the player says "No" to Sandile
+        hidemonpic
+        msgbox("Maybe you'll choose another Pokémon.", MSGBOX_AUTOCLOSE) // No object removal here
+    }
+}
+
+
+
+
+
+script NewProfessor_EventScript_Oshawott {
+   
+    if (flag(FLAG_UNUSED_0x495)) {
+        msgbox("You've already chosen a Pokémon! No more are available.")
+        end
+    }
+
+     showmonpic(SPECIES_OSHAWOTT, 10, 3)
+    msgbox("Do you want to choose Oshawott?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("Do you want it to be shiny?", MSGBOX_YESNO)
+        givemon(SPECIES_OSHAWOTT, 5, ITEM_MYSTIC_WATER, isShiny=VAR_RESULT) // Shiny logic remains unchanged
+
+        if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Oshawott!")
+            removeobject(2) // Remove Pokéball only if Tepig is given to the party
+            setflag(FLAG_UNUSED_0x021)
+            setflag(FLAG_UNUSED_0x495) // Mark the Pokéball as used
+            call(NicknamePartyMon)
+            setflag(FLAG_SYS_POKEMON_GET)
+            setvar(VAR_UNUSED_0x40FF, 2)
+            setvar(VAR_STARTER_MON, 2)
+            setflag(FLAG_SYS_POKEMON_GET)
+            setflag(FLAG_SYS_POKEDEX_GET)
+            setflag(FLAG_RECEIVED_RUNNING_SHOES)
+            setflag(FLAG_SYS_B_DASH)
+            setflag(FLAG_ADVENTURE_STARTED)
+            call(GivePokedex1)
+           
+            
+            
+           
+            
+            
+        } 
+        elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Oshawott!")
+            removeobject(2) // Remove Pokéball only if Tepig is sent to the PC
+            setflag(FLAG_UNUSED_0x021)
+            setflag(FLAG_UNUSED_0x495) // Mark the Pokéball as used
+            call(NicknameBoxMon)
+            setvar(VAR_UNUSED_0x40FF, 2)
+            setvar(VAR_STARTER_MON, 1)
+            call(GivePokedex1)
+            
+            
+          
+           
+        
+        } 
+        else {
+            hidemonpic
+            msgbox("No More Room!",MSGBOX_AUTOCLOSE) // If Tepig could not be added
+        }
+    } 
+    else { // If the player says "No" to Tepig
+        hidemonpic
+        msgbox("Maybe you'll choose another Pokémon.",MSGBOX_AUTOCLOSE) // No object removal here
+    }
+}
+
+script New_Professor_Event_Script {
+    
+    if(var(VAR_UNUSED_0x40FF) == 0) {
+        lockall
+        msgbox("You must take a Pokémon", MSGBOX_AUTOCLOSE)
+        releaseall
+
+
+    }
+
+    else {
+        lockall
+        msgbox("Good luck on your adventure!", MSGBOX_AUTOCLOSE)
+        releaseall
+    }
+    
+}
+
+
+
+script NewProfessor_EventScript_Fuecoco {
+   
+    if (flag(FLAG_UNUSED_0x495)) {
+        msgbox("You've already chosen a Pokémon! No more are available.")
+        end
+    }
+
+     showmonpic(SPECIES_FUECOCO, 10, 3)
+    msgbox("Do you want to choose Fuecoco?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("Do you want it to be shiny?", MSGBOX_YESNO)
+        givemon(SPECIES_FUECOCO, 5, ITEM_RARE_CANDY, isShiny=VAR_RESULT) // Shiny logic remains unchanged
+
+        if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Fuecoco!")
+            removeobject(3) // Remove Pokéball only if Tepig is given to the party
+            setflag(FLAG_UNUSED_0x023)
+            setflag(FLAG_UNUSED_0x495) // Mark the Pokéball as used
+            call(NicknamePartyMon)
+            setflag(FLAG_SYS_POKEMON_GET)
+            setvar(VAR_UNUSED_0x40FF, 2)
+            setvar(VAR_STARTER_MON, 3)
+            setflag(FLAG_SYS_POKEMON_GET)
+            setflag(FLAG_SYS_POKEDEX_GET)
+            setflag(FLAG_RECEIVED_RUNNING_SHOES)
+            setflag(FLAG_SYS_B_DASH)
+            setflag(FLAG_ADVENTURE_STARTED)
+            call(GivePokedex2)
+            
+            
+            
+           
+            
+            
+        } 
+        elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Fuecoco!")
+            removeobject(3) 
+            setflag(FLAG_UNUSED_0x023)
+            setflag(FLAG_UNUSED_0x495) 
+            call(NicknameBoxMon)
+            setvar(VAR_UNUSED_0x40FF, 3)
+            setvar(VAR_STARTER_MON, 2)
+            call(GivePokedex2)
+            
+            
+            
+            
+            
+        } 
+        else {
+            hidemonpic
+            msgbox("No More Room!",MSGBOX_AUTOCLOSE) 
+        }
+    } 
+    else { 
+        hidemonpic
+        msgbox("Maybe you'll choose another Pokémon.", MSGBOX_AUTOCLOSE) // No object removal here
+    }
+}
+
+
+
+script NicknamePartyMon {
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES) {
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+}
+
+script NicknameBoxMon {
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES) {
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+}
+
+

@@ -236,6 +236,25 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphir
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aegislash;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Swinub;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Krookodile;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bidoof;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Koraidon;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Celebi;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Krabby;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Staryu;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandshrew;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Horsea;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corsola;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sandile;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RollingSpheal;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cactus;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tree;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsStatue_Bulbizzare;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsStatue_Fontaine;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Potdefleur;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TyrantrumStatue;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -488,6 +507,25 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+    [OBJ_EVENT_GFX_AEGISLASH] =                  &gObjectEventGraphicsInfo_Aegislash,
+    [OBJ_EVENT_GFX_SWINUB] =                  &gObjectEventGraphicsInfo_Swinub,
+    [OBJ_EVENT_GFX_KROOKODILE] =                  &gObjectEventGraphicsInfo_Krookodile,
+    [OBJ_EVENT_GFX_BIDOOF] =                  &gObjectEventGraphicsInfo_Bidoof,
+    [OBJ_EVENT_GFX_KORAIDON] =                  &gObjectEventGraphicsInfo_Koraidon,
+    [OBJ_EVENT_GFX_CELEBI] =                  &gObjectEventGraphicsInfo_Celebi,
+    [OBJ_EVENT_GFX_KRABBY] =                  &gObjectEventGraphicsInfo_Krabby,
+    [OBJ_EVENT_GFX_STARYU] =                  &gObjectEventGraphicsInfo_Staryu,
+    [OBJ_EVENT_GFX_SANDSHREW] =                  &gObjectEventGraphicsInfo_Sandshrew,
+    [OBJ_EVENT_GFX_HORSEA] =                  &gObjectEventGraphicsInfo_Horsea,
+    [OBJ_EVENT_GFX_CORSOLA] =                  &gObjectEventGraphicsInfo_Corsola,
+    [OBJ_EVENT_GFX_SANDILE] =                  &gObjectEventGraphicsInfo_Sandile,
+    [OBJ_EVENT_GFX_ROLLING_SPHEAL] =                  &gObjectEventGraphicsInfo_RollingSpheal,
+    [OBJ_EVENT_GFX_CACTUS] =                  &gObjectEventGraphicsInfo_Cactus,
+    [OBJ_EVENT_GFX_TREE] =                  &gObjectEventGraphicsInfo_Tree,
+    [OBJ_EVENT_GFX_STATUE_BULBIZZARE] =                  &gObjectEventGraphicsStatue_Bulbizzare,
+    [OBJ_EVENT_GFX_FONTAINE] =                  &gObjectEventGraphicsStatue_Fontaine,
+    [OBJ_EVENT_GFX_POTDEFLEUR] =                  &gObjectEventGraphicsInfo_Potdefleur,
+    [OBJ_EVENT_GFX_TYRANTRUM_STATUE] =                  &gObjectEventGraphicsInfo_TyrantrumStatue,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };

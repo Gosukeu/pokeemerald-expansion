@@ -107,7 +107,7 @@ EventScript_ResetAllBerries::
 	setberrytree BERRY_TREE_ROUTE_123_PECHA,    ITEM_TO_BERRY(ITEM_PECHA_BERRY),  BERRY_STAGE_BERRIES
 	setberrytree BERRY_TREE_ROUTE_123_SITRUS,   ITEM_TO_BERRY(ITEM_SITRUS_BERRY), BERRY_STAGE_BERRIES
 	setberrytree BERRY_TREE_ROUTE_123_RAWST,    ITEM_TO_BERRY(ITEM_RAWST_BERRY),  BERRY_STAGE_BERRIES
-
+    
 	@ Mirage Island
 	setberrytree BERRY_TREE_ROUTE_130_LIECHI, ITEM_TO_BERRY(ITEM_LIECHI_BERRY), BERRY_STAGE_BERRIES
 	return
@@ -272,5 +272,19 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
+	setflag FLAG_LOST_KID
+	setflag FLAG_UNUSED_0x49C
+	setflag FLAG_GRUNT_MALE
+	setflag FLAG_GRUNT_FEMALE
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      
+    setflag FLAG_HIDE_APPRENTICE                                      
+    setflag FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN               
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_1                              
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_2                               
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_3                               
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_4                              
+    setflag  FLAG_HIDE_UNION_ROOM_PLAYER_5                             
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_6                              
+    setflag FLAG_HIDE_UNION_ROOM_PLAYER_7 
 	call EventScript_ResetAllBerries
 	end
