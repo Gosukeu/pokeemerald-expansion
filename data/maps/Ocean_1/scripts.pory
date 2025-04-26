@@ -968,3 +968,22 @@ if (var(VAR_RESULT) == 192) {
 
 
 
+
+//script hiddenWailmer{ // plusieur fois, nan peut etre pas , essayer de faire spawn aleatoirement ces trucs , donc les configurer en tant que object peut etre , ou jjuste sinon faire avencer les metatiels randmly ce qui est surment pas faciel comme c un assemblega de 4 tiles
+    //lockall
+    //applymovement(OBJ_EVENT_PLAYER_ID, EXLAMATIONMARKWAILMER)
+    //waitmovement(OBJ_EVENT_PLAYER_ID)
+    //msgbox(format("A huge fish, jumped off the surface"), msgboxautoclose)
+    //setwildencounter()// wailmer
+//}
+
+//movement  EXLAMATIONMARKWAILMER{
+
+   // emote_exlamation_mark
+//}
+
+
+// trainer 1  ( de paire ) dans l eau aura poissyroi , et grelacon
+// trainer 2  ( de paire) dans l eau aura seuekement un pinplouf 
+// trainer evitabble , aura premier evo de kaiminus sans ev et iv 
+// trainer 4 aura 33 poke , surment des chips , comme kokyas, minidraco , et la premie evo starter soleil et lune 

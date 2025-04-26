@@ -5037,7 +5037,7 @@
       "width": 80,
       "height": 65,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Ocean_1/border.bin",
       "blockdata_filepath": "data/layouts/Ocean_1/map.bin"
     },
