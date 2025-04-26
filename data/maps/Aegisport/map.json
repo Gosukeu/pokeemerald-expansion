@@ -1,0 +1,147 @@
+{
+  "id": "MAP_AEGISPORT",
+  "name": "Aegisport",
+  "layout": "LAYOUT_AEGISPORT",
+  "music": "MUS_SLATEPORT",
+  "region_map_section": "MAPSEC_ROUTE_119",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE1",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_MAGMA_BOSS_AEGISPORT"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_POKE_CENTER_1_AEGISPORT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_POKE_MART",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 43,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_FISCHER_HOUSE_AEGISPORT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SHIP_YARD_AEGISPORT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_AEGISPORT_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_AEGISPORT_TRADE_HISUAN_FORM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_AEGISPORT_SHIPHOLE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_AEGISPORT_LOSTKID",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_AEGISPORT_HOUSE_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_AEGISPORT_HOUSE_2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_MAGMA_BOSS_AEGIGLASH",
+      "var_value": "0",
+      "script": "Team_Magma_Boss_Trigger_AEGISPORT"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_MAGMA_BOSS_AEGIGLASH",
+      "var_value": "0",
+      "script": "Team_Magma_Boss_Trigger_AEGISPORT1"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SIGNPRIVATE"
+    },
+    {
+      "type": "sign",
+      "x": 37,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SIGNPRIVATE"
+    }
+  ]
+}

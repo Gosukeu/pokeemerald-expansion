@@ -46,7 +46,7 @@ Optional fields for Pokemon:
           (Order does not matter)
     - EVs (252 HP / 128 Spe / 48 Def, defaults to all 0, is not capped at 512 total)
           (Order does not matter)
-    - Ball (Poke Ball or ITEM_POKE_BALL, defaults to Poke Ball)
+    - Ball (Poke Ball or ITEM_POKE_BALL, defaults to Poke Ball
     - Happiness (Number between 1 and 255)
     - Nature (Rash or NATURE_RASH, defaults to Hardy)
     - Shiny (Yes/No, defaults to No)
@@ -81,194 +81,333 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_SAWYER_1 ===
-Name: SAWYER
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Basic Trainer
-
-Geodude
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Poochyena
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Poochyena
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Zubat
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GABRIELLE_1 ===
-Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+=== TRAINER_MAY_EMBERFALL_TOWN_FUECOCO ===
+Name: MAY
+Class: Rival
+Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Skitty
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Oshawott @ Mystic Water  
+Ability: Shell Armor  
+Level: 5  
+EVs: 6 HP / 252 Atk  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet  
+- Fury Cutter
+- Tackle  
+- Quick Attack  
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+=== TRAINER_MAY_EMBERFALL_TOWN_TURTWIG ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
 
-Zigzagoon
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fuecoco @ Charcoal  
+Ability: Unaware  
+Level: 5   
+EVs: 6 HP / 252 Atk / 252 Spe  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Charge  
+- Tackle  
+- Quick Attack  
+- Leer  
 
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+=== TRAINER_MAY_EMBERFALL_TOWN_OSHAWOTT ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
 
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Turtwig @ Miracle Seed  
+Ability: Shell Armor  
+EVs: 6 HP / 252 Atk / 252 Spe  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Grassy Glide  
+- Quick Attack  
+- Tackle  
+- Leer  
 
-Taillow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_PETALBURG_WOODS ===
+=== GRUNT_1 ===
+Name: GRUNT 1
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Hp Aware / Check Viability
+
+Poliwag @ Black Belt  
+Ability: Water Absorb  
+Level: 13   
+EVs: 252 SpA / 252 Spe  
+Quirky Nature  
+- Pound  
+- Bubble Beam  
+- Mud Shot  
+- Whirlpool  
+
+=== GRUNT_2 ===
+Name: GRUNT 2
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Slowpoke @ Wacan Berry  
+Ability: Own Tempo  
+Level: 11  
+EVs: 252 HP / 252 Def  
+Quirky Nature  
+IVs: 0 Atk  
+- Confusion  
+- Swift  
+- Water Gun  
+- Curse  
+
+=== GRUNT_3 ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Hp Aware / Check Viability
 
-Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tentacool  
+Ability: Clear Body  
+Level: 13    
+EVs: 252 SpA / 252 SpD / 6 Spe  
+Hardy Nature  
+IVs: 0 Atk  
+- Chilling Water  
+- Acid Spray  
+- Aurora Beam  
+- Rest
 
-=== TRAINER_MARCEL ===
-Name: MARCEL
-Class: Cooltrainer
-Pic: Cooltrainer M
+=== GRUNT_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
 Gender: Male
-Music: Cool
-Items: Hyper Potion
+Music: Aqua
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Hp Aware / Check Viability
 
-Manectric
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Carvanha @ Mystic Water  
+Ability: Rough Skin  
+Level: 12  
+EVs: 6 HP / 252 Atk / 252 Spe  
+Quirky Nature  
+- Aqua Jet  
+- Soak  
+- Flip Turn  
+- Arm Thrust
 
-Shiftry
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_ALBERTO ===
-Name: ALBERTO
-Class: Bird Keeper
-Pic: Bird Keeper
+=== Route1TrainerKid ===
+Name: Oscar
+Class: Youngster
+Pic: Youngster
 Gender: Male
-Music: Cool
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Pelipper
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellsprout  
+Ability: Chlorophyll  
+Level: 8  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Sunny Day  
+- Vine Whip  
+- Growth  
+- Acid  
 
-Xatu
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bulbasaur  
+Ability: Chlorophyll  
+Level: 9  
+EVs: 252 HP / 252 SpA / 4 SpD  
+IVs: 0 Atk  
+- Growth  
+- Acid Spray  
+- Magical Leaf  
+- Weather Ball  
+
+Exeggcute  
+Ability: Chlorophyll  
+Level: 9  
+EVs: 6 HP / 252 Def / 252 SpA  
+IVs: 0 Atk  
+- Curse  
+- Ancient Power  
+- Mega Drain  
+- Leech Seed  
+
+
+
+=== Route2TrainerKid ===
+Name: Léo
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Surskit  
+Ability: Swift Swim  
+Level: 10   
+EVs: 252 SpA / 4 SpD / 252 Spe  
+IVs: 0 Atk  
+- Water Gun  
+- Sticky Web  
+- Struggle Bug  
+- Rain Dance  
+
+Lotad  
+Ability: Swift Swim  
+Level: 9  
+EVs: 252 HP / 4 SpA / 252 SpD  
+IVs: 0 Atk  
+- Absorb  
+- Icy Wind  
+- Synthesis  
+- Weather Ball  
+
+
+
+
+=== Route3TrainerKid ===
+Name: AUTUMN
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Sandshrew  
+Ability: Sand Rush  
+Level: 10   
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Sandstorm  
+- Rollout  
+- Poison Sting  
+- Scratch  
+
+Diglett-Alola  
+Ability: Sand Veil  
+Level: 10  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Metal Claw  
+- Astonish  
+- Bulldoze  
+- Smack Down  
+
+Trapinch  
+Ability: Hyper Cutter  
+Level: 9  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Astonish  
+- Sand Attack  
+- Bite  
+- Bulldoze  
+
+
+=== MAYTurtwig ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Fuecoco @ Charcoal  
+Ability: Blaze  
+Level: 13   
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+- Ember  
+- Round  
+- Bite  
+- Snarl  
+
+Mankey @ Focus Sash  
+Ability: Defiant  
+Level: 12  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+- Covet  
+- Low Kick  
+- Leer  
+- Bulldoze  
+
+Mudbray @ Expert Belt  
+Ability: Stamina  
+Level: 12  
+EVs: 4 HP / 252 Atk / 252 Def  
+Impish Nature  
+- Rock Smash  
+- Bulldoze  
+- Sand Tomb  
+- Bulk Up  
+
+
+
+
+=== MAYOashwott ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Turtwig @ Leftovers  
+Ability: Shell Armor  
+Level: 13  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Razor Leaf  
+- Tackle  
+- Bite  
+- Smack Down  
+
+Mankey @ Focus Sash  
+Ability: Defiant  
+Level: 12    
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+- Covet  
+- Low Kick  
+- Leer  
+- Bulldoze  
+
+Mudbray @ Expert Belt  
+Ability: Stamina  
+Level: 12  
+EVs: 4 HP / 252 Atk / 252 Def  
+Impish Nature  
+- Rock Smash  
+- Bulldoze  
+- Sand Tomb  
+- Bulk Up  
+
+
+
 
 === TRAINER_ED ===
 Name: ED
@@ -287,306 +426,604 @@ Seviper
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
+=== MAYFuecoco ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Oshawott @ Mystic Water  
+Ability: Shell Armor  
+Level: 13  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Fury Cutter  
+- Swift  
+- Water Pulse  
+- Aqua Jet  
+
+Mankey @ Focus Sash  
+Ability: Defiant  
+Level: 12  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+- Covet  
+- Low Kick  
+- Leer  
+- Bulldoze  
+
+Mudbray @ Expert Belt  
+Ability: Stamina  
+Level: 12  
+EVs: 4 HP / 252 Atk / 252 Def  
+Impish Nature  
+- Rock Smash  
+- Bulldoze  
+- Sand Tomb  
+- Bulk Up  
+
+
+
+=== brendanfuecoco ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Oshawott @ Mystic Water  
+Ability: Shell Armor  
+Level: 13  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Fury Cutter  
+- Swift  
+- Water Pulse  
+- Aqua Jet  
+
+Mankey @ Focus Sash  
+Ability: Defiant  
+Level: 12  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+- Covet  
+- Low Kick  
+- Leer  
+- Bulldoze  
+
+Mudbray @ Expert Belt  
+Ability: Stamina  
+Level: 12  
+EVs: 4 HP / 252 Atk / 252 Def  
+Impish Nature  
+- Rock Smash  
+- Bulldoze  
+- Sand Tomb  
+- Bulk Up  
+
+
+=== brendanoshawott ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Turtwig @ Leftovers  
+Ability: Shell Armor  
+Level: 13  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Razor Leaf  
+- Tackle  
+- Bite  
+- Smack Down  
+
+Mankey @ Focus Sash  
+Ability: Defiant  
+Level: 12    
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+- Covet  
+- Low Kick  
+- Leer  
+- Bulldoze  
+
+Mudbray @ Expert Belt  
+Ability: Stamina  
+Level: 12  
+EVs: 4 HP / 252 Atk / 252 Def  
+Impish Nature  
+- Rock Smash  
+- Bulldoze  
+- Sand Tomb  
+- Bulk Up  
+
+
+=== brenednTurtwig ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Fuecoco @ Charcoal  
+Ability: Blaze  
+Level: 13   
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+- Ember  
+- Round  
+- Bite  
+- Snarl  
+
+Mankey @ Focus Sash  
+Ability: Defiant  
+Level: 12  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+- Covet  
+- Low Kick  
+- Leer  
+- Bulldoze  
+
+Mudbray @ Expert Belt  
+Ability: Stamina  
+Level: 12  
+EVs: 4 HP / 252 Atk / 252 Def  
+Impish Nature  
+- Rock Smash  
+- Bulldoze  
+- Sand Tomb  
+- Bulk Up  
+
+=== AQUA_F_CONTEST_HALL ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rattata-Alola @ Focus Sash  
+Ability: Gluttony  
+Level: 14  
+EVs: 42 Atk  
+Serious Nature  
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Endeavor  
+- Quick Attack  
+- Take Down  
+- Bite  
 
-=== TRAINER_DECLAN ===
-Name: DECLAN
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
-Music: Swimmer
-Double Battle: No
-AI: Check Bad Move
+Wooper @ Rindo Berry  
+Ability: Water Absorb  
+Level: 16  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Water Pulse  
+- Bulldoze  
+- Rain Dance  
+- Slam  
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corphish @ Quick Claw  
+Ability: Adaptability  
+Level: 16  
+EVs: 6 HP / 252 Atk / 252 Def  
+- Bite  
+- Water Pulse  
+- Vise Grip  
+- Leer  
 
-=== TRAINER_GRUNT_RUSTURF_TUNNEL ===
+
+
+=== AQUA_M_CONTEST_HALL ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Finneon @ Mystic Water  
+Ability: Storm Drain  
+Level: 16  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+IVs: 0 Atk  
+- Swift  
+- Water Pulse  
+- Rain Dance  
+- Gust  
 
-=== TRAINER_GRUNT_WEATHER_INST_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Barboach @ Rindo Berry  
+Ability: Anticipation  
+Level: 15  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Water Pulse  
+- Mud Shot  
+- Snore  
+- Rest  
+
+Buizel  
+Ability: Water Veil  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Fury Cutter  
+- Quick Attack  
+- Water Pulse  
+- Bite  
+
+
+
+=== AQUA_BOSS_CONTEST_HALL ===
+Name: ARCHIE
+Class: Aqua Leader
+Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Zubat
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dewott @ Rindo Berry  
+Ability: Shell Armor  
+Level: 18  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Water Pulse  
+- Fury Cutter  
+- Swords Dance  
+- Aqua Jet  
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow @ Dark Gem  
+Ability: Super Luck  
+Level: 16   
+EVs: 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+IVs: 0 Atk  
+- Air Cutter  
+- Icy Wind  
+- Snarl  
+- Mud-Slap  
 
-=== TRAINER_GRUNT_WEATHER_INST_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
+Morgrem @ Fairy Gem  
+Ability: Prankster  
+Level: 17   
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Fake Out  
+- Assurance  
+- Parting Shot  
+- Draining Kiss  
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_MUSEUM_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Carvanha
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_MUSEUM_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Zubat
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_SPACE_CENTER_1 ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
-Music: Magma
-Double Battle: No
-AI: Check Bad Move
-
-Numel
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_MT_PYRE_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_MT_PYRE_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_MT_PYRE_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Poochyena
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_WEATHER_INST_4 ===
+=== GRUNTCONTESTHALLRANDOM ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Carvanha
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chewtle @ Shell Bell  
+Ability: Strong Jaw  
+Level: 13   
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Tackle  
+- Bite  
+- Chilling Water  
+- Mud Shot  
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
+Chinchou @ Sitrus Berry  
+Ability: Volt Absorb  
+Level: 15  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Supersonic  
+- Electro Ball  
+- Thunder Wave  
+- Bubble Beam  
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_FREDRICK ===
-Name: FREDRICK
-Class: Expert
-Pic: Expert M
+
+
+=== TRAINER_FIRST_GYM_BADGE_WATER ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
 Gender: Male
-Music: Intense
+Music: Male
+Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Makuhita
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Finneon @ Mystic Water  
+Ability: Storm Drain  
+Level: 22  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+IVs: 0 Atk  
+- Water Pulse  
+- Rain Dance  
+- Gust  
+- Icy Wind  
 
-Machoke
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Marshtomp @ Rindo Berry  
+Ability: Torrent  
+Level: 24  
+EVs: 42 HP / 42 Atk / 4 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Rock Smash  
+- Rock Throw  
+- Water Pulse  
+- Mud Shot  
 
-=== TRAINER_MATT ===
-Name: MATT
-Class: Aqua Admin
-Pic: Aqua Admin M
-Gender: Male
-Music: Aqua
-Items: Super Potion
-Double Battle: No
-AI: Basic Trainer
+Poliwhirl @ Damp Rock  
+Ability: Swift Swim  
+Level: 23  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 252 Spe  
+Serious Nature  
+IVs: 0 Atk  
+- Icy Wind  
+- Rain Dance  
+- Bubble Beam  
+- Hypnosis  
 
-Mightyena
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Lombre @ Leftovers  
+Ability: Swift Swim  
+Level: 20  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Fake Out  
+- Knock Off  
+- Water Gun  
+- Mega Drain  
 
-Golbat
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Staryu @ Scope Lens  
+Ability: Natural Cure  
+Level: 22  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Water Pulse  
+- Swift  
+- Psybeam  
+- Rest  
 
-=== TRAINER_ZANDER ===
-Name: ZANDER
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
+Croconaw @ Expert Belt  
+Ability: Torrent  
+Level: 20  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Bite  
+- Aqua Jet  
+- Breaking Swipe  
+- Aerial Ace  
 
-Hariyama
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_SHELLY_WEATHER_INSTITUTE ===
-Name: SHELLY
-Class: Aqua Admin
-Pic: Aqua Admin F
+=== F1_WATER_GYM_TRAINER ===
+Name: MELISSA
+Class: Beauty
+Pic: Beauty
 Gender: Female
-Music: Aqua
+Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Carvanha
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Wingull @ Mystic Water  
+Ability: Keen Eye  
+Level: 17  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+Serious Nature  
+- Air Cutter  
+- Swift  
+- Water Pulse  
+- Quick Attack
 
-Mightyena
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-=== TRAINER_SHELLY_SEAFLOOR_CAVERN ===
-Name: SHELLY
-Class: Aqua Admin
-Pic: Aqua Admin F
+=== F1_WATER_GYM_TRAINER1 ===
+Name: ANDREA
+Class: Lass
+Pic: Lass
 Gender: Female
-Music: Aqua
+Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
 
-Sharpedo
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Horsea @ Dragon Fang  
+Ability: Sniper  
+Level: 17  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Water Pulse  
+- Icy Wind  
+- Dragon Breath  
+- Weather Ball  
 
-Mightyena
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+=== F1_WATER_GYM_TRAINER2 ===
+Name: CRISSY
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Mareanie @ Poison Barb  
+Ability: Merciless  
+Level: 17  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Icy Wind  
+- Acid Spray  
+- Mud Shot  
+- Water Pulse  
+
+
+=== F1_WATER_GYM_TRAINER3 ===
+Name: BRIANNA
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Shellos @ Rindo Berry  
+Ability: Storm Drain  
+Level: 18  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Icy Wind  
+- Water Pulse  
+- Sludge  
+- Stockpile  
+
+
+=== F1_WATER_GYM_TRAINER4 ===
+Name: CONNIE
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Azurill @ Sitrus Berry  
+Ability: Huge Power  
+Level: 17   
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Bubble Beam  
+- Mud Shot  
+- Icy Wind  
+- Draining Kiss  
+
+
+=== KID1TOURNEMENT ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Pichu @ Air Balloon  
+Ability: Static  
+Level: 17   
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+IVs: 0 Atk  
+- Disarming Voice  
+- Swift  
+- Charge  
+- Electroweb  
+
+=== KID1TOURNEMENT1 ===
+Name: TED
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Togepi @ Berry Juice  
+Ability: Super Luck  
+Level: 15  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Sweet Kiss  
+- Ancient Power  
+- Draining Kiss  
+- Pound  
+
+=== KID1TOURNEMENT2 ===
+Name: PAUL
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Tyrogue @ Black Belt  
+Ability: Guts  
+Level: 17  
+Tera Type: Fighting  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Feint  
+- Upper Hand  
+- Thief  
+- Counter  
+
+=== KID1TOURNEMENT3 ===
+Name: JERRY
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Smoochum @ Wise Glasses  
+Ability: Oblivious  
+Level: 16  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Covet  
+- Confusion  
+- Powder Snow  
+- Snore  
+
+=== KID1TOURNEMENT4 ===
+Name: LUCAS
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Elekid @ Magnet  
+Ability: Static  
+Level: 16  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Feint  
+- Shock Wave  
+- Thief  
+- Trailblaze  
+
+=== KID1TOURNEMENT5 ===
+Name: PAUL
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn
+
+Magby @ Charcoal  
+Ability: Flame Body  
+Level: 20  
+EVs: 42 HP / 42 Atk / 42 Def / 42 SpA / 42 SpD / 42 Spe  
+- Flame Wheel  
+- Thief  
+- Mach Punch  
+- Will-O-Wisp  
+
 
 === TRAINER_ARCHIE ===
 Name: ARCHIE

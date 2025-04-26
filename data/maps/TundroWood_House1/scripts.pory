@@ -1,0 +1,1716 @@
+raw `
+TundroWood_House1_MapScripts::
+	.byte 0
+
+`
+// pour chaque event associer une var, pour ne pas pouvroir battre le meme gars 6 fois!
+script SchoolHouseTournamentTrigger {
+	lockall
+	applymovement(8, exlamationmovement)
+	waitmovement(8)
+	applymovement(OBJ_EVENT_ID_PLAYER, exlamationmovement)
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	msgbox(format("Ah, I see... You must be the last student! Come over here-you're just in time. We are about to begin the grand Tournament of Knowledge and Battle! The winner gets a mysterie egg!"), MSGBOX_AUTOCLOSE)
+	applymovement(7, oldpapygoesback)
+	waitmovement(7)
+	removeobject(7)
+	setvar(VAR_ROUTE107_STATE, 2)
+	releaseall
+	end
+}
+
+
+script pourlavar {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 1)
+	setvar(VAR_EACH_TRAINER, 1)
+	releaseall
+	end
+	
+}
+script pourlavar1 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 2)
+	setvar(VAR_EACH_TRAINER, 1)
+	releaseall
+	end
+}
+script pourlavar2 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 3)
+	setvar(VAR_EACH_TRAINER, 1)
+	releaseall
+	end
+}
+script pourlavar3 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 4)
+	setvar(VAR_EACH_TRAINER, 1)
+	releaseall
+	end
+}
+script pourlavar4 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 5)
+	setvar(VAR_EACH_TRAINER, 1)
+	releaseall
+	end
+}
+script pourlavar5 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 6)
+	setvar(VAR_EACH_TRAINER, 1)
+	setvar(VAR_ROUTE107_STATE, 3)
+	releaseall
+	end
+}
+// limit
+script pourlavardeuxiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 1)
+	setvar(VAR_NEW1, 1)
+	releaseall
+	end
+}
+script pourlavar1deuxiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 2)
+	setvar(VAR_NEW1, 1)
+	releaseall
+	end
+}
+script pourlavar2deuxiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 3)
+	setvar(VAR_NEW1, 1)
+	releaseall
+	end
+}
+script pourlavar3deuxiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 4)
+	setvar(VAR_NEW1, 1)
+	releaseall
+	end
+}
+script pourlavar4deuxiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 5)
+	setvar(VAR_NEW1, 1)
+	releaseall
+	end
+}
+script pourlavar5deuxiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 6)
+	setvar(VAR_NEW1, 1)
+	setvar(VAR_ROUTE107_STATE, 3)
+	releaseall
+	end
+}
+// limit
+
+
+script pourlavartroisiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 1)
+	setvar(VAR_ROUTE111_STATE, 1)
+	releaseall
+	end
+}
+script pourlavartroisiemecombat1 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 2)
+	setvar(VAR_ROUTE111_STATE, 1)
+	releaseall
+	end
+}
+script pourlavartroisiemecombat2 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 3)
+	setvar(VAR_ROUTE111_STATE, 1)
+	releaseall
+	end
+}
+script pourlavartroisiemecombat3 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 4)
+	setvar(VAR_ROUTE111_STATE, 1)
+	releaseall
+	end
+}
+script pourlavartroisiemecombat4 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 5)
+	setvar(VAR_ROUTE111_STATE, 1)
+	releaseall
+	end
+}
+script pourlavartroisiemecombat5 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 6)
+	setvar(VAR_ROUTE111_STATE, 1)
+	setvar(VAR_ROUTE107_STATE, 3)
+	releaseall
+	end
+}
+// LIMIT
+script pourlavarquatriemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 1)
+	setvar(VAR_ROUTE112_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarquatriemecombat1 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 2)
+	setvar(VAR_ROUTE112_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarquatriemecombat2 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 3)
+	setvar(VAR_ROUTE112_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarquatriemecombat3 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 4)
+	setvar(VAR_ROUTE112_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarquatriemecombat4 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 5)
+	setvar(VAR_ROUTE112_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarquatriemecombat5 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 6)
+	setvar(VAR_ROUTE112_STATE, 1)
+	setvar(VAR_ROUTE107_STATE, 3)
+	releaseall
+	end
+}
+// LIMIT
+script pourlavarcinquiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 1)
+	setvar(VAR_ROUTE113_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarcinquiemecombat1 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 2)
+	setvar(VAR_ROUTE113_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarcinquiemecombat2 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 3)
+	setvar(VAR_ROUTE113_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarcinquiemecombat3 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 4)
+	setvar(VAR_ROUTE113_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarcinquiemecombat4 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 5)
+	setvar(VAR_ROUTE113_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarcinquiemecombat5 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 6)
+	setvar(VAR_ROUTE113_STATE, 1)
+	setvar(VAR_ROUTE107_STATE, 3)
+	releaseall
+	end
+}
+// LIMIT
+script pourlavarsixiemecombat {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 1)
+	setvar(VAR_ROUTE114_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarsixiemecombat1 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 2)
+	setvar(VAR_ROUTE114_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarsixiemecombat2 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 3)
+	setvar(VAR_ROUTE114_STATE, 1)
+	releaseall
+	end
+}
+
+script pourlavarsixiemecombat3 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 4)
+	setvar(VAR_ROUTE114_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarsixiemecombat4 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 5)
+	setvar(VAR_ROUTE114_STATE, 1)
+	releaseall
+	end
+}
+script pourlavarsixiemecombat5 {
+	lockall
+	setvar(VAR_SCHOOL_TOURNAMENT, 6)
+	setvar(VAR_ROUTE114_STATE, 1)
+	setvar(VAR_ROUTE107_STATE, 3)
+	releaseall
+	end
+}
+// LIMIT
+script KID6TOURNEMENTBattle1 {
+	trainerbattle_single(KID1TOURNEMENT5, kid1intro1, kid1outro1, pourlavarsixiemecombat)
+	
+}
+script KID6TOURNEMENTBattle2 {
+	trainerbattle_single(KID1TOURNEMENT5, kid1intro2, kid1outro2, pourlavarsixiemecombat1)
+	
+}
+script KID6TOURNEMENTBattle3 {
+	trainerbattle_single(KID1TOURNEMENT5, kid1intro3, kid1outro3, pourlavarsixiemecombat2)
+	
+}
+script KID6TOURNEMENTBattle4 {
+	trainerbattle_single(KID1TOURNEMENT5, kid1intro4, kid1outro4, pourlavarsixiemecombat3)
+	
+}
+script KID6TOURNEMENTBattle5 {
+	trainerbattle_single(KID1TOURNEMENT5, kid1intro5, kid1outro5, pourlavarsixiemecombat4)
+	
+}script KID6TOURNEMENTBattle6 {
+	trainerbattle_single(KID1TOURNEMENT5, kid1intro6, kid1outro6, pourlavarsixiemecombat5)
+	
+}
+// LIMIT
+script KID5TOURNEMENTBattle1 {
+	trainerbattle_single(KID1TOURNEMENT4, kid1intro1, kid1outro1, pourlavarcinquiemecombat)
+	
+}
+script KID5TOURNEMENTBattle2 {
+	trainerbattle_single(KID1TOURNEMENT4, kid1intro2, kid1outro2, pourlavarcinquiemecombat1)
+	
+}
+script KID5TOURNEMENTBattle3 {
+	trainerbattle_single(KID1TOURNEMENT4, kid1intro3, kid1outro3, pourlavarcinquiemecombat2)
+	
+}
+script KID5TOURNEMENTBattle4 {
+	trainerbattle_single(KID1TOURNEMENT4, kid1intro4, kid1outro4, pourlavarcinquiemecombat3)
+	
+}
+script KID5TOURNEMENTBattle5 {
+	trainerbattle_single(KID1TOURNEMENT4, kid1intro5, kid1outro5, pourlavarcinquiemecombat4)
+	
+}script KID5TOURNEMENTBattle6 {
+	trainerbattle_single(KID1TOURNEMENT4, kid1intro6, kid1outro6, pourlavarcinquiemecombat5)
+	
+}
+// LIMIT
+script KID4TOURNEMENTBattle1 {
+	trainerbattle_single(KID1TOURNEMENT3, kid1intro1, kid1outro1, pourlavarquatriemecombat)
+	
+}
+script KID4TOURNEMENTBattle2 {
+	trainerbattle_single(KID1TOURNEMENT3, kid1intro2, kid1outro2, pourlavarquatriemecombat1)
+	
+}
+script KID4TOURNEMENTBattle3 {
+	trainerbattle_single(KID1TOURNEMENT3, kid1intro3, kid1outro3, pourlavarquatriemecombat2)
+	
+}
+script KID4TOURNEMENTBattle4 {
+	trainerbattle_single(KID1TOURNEMENT3, kid1intro4, kid1outro4, pourlavarquatriemecombat3)
+	
+}
+script KID4TOURNEMENTBattle5 {
+	trainerbattle_single(KID1TOURNEMENT3, kid1intro5, kid1outro5, pourlavarquatriemecombat4)
+	
+}script KID4TOURNEMENTBattle6 {
+	trainerbattle_single(KID1TOURNEMENT3, kid1intro6, kid1outro6, pourlavarquatriemecombat5)
+	
+}
+// LIMIT
+script KID3TOURNEMENTBattle1 {
+	trainerbattle_single(KID1TOURNEMENT2, kid1intro1, kid1outro1, pourlavartroisiemecombat)
+	
+}
+script KID3TOURNEMENTBattle2 {
+	trainerbattle_single(KID1TOURNEMENT2, kid1intro2, kid1outro2, pourlavartroisiemecombat1)
+	
+}
+script KID3TOURNEMENTBattle3 {
+	trainerbattle_single(KID1TOURNEMENT2, kid1intro3, kid1outro3, pourlavartroisiemecombat2)
+	
+}
+script KID3TOURNEMENTBattle4 {
+	trainerbattle_single(KID1TOURNEMENT2, kid1intro4, kid1outro4, pourlavartroisiemecombat3)
+	
+}
+script KID3TOURNEMENTBattle5 {
+	trainerbattle_single(KID1TOURNEMENT2, kid1intro5, kid1outro5, pourlavartroisiemecombat4)
+	
+}script KID3TOURNEMENTBattle6 {
+	trainerbattle_single(KID1TOURNEMENT2, kid1intro6, kid1outro6, pourlavartroisiemecombat5)
+	
+}
+// limit
+
+script KID2TOURNEMENTBattle1 {
+	trainerbattle_single(KID1TOURNEMENT1, kid1intro1, kid1outro1, pourlavardeuxiemecombat)
+	
+}
+script KID2TOURNEMENTBattle2 {
+	trainerbattle_single(KID1TOURNEMENT1, kid1intro2, kid1outro2, pourlavar1deuxiemecombat)
+	
+}
+script KID2TOURNEMENTBattle3 {
+	trainerbattle_single(KID1TOURNEMENT1, kid1intro3, kid1outro3, pourlavar2deuxiemecombat)
+	
+}
+script KID2TOURNEMENTBattle4 {
+	trainerbattle_single(KID1TOURNEMENT1, kid1intro4, kid1outro4, pourlavar3deuxiemecombat)
+	
+}
+script KID2TOURNEMENTBattle5 {
+	trainerbattle_single(KID1TOURNEMENT1, kid1intro5, kid1outro5, pourlavar4deuxiemecombat)
+	
+}script KID2TOURNEMENTBattle6 {
+	trainerbattle_single(KID1TOURNEMENT1, kid1intro6, kid1outro6, pourlavar5deuxiemecombat)
+	
+}
+//
+
+script KID1TOURNEMENTBattle1 {
+	trainerbattle_single(KID1TOURNEMENT, kid1intro1, kid1outro1, pourlavar)
+	
+}
+script KID1TOURNEMENTBattle2 {
+	trainerbattle_single(KID1TOURNEMENT, kid1intro2, kid1outro2, pourlavar1)
+	
+}
+script KID1TOURNEMENTBattle3 {
+	trainerbattle_single(KID1TOURNEMENT, kid1intro3, kid1outro3, pourlavar2)
+	
+}
+script KID1TOURNEMENTBattle4 {
+	trainerbattle_single(KID1TOURNEMENT, kid1intro4, kid1outro4, pourlavar3)
+	
+}
+script KID1TOURNEMENTBattle5 {
+	trainerbattle_single(KID1TOURNEMENT, kid1intro5, kid1outro5, pourlavar4)
+	
+}script KID1TOURNEMENTBattle6 {
+	trainerbattle_single(KID1TOURNEMENT, kid1intro6, kid1outro6, pourlavar5)
+	
+}
+
+text kid1intro1 {
+	format("Hah! I’ll be the first to win this tournament. Prepare to be defeated!")
+	
+}
+text kid1outro1 {
+	format("This can’t be… I’ll get you next time!")
+	
+}
+text kid1intro2 {
+	format("You survived the first round, but can you handle a real challenge? Let’s put your skills to the test!")
+	
+}
+text kid1outro2 {
+	format("Not bad. You outplayed me this time… but don’t get overconfident!")
+	
+}
+text kid1intro3 {
+	format("Only the strongest remain… I won’t let my journey end here!")
+	
+}
+text kid1outro3 {
+	format("I fought with everything I had… You really are something else.")
+	
+}
+text kid1intro4 {
+	format("I knew we’d face off eventually. This is where things get serious!")
+	
+}
+text kid1outro4 {
+	format("I was so close… but you deserved this win. Go take the title!")
+	
+}
+text kid1intro5 {
+	format("You’ve proven yourself, but the final battle is where true champions are made!")
+	
+}
+text kid1outro5 {
+	format("I can’t believe it… You really did it. The tournament has a new champion!")
+	
+}
+text kid1intro6 {
+	format("You’ve overcome every challenge… Now, accept your title with pride!")
+	
+}
+text kid1outro6 {
+	format("This victory will be remembered in Academy history. Well done, Champion!")
+	
+}
+
+script KID1TOURNEMENTQUIZ {
+    if(var(VAR_EACH_TRAINER) == 0){
+
+	if(var(VAR_SCHOOL_TOURNAMENT) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Hah! I will be the first to win this tournament! I've studied every type, every move… You don’t stand a chance against me! Get ready for an unforgettable lesson!"), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Pikachu is an Electric-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID1TOURNEMENTBattle1)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Hmm… You managed to pass the first round? Interesting. But the real challenge starts now. A great Trainer doesn’t rely only on strength but also on strategy! Let’s see if you’re up to the task."), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+        msgbox(format("Can a Pokémon have more than two active status conditions at the same time? Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID1TOURNEMENTBattle2)
+
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You’re stronger than I thought... But I can’t give up now! If I lose, how can I prove that all my training was worth it? Alright, I’ll give it my all!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Water-type Pokémon can be burned by a Fire-type move. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID1TOURNEMENTBattle3)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 3){
+		lockall
+		faceplayer
+		msgbox(format("We finally meet… I knew you would make it this far. But I’ve also given everything to reach this moment! This battle will decide who truly deserves a spot in the final. Don’t hold back!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("The ability Intimidate lowers the opponent’s Special Attack. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID1TOURNEMENTBattle4)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 4){
+		lockall
+		faceplayer
+		msgbox(format("Impressive. Very impressive. Few students make it this far… But I am the best for a reason. This tournament is not just about strength, but also knowledge and mastery. Are you ready to face the Academy’s greatest challenge?"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Pokémon can have more than four moves in battle. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID1TOURNEMENTBattle5)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 5){
+		lockall
+		faceplayer
+		msgbox(format("Incredible! You have proven yourself not only as an outstanding Trainer but also as a true Pokémon scholar. On behalf of the entire Academy, I congratulate you. Here is your reward, Champion of the Tournament of Knowledge and Battle!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("Charizard is a Dragon-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID1TOURNEMENTBattle6)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	    
+	}
+	
+}
+else{
+	lockall
+	msgbox(format("I already lost, their more participants!"))
+}
+  
+}
+script KID1TOURNEMENT1QUIZ {
+	 if(var(VAR_NEW1) == 0){
+	
+	if(var(VAR_SCHOOL_TOURNAMENT) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Hah! I will be the first to win this tournament! I've studied every type, every move… You don’t stand a chance against me! Get ready for an unforgettable lesson!"), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Pikachu is an Electric-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID2TOURNEMENTBattle1)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Hmm… You managed to pass the first round? Interesting. But the real challenge starts now. A great Trainer doesn’t rely only on strength but also on strategy! Let’s see if you’re up to the task."), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+        msgbox(format("Can a Pokémon have more than two active status conditions at the same time? Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID2TOURNEMENTBattle2)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You’re stronger than I thought... But I can’t give up now! If I lose, how can I prove that all my training was worth it? Alright, I’ll give it my all!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Water-type Pokémon can be burned by a Fire-type move. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID2TOURNEMENTBattle3)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 3){
+		lockall
+		faceplayer
+		msgbox(format("We finally meet… I knew you would make it this far. But I’ve also given everything to reach this moment! This battle will decide who truly deserves a spot in the final. Don’t hold back!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("The ability Intimidate lowers the opponent’s Special Attack. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID2TOURNEMENTBattle4)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 4){
+		lockall
+		faceplayer
+		msgbox(format("Impressive. Very impressive. Few students make it this far… But I am the best for a reason. This tournament is not just about strength, but also knowledge and mastery. Are you ready to face the Academy’s greatest challenge?"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Pokémon can have more than four moves in battle. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID2TOURNEMENTBattle5)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 5){
+		lockall
+		faceplayer
+		msgbox(format("Incredible! You have proven yourself not only as an outstanding Trainer but also as a true Pokémon scholar. On behalf of the entire Academy, I congratulate you. Here is your reward, Champion of the Tournament of Knowledge and Battle!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("Charizard is a Dragon-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID2TOURNEMENTBattle6)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	    
+	}
+	 }
+
+	else{
+		lockall
+		msgbox(format("I already lost, their more participants!"), MSGBOX_AUTOCLOSE)
+		releaseall
+	}
+	
+
+}
+
+script KID1TOURNEMENT2QUIZ {
+	if(var(VAR_ROUTE111_STATE) == 0){
+
+	if(var(VAR_SCHOOL_TOURNAMENT) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Hah! I will be the first to win this tournament! I've studied every type, every move… You don’t stand a chance against me! Get ready for an unforgettable lesson!"), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Pikachu is an Electric-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID3TOURNEMENTBattle1)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Hmm… You managed to pass the first round? Interesting. But the real challenge starts now. A great Trainer doesn’t rely only on strength but also on strategy! Let’s see if you’re up to the task."), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+        msgbox(format("Can a Pokémon have more than two active status conditions at the same time? Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID3TOURNEMENTBattle2)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You’re stronger than I thought... But I can’t give up now! If I lose, how can I prove that all my training was worth it? Alright, I’ll give it my all!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Water-type Pokémon can be burned by a Fire-type move. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID3TOURNEMENTBattle3)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 3){
+		lockall
+		faceplayer
+		msgbox(format("We finally meet… I knew you would make it this far. But I’ve also given everything to reach this moment! This battle will decide who truly deserves a spot in the final. Don’t hold back!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("The ability Intimidate lowers the opponent’s Special Attack. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID3TOURNEMENTBattle4)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 4){
+		lockall
+		faceplayer
+		msgbox(format("Impressive. Very impressive. Few students make it this far… But I am the best for a reason. This tournament is not just about strength, but also knowledge and mastery. Are you ready to face the Academy’s greatest challenge?"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Pokémon can have more than four moves in battle. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID3TOURNEMENTBattle5)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 5){
+		lockall
+		faceplayer
+		msgbox(format("Incredible! You have proven yourself not only as an outstanding Trainer but also as a true Pokémon scholar. On behalf of the entire Academy, I congratulate you. Here is your reward, Champion of the Tournament of Knowledge and Battle!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("Charizard is a Dragon-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID3TOURNEMENTBattle6)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	    
+	}
+	
+}
+
+ else{
+	lockall
+	msgbox(format("I already lost, their more participants!"), MSGBOX_AUTOCLOSE)
+ }
+
+}
+script KID1TOURNEMENT3QUIZ {
+
+	  if(var(VAR_ROUTE112_STATE) == 0){
+	if(var(VAR_SCHOOL_TOURNAMENT) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Hah! I will be the first to win this tournament! I've studied every type, every move… You don’t stand a chance against me! Get ready for an unforgettable lesson!"), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Pikachu is an Electric-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			lockall
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID4TOURNEMENTBattle1)
+		}
+		if(var(VAR_RESULT) == NO){
+			lockall
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Hmm… You managed to pass the first round? Interesting. But the real challenge starts now. A great Trainer doesn’t rely only on strength but also on strategy! Let’s see if you’re up to the task."), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+        msgbox(format("Can a Pokémon have more than two active status conditions at the same time? Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID4TOURNEMENTBattle2)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You’re stronger than I thought... But I can’t give up now! If I lose, how can I prove that all my training was worth it? Alright, I’ll give it my all!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Water-type Pokémon can be burned by a Fire-type move. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID4TOURNEMENTBattle3)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 3){
+		lockall
+		faceplayer
+		msgbox(format("We finally meet… I knew you would make it this far. But I’ve also given everything to reach this moment! This battle will decide who truly deserves a spot in the final. Don’t hold back!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("The ability Intimidate lowers the opponent’s Special Attack. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID4TOURNEMENTBattle4)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 4){
+		lockall
+		faceplayer
+		msgbox(format("Impressive. Very impressive. Few students make it this far… But I am the best for a reason. This tournament is not just about strength, but also knowledge and mastery. Are you ready to face the Academy’s greatest challenge?"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Pokémon can have more than four moves in battle. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID4TOURNEMENTBattle5)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 5){
+		lockall
+		faceplayer
+		msgbox(format("Incredible! You have proven yourself not only as an outstanding Trainer but also as a true Pokémon scholar. On behalf of the entire Academy, I congratulate you. Here is your reward, Champion of the Tournament of Knowledge and Battle!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("Charizard is a Dragon-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID4TOURNEMENTBattle6)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	    
+	
+}
+}
+
+else{
+	lockall
+	msgbox(format("I already lost, their more participants!"), MSGBOX_AUTOCLOSE)
+}
+
+
+}
+
+
+script KID1TOURNEMENT4QUIZ {
+	if(var(VAR_ROUTE113_STATE) == 0){
+	if(var(VAR_SCHOOL_TOURNAMENT) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Hah! I will be the first to win this tournament! I've studied every type, every move… You don’t stand a chance against me! Get ready for an unforgettable lesson!"), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Pikachu is an Electric-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID5TOURNEMENTBattle1)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Hmm… You managed to pass the first round? Interesting. But the real challenge starts now. A great Trainer doesn’t rely only on strength but also on strategy! Let’s see if you’re up to the task."), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+        msgbox(format("Can a Pokémon have more than two active status conditions at the same time? Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID5TOURNEMENTBattle2)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You’re stronger than I thought... But I can’t give up now! If I lose, how can I prove that all my training was worth it? Alright, I’ll give it my all!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Water-type Pokémon can be burned by a Fire-type move. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID5TOURNEMENTBattle3)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 3){
+		lockall
+		faceplayer
+		msgbox(format("We finally meet… I knew you would make it this far. But I’ve also given everything to reach this moment! This battle will decide who truly deserves a spot in the final. Don’t hold back!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("The ability Intimidate lowers the opponent’s Special Attack. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID5TOURNEMENTBattle4)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 4){
+		lockall
+		faceplayer
+		msgbox(format("Impressive. Very impressive. Few students make it this far… But I am the best for a reason. This tournament is not just about strength, but also knowledge and mastery. Are you ready to face the Academy’s greatest challenge?"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Pokémon can have more than four moves in battle. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID5TOURNEMENTBattle5)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 5){
+		lockall
+		faceplayer
+		msgbox(format("Incredible! You have proven yourself not only as an outstanding Trainer but also as a true Pokémon scholar. On behalf of the entire Academy, I congratulate you. Here is your reward, Champion of the Tournament of Knowledge and Battle!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("Charizard is a Dragon-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID5TOURNEMENTBattle6)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	    
+	}
+	
+}
+else{
+	lockall
+	msgbox(format("I already lost, their more participants!"), MSGBOX_AUTOCLOSE)
+}
+
+}
+
+
+script KID1TOURNEMENT5QUIZZ {
+	if(var(VAR_ROUTE114_STATE) == 0){
+	if(var(VAR_SCHOOL_TOURNAMENT) == 0){
+		lockall
+		faceplayer
+		msgbox(format("Hah! I will be the first to win this tournament! I've studied every type, every move… You don’t stand a chance against me! Get ready for an unforgettable lesson!"), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Pikachu is an Electric-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID6TOURNEMENTBattle1)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 1){
+		lockall
+		faceplayer
+		msgbox(format("Hmm… You managed to pass the first round? Interesting. But the real challenge starts now. A great Trainer doesn’t rely only on strength but also on strategy! Let’s see if you’re up to the task."), MSGBOX_AUTOCLOSE)
+	    msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+        msgbox(format("Can a Pokémon have more than two active status conditions at the same time? Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID6TOURNEMENTBattle2)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You’re stronger than I thought... But I can’t give up now! If I lose, how can I prove that all my training was worth it? Alright, I’ll give it my all!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Water-type Pokémon can be burned by a Fire-type move. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID6TOURNEMENTBattle3)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 3){
+		lockall
+		faceplayer
+		msgbox(format("We finally meet… I knew you would make it this far. But I’ve also given everything to reach this moment! This battle will decide who truly deserves a spot in the final. Don’t hold back!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("The ability Intimidate lowers the opponent’s Special Attack. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID6TOURNEMENTBattle4)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 4){
+		lockall
+		faceplayer
+		msgbox(format("Impressive. Very impressive. Few students make it this far… But I am the best for a reason. This tournament is not just about strength, but also knowledge and mastery. Are you ready to face the Academy’s greatest challenge?"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("A Pokémon can have more than four moves in battle. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID6TOURNEMENTBattle5)
+		}
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	}
+	if(var(VAR_SCHOOL_TOURNAMENT) == 5){
+		lockall
+		faceplayer
+		msgbox(format("Incredible! You have proven yourself not only as an outstanding Trainer but also as a true Pokémon scholar. On behalf of the entire Academy, I congratulate you. Here is your reward, Champion of the Tournament of Knowledge and Battle!"), MSGBOX_AUTOCLOSE)
+		msgbox(format("Quiz Time!"), MSGBOX_AUTOCLOSE)
+		 msgbox(format("Charizard is a Dragon-type Pokémon. Yes or No?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			msgbox(format("Well done! Now let's fight!"), MSGBOX_AUTOCLOSE)
+			call(KID6TOURNEMENTBattle6)
+		}
+		if(var(VAR_RESULT) == NO){
+			msgbox(format("That's not right try again."), MSGBOX_AUTOCLOSE)
+			releaseall
+		}
+	    
+	}
+	
+}
+else{
+	lockall
+	msgbox(format("I already lost, their more participants!"), MSGBOX_AUTOCLOSE)
+}
+}
+movement oldpapygoesback {
+	walk_left * 3
+	walk_up * 2
+	
+}
+
+
+
+script OldTeacherBattleCount {
+	if(var(VAR_ROUTE107_STATE) == 1){
+	lockall
+	faceplayer
+	msgbox(format("The first one to beat every participant and winning all quiz will earn a mysterige egg!"), MSGBOX_AUTOCLOSE)
+	setvar(VAR_ROUTE107_STATE, 2)
+	releaseall
+	end
+} 
+      if(var(VAR_ROUTE107_STATE) == 2){
+		lockall
+		faceplayer
+		msgbox(format("You are not there yet, good luck!"), MSGBOX_AUTOCLOSE)
+		releaseall
+	  }
+
+	  if(var(VAR_ROUTE107_STATE) == 3){
+		lockall
+		faceplayer
+		msgbox(format("Congarts, here!"), MSGBOX_AUTOCLOSE)
+		random(5)
+		if(var(VAR_RESULT) == 1){
+			giveegg(SPECIES_RIOLU)
+		if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You received an egg!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+		}
+
+		elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+			lockall
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("The egg has been sent to your pc!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+	  }
+
+		}
+		if(var(VAR_RESULT) == 2){
+			giveegg(SPECIES_MAGBY)
+		if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You received an egg!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+		}
+
+		elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+			lockall
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("The egg has been sent to your pc!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+	  }
+
+		
+   
+}
+if(var(VAR_RESULT) == 3){
+			giveegg(SPECIES_ELEKID)
+		if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You received an egg!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+		}
+
+		elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+			lockall
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("The egg has been sent to your pc!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+	  }
+
+		
+   
+}
+
+if(var(VAR_RESULT) == 4){
+			giveegg(SPECIES_TOGEPI)
+		if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You received an egg!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+		}
+
+		elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+			lockall
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You party is full!"))
+			msgbox(format("The egg has been sent to your pc!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+	  }
+
+		
+   
+}
+
+if(var(VAR_RESULT) == 5){
+			giveegg(SPECIES_PICHU)
+		if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You received an egg!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+		}
+
+		elif (var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+			lockall
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox(format("You party is full!"))
+			msgbox(format("The egg has been sent to your pc!"), MSGBOX_AUTOCLOSE)
+			setvar(VAR_ROUTE107_STATE, 4)
+			releaseall
+			end
+	  }
+
+		
+   
+}
+
+}
+  if(var(VAR_ROUTE107_STATE) == 4){
+	lockall
+	msgbox(format("I couldn't be happier to hand over an egg to such a promising student!"), MSGBOX_AUTOCLOSE)
+	releaseall
+  }
+   
+}
+movement exlamationmovementwalkup {
+	walk_up
+	
+}
+
+script HisuanFormsSwap{
+	lockall
+	msgbox(format("I've been studying Pokémon from the Hisui region and discovered a way to restore certain Pokémon to their ancient forms. If you have a compatible Pokémon, I can awaken its Hisuian lineage! Would you like to try?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+	
+	checkspecies(SPECIES_GROWLITHE)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Growlithe! He will now be fire and rock type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_GrowlithTrade)
+	}
+	checkspecies(SPECIES_ARCANINE)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Arcanine! He will now be fire and rock type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_ArcanineTrade)
+	}
+	checkspecies(SPECIES_VOLTORB)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Voltorb! He will now be Electric and Grass type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_VoltorbTrade)
+	}
+	checkspecies(SPECIES_ELECTRODE)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Electrode! He will now be Electric and Grass type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_ElectrodeTrade)
+	}
+	checkspecies(SPECIES_QWILFISH)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Qwilfish! He will now be Dark and Poison type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_QwilfishTrade)
+	}
+	checkspecies(SPECIES_TYPHLOSION)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Typhlosion! He will now be Fire and Ghost type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_TyphlosionTrade)
+	}
+		checkspecies(SPECIES_SNEASEL)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Sneasel! He will now be Fight and Poison type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_SneaselTrade)
+	}
+		checkspecies(SPECIES_SAMUROTT)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Samurott! He will now be Water and Dark type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_SamurottTrade)
+	}
+		checkspecies(SPECIES_LILLIGANT)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Lilligant! He will now be Grass and Fight type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_LilligantTrade)
+	}
+		checkspecies(SPECIES_ZORUA)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Zorua! He will now be Normal and Ghost type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_ZoruaTrade)
+	}
+		checkspecies(SPECIES_ZOROARK)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Zoroark! He will now be Normal and Ghost type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_ZoroarkTrade)
+	}
+			checkspecies(SPECIES_BRAVIARY)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Braviary! He will now be Psychic and Flying type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_BraviaryTrade)
+	}
+			checkspecies(SPECIES_SLIGGOO)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Sliggo! He will now be Steel and Dragon type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_SliggooTrade)
+	}
+			checkspecies(SPECIES_GOODRA)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Goodra! He will now be Steel and Dragon type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_GoodraTrade)
+	}
+				checkspecies(SPECIES_AVALUGG)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Avalugg! He will now be Ice and Rock type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_AvaluggTrade)
+	}
+
+			checkspecies(SPECIES_DECIDUEYE)
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Oh, that's a Decidueye! He will now be Grass and Fight type"), MSGBOX_AUTOCLOSE)
+		call(TundraWood_House1_DecidueyeTrade)
+	}
+
+
+	 else{
+		msgbox(format("Sorry, but you don't have any Requested Pokemon."), MSGBOX_AUTOCLOSE)
+	}
+	}
+	
+
+
+
+    else{
+		msgbox(format("If you change your mind, feel free to come back anytime!"), MSGBOX_AUTOCLOSE)
+	}
+}
+
+
+raw `
+TundraWood_House1_GrowlithTrade::
+
+    lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_GROWLITH
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_ArcanineTrade::
+
+    lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_ARCANINE
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_VoltorbTrade::
+
+    lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_VOLTORB
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+		
+	TundraWood_House1_ElectrodeTrade::
+    
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_ELECTRODE
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+	
+	TundraWood_House1_TyphlosionTrade::
+    lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_TYPHLOSION
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+	
+	TundraWood_House1_QwilfishTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_QWILFISH
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_SneaselTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_SNEASEL
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_SamurottTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_SAMUROTT
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_LilligantTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_LILIGANT
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_ZoruaTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_ZORUA
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_ZoroarkTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_ZOROARK
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_BraviaryTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_BRAVIARY
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_SliggooTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_SLIGGOO
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_GoodraTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_GOODRA
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_AvaluggTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_AVALUGG
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+
+	TundraWood_House1_DecidueyeTrade::
+	lock
+	faceplayer
+	setvar VAR_0x8008, INGAME_TRADE_DECIDUEYE
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LittlerootTown_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	specialvar VAR_RESULT, GetTradeSpecies 
+	goto_if_ne VAR_RESULT, VAR_0x8009, LittlerootTown_EventScript_NotRequestedMon 
+	copyvar VAR_0x8004, VAR_0x8008
+	special CreateInGameTradePokemon 
+	special DoInGameTradeScene 
+	waitstate
+	release
+	end
+ 
+LittlerootTown_DeclineTrade::
+	msgbox LittlerootTown_DeclineTrade_Text, MSGBOX_DEFAULT
+	release
+	end
+ 
+LittlerootTown_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox LittlerootTown_WrongMon_Text, MSGBOX_DEFAULT
+	release
+	end
+ 
+LittlerootTown_EventScript_TradeCompleted::
+	msgbox LittlerootTown_EventScript_TradeCompleted_Text, MSGBOX_DEFAULT
+	release
+	end
+ 
+LittlerootTown_EventScript_TradeCompleted_Text::
+	.string "Thanks for trading with me!$"
+ 
+LittlerootTown_Text_WillingToTradeIt::
+	.string "Check out this {STR_VAR_2}!\n"
+	.string "Oh, I can see that you want it!\p"
+	.string "I'll tell you what. I might be willing\n"
+	.string "to trade it for a {STR_VAR_1}.$"
+ 
+LittlerootTown_DeclineTrade_Text::
+	.string "Thats too bad, maybe next time.$"
+ 
+LittlerootTown_WrongMon_Text::
+	.string "I'm sorry but that is not\n"
+	.string "a {STR_VAR_1}, I cannot trade with you.$"
+ 
+
+
+
+
+

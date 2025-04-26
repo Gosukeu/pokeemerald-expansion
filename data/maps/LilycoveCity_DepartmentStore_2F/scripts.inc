@@ -27,7 +27,6 @@ LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
 LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_ANTIDOTE
@@ -35,7 +34,6 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_FLUFFY_TAIL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
@@ -58,8 +56,6 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	.2byte ITEM_REPEL
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_WAVE_MAIL
-	.2byte ITEM_MECH_MAIL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:

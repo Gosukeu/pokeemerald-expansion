@@ -1,0 +1,217 @@
+raw `
+Rival_House_MapScripts::
+	.byte 0
+
+`
+
+
+
+
+
+
+
+script Trigger{
+    if(var(VAR_CHECK_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, RIVALGIRL)
+    goto_if_eq(VAR_RESULT, FEMALE, RIVALBOY)
+}
+else{
+
+}
+}
+script Trigger1{
+     if(var(VAR_CHECK_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, RIVALGIRLspecial)
+    goto_if_eq(VAR_RESULT, FEMALE, RIVALBOYspecial)
+}
+else{
+
+}
+}
+script Trigger2{
+     if(var(VAR_CHECK_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, RIVALGIRL1)
+    goto_if_eq(VAR_RESULT, FEMALE, RIVALBOY1)
+}
+else{
+
+}
+}
+script Trigger3{
+     if(var(VAR_CHECK_RIVAL) == 0){
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, RIVALGIRL2)
+    goto_if_eq(VAR_RESULT, FEMALE, RIVALBOY2)
+}
+else{
+
+}
+}
+script RIVALGIRL {
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom)
+    waitmovement(1)
+    msgbox(format("Luna already left the island, go quickly take the boat.{PLAYER} please watch on Luna , she is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+}
+
+   script RIVALBOY {
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom)
+    waitmovement(1)
+    msgbox(format("Rival already left the island, go quickly take the boat.{PLAYER} please watch on Rival , he is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+    
+ }
+
+ script RIVALGIRLspecial {
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom1)
+    waitmovement(1)
+    msgbox(format("Luna already left the island, go quickly take the boat.{PLAYER} please watch on Luna , she is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back1)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+}
+
+   script RIVALBOYspecial {
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom1)
+    waitmovement(1)
+    msgbox(format("Rival already left the island, go quickly take the boat.{PLAYER} please watch on Rival , he is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back1)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+    
+ }
+ 
+
+movement Greeting_Rival_Mom1 {
+    walk_left * 6
+    walk_down * 3
+    
+}
+
+movement Rival_Mom_Goes_Back1 {
+    walk_up * 3
+    walk_right * 6
+    face_up
+    
+}
+
+movement Greeting_Rival_Mom {
+    walk_left * 5
+    walk_down * 4
+    
+}
+
+
+movement Rival_Mom_Goes_Back {
+    walk_up * 4
+    walk_right *5
+    face_up
+    
+}
+
+
+script RIVALGIRL1 {
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom2)
+    waitmovement(1)
+    msgbox(format("Luna already left the island, go quickly take the boat.{PLAYER} please watch on Luna , she is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back2)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+}
+    script RIVALBOY1{
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom2)
+    waitmovement(1)
+    msgbox(format("Rival already left the island, go quickly take the boat.{PLAYER} please watch on Rival , he is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back2)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+    }
+
+movement Greeting_Rival_Mom2 {
+    walk_left * 7
+    walk_down * 3
+    
+}
+
+movement Rival_Mom_Goes_Back2 {
+    walk_up * 3
+    walk_right * 7
+    face_up
+    
+}
+
+
+script RIVALGIRL2 {
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom3)
+    waitmovement(1)
+    msgbox(format("Luna already left the island, go quickly take the boat.{PLAYER} please watch on Luna , she is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back3)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+}
+
+    script RIVALBOY2{
+    lockall
+    applymovement(1, Exlamation_Mark)
+    waitmovement(1)
+    applymovement(1, Greeting_Rival_Mom3)
+    waitmovement(1)
+    msgbox(format("Rival already left the island, go quickly take the boat.{PLAYER} please watch on Rival , he is experienced i have no doubt about it , but you guys are going to a unvisited world , take care and both of you need to comeback!"), MSGBOX_AUTOCLOSE)
+    applymovement(1, Rival_Mom_Goes_Back3)
+    waitmovement(1)
+    setvar(VAR_CHECK_RIVAL, 2)
+    releaseall
+}
+
+movement  Exlamation_Mark {
+    emote_exclamation_mark
+    
+}
+
+movement Greeting_Rival_Mom3 {
+    walk_left * 8
+    walk_down * 4
+    
+}
+
+movement Rival_Mom_Goes_Back3 {
+    walk_up * 4
+    walk_right * 8
+    face_up
+    
+}

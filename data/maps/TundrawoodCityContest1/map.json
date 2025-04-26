@@ -1,0 +1,390 @@
+{
+  "id": "MAP_TUNDRAWOOD_CITY_CONTEST1",
+  "name": "TundrawoodCityContest1",
+  "layout": "LAYOUT_TUNDRAWOOD_CITY_CONTEST1",
+  "music": "MUS_CONTEST_LOBBY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
+      "x": 25,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TRAINER3CONTESHALL",
+      "flag": "FLAG_UNUSED_0x49C"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 13,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TRAINER1CONTESHALL",
+      "flag": "FLAG_GRUNT_FEMALE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 37,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TRAINER2CONTESHALL",
+      "flag": "FLAG_GRUNT_MALE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 24,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ITEM_ROUTE_133_MAX_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 25,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 26,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ITEM_ROUTE_132_PROTEIN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 31,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_LOVE_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_CONTEST_HALL_LOVE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_LEVEL_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_LEVEL_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 1,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MOON_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MOON_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 24,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_UNUSED_0x49D"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 26,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_UNUSED_0x49E"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
+      "x": 25,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_UNUSED_0x49B"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 36,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "gruntcontesthall1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 14,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OTHERGRUNTCONTESHALL1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "gruntcontesthall2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 4,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "gruntcontesthall3",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 28,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "gruntcontesthall4",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 46,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "gruntcontesthall5",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_TUNDRAWOOD_CITY_CONTEST",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 20,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_TUNDRAWOOD_CITY_CONTEST",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 31,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_TUNDRAWOOD_CITY_CONTEST",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 30,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_TUNDRAWOOD_CITY_CONTEST",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "0",
+      "script": "TRIGGER1CONTESTFIGHT2"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "0",
+      "script": "TRIGGER1CONTESTFIGHT1"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "0",
+      "script": "TRIGGER1CONTESTFIGHT3"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "1",
+      "script": "TRIGGERDONTSCAPE"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "1",
+      "script": "TRIGGERDONTSCAPE"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "1",
+      "script": "TRIGGERDONTSCAPE"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_LEVEL",
+      "var_value": "1",
+      "script": "TRIGGERDONTSCAPE"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ASH_GATHER_COUNT",
+      "var_value": "1",
+      "script": "TRIGGERBOSSFINALFIGHT"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ASH_GATHER_COUNT",
+      "var_value": "1",
+      "script": "TRIGGERBOSSFINALFIGHT"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ASH_GATHER_COUNT",
+      "var_value": "1",
+      "script": "TRIGGERBOSSFINALFIGHT"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

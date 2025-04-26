@@ -1,6 +1,7 @@
 #include "global.h"
 #include "malloc.h"
 #include "bg.h"
+#include "bw_summary_screen.h"
 #include "data.h"
 #include "decompress.h"
 #include "dma3.h"
@@ -55,13 +56,13 @@
 // PC main menu options
 enum {
 #if OW_PC_MOVE_ORDER <= GEN_3
+    OPTION_MOVE_MONS,
     OPTION_WITHDRAW,
     OPTION_DEPOSIT,
-    OPTION_MOVE_MONS,
 #elif OW_PC_MOVE_ORDER >= GEN_4 && OW_PC_MOVE_ORDER <= GEN_6_XY
+    OPTION_MOVE_MONS,
     OPTION_DEPOSIT,
     OPTION_WITHDRAW,
-    OPTION_MOVE_MONS,
 #elif OW_PC_MOVE_ORDER >= GEN_7
     OPTION_MOVE_MONS,
     OPTION_DEPOSIT,
@@ -3746,9 +3747,19 @@ static void Task_ChangeScreen(u8 taskId)
         mode = sStorage->summaryScreenMode;
         FreePokeStorageData();
         if (mode == SUMMARY_MODE_NORMAL && boxMons == &sSavedMovingMon.box)
-            ShowPokemonSummaryScreenHandleDeoxys(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+        {
+            if (BW_SUMMARY_SCREEN)
+                ShowPokemonSummaryScreenHandleDeoxys_BW(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            else
+                ShowPokemonSummaryScreenHandleDeoxys(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+        }
         else
-            ShowPokemonSummaryScreen(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+        {            
+            if (BW_SUMMARY_SCREEN)
+                ShowPokemonSummaryScreen_BW(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            else
+                ShowPokemonSummaryScreen(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+        }
         break;
     case SCREEN_CHANGE_NAME_BOX:
         FreePokeStorageData();

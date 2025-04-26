@@ -1,0 +1,20 @@
+mapscripts  Poke_Center_EmberfallTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Poke_Center_EmberfallTown_OnTransition
+	MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+ 
+script Poke_Center_EmberfallTown_OnTransition {
+   	setrespawn(HEAL_LOCATION_EMBERFALL_TOWN)
+	end 
+}
+ 
+ 
+script Pokemart_Employee_Simple{
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+ 

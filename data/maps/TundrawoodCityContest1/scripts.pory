@@ -1,0 +1,443 @@
+raw `
+TundrawoodCityContest1_MapScripts::
+	.byte 0
+
+`
+
+script TRIGGER1CONTESTFIGHT {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Exlamation_Mark)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You!!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, ARCHIEDOWN)
+    waitmovement(13)
+    msgbox(format("I heard that you defeated some of my members, so I invite you to play my game. You see, the only way for you to leave this Contest Hall is to defeat two of my members located in the ring. If you manage to beat them, you'll earn the right to fight me. And if you manage to win all three battles, you will be allowed to leave the Contest Hall!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, bosstoring)
+    waitmovement(13)
+    removeobject(13)
+    applymovement(11,bosstoring)
+    waitmovement(11)
+    removeobject(11)
+    applymovement(13,bosstoring)
+    waitmovement(13)
+    removeobject(13)
+    clearflag(FLAG_UNUSED_0x49C)
+    clearflag(FLAG_GRUNT_FEMALE)
+    setvar(VAR_TRICK_HOUSE_LEVEL, 1)
+    releaseall
+}
+script TRIGGER1CONTESTFIGHT1 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Exlamation_Mark)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You!!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, ARCHIEDOWN1)
+    waitmovement(13)
+    msgbox(format("So, you've already taken down some of my members? Impressive. But if you want to leave this Contest Hall, you'll have to play my game.The rules are simple: Two of my members are waiting for you in the ring. Defeat them both, and you'll earn the right to face me. Only after winning all three battles will you be allowed to leave.But be warned, if you do not see my members in the ring, it means they have not lost their first fight yet. You will need to find and defeat them first before you can challenge the next one. There is no escape until you prove your strength!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, bosstoring)
+    waitmovement(13)
+    removeobject(13)
+    applymovement(11,bosstoring)
+    waitmovement(11)
+    removeobject(11)
+    applymovement(12,bosstoring)
+    waitmovement(12)
+    removeobject(12)
+    clearflag(FLAG_UNUSED_0x49C)
+    clearflag(FLAG_GRUNT_FEMALE)
+    setvar(VAR_TRICK_HOUSE_LEVEL, 1)
+    releaseall
+}
+script TRIGGER1CONTESTFIGHT2 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Exlamation_Mark)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You!!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, ARCHIEDOWN2)
+    waitmovement(13)
+    msgbox(format("So, you've already taken down some of my members? Impressive. But if you want to leave this Contest Hall, you'll have to play my game.The rules are simple: Two of my members are waiting for you in the ring. Defeat them both, and you'll earn the right to face me. Only after winning all three battles will you be allowed to leave.But be warned, if you do not see my members in the ring, it means they have not lost their first fight yet. You will need to find and defeat them first before you can challenge the next one. There is no escape until you prove your strength!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, bosstoring)
+    waitmovement(13)
+    removeobject(13)
+    applymovement(11,bosstoring)
+    waitmovement(11)
+    removeobject(11)
+    applymovement(12,bosstoring)
+    waitmovement(12)
+    removeobject(12)
+    clearflag(FLAG_UNUSED_0x49C)
+    clearflag(FLAG_GRUNT_FEMALE)
+    setvar(VAR_TRICK_HOUSE_LEVEL, 1)
+    releaseall
+}
+script TRIGGER1CONTESTFIGHT3 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Exlamation_Mark)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You!!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, ARCHIEDOWN3)
+    waitmovement(13)
+    msgbox(format("So, you've already taken down some of my members? Impressive. But if you want to leave this Contest Hall, you'll have to play my game.The rules are simple: Two of my members are waiting for you in the ring. Defeat them both, and you'll earn the right to face me. Only after winning all three battles will you be allowed to leave.But be warned, if you do not see my members in the ring, it means they have not lost their first fight yet. You will need to find and defeat them first before you can challenge the next one. There is no escape until you prove your strength!"), MSGBOX_AUTOCLOSE)
+    applymovement(13, bosstoring)
+    waitmovement(13)
+    removeobject(13)
+    applymovement(11,bosstoring)
+    waitmovement(11)
+    removeobject(11)
+    applymovement(12,bosstoring)
+    waitmovement(12)
+    removeobject(12)
+    clearflag(FLAG_UNUSED_0x49C)
+    clearflag(FLAG_GRUNT_FEMALE)
+    setvar(VAR_TRICK_HOUSE_LEVEL, 1)
+    releaseall
+}
+
+
+movement gardsmoveleft {
+    walk_left * 5
+    
+}
+
+script TRIGGERDONTSCAPE {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Exlamation_Mark)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    msgbox(format("You cannot leave the Contest Hall until you have beaten us! Ahahahaha!"), MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, playercanescape)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    releaseall
+}
+movement playercanescape {
+    walk_up * 1
+    
+}
+
+movement  ARCHIEDOWN2{
+    walk_down * 5
+    
+}
+movement  ARCHIEDOWN3{
+    walk_down
+    walk_right
+    walk_down * 4
+    
+}
+movement  ARCHIEDOWN4{
+    walk_down
+    walk_right * 2
+    walk_down * 4
+    
+}
+
+movement faceupplayer {
+    face_up
+    
+}
+movement facerightmovement {
+    face_right
+    
+}
+
+movement  bosstoring {
+    walk_up * 5
+    
+}
+
+movement allout {
+    walk_up * 6
+    
+    
+}
+
+movement allout1 {
+    walk_right 
+    walk_up * 6
+    
+}
+movement ARCHIEDOWN {
+    walk_down 
+    walk_left * 2
+    walk_down * 4
+    
+}
+movement ARCHIEDOWN1 {
+    walk_down 
+    walk_left * 1
+    walk_down * 4
+    
+}
+
+movement gruntfirst {
+    walk_left
+    walk_down * 5
+    
+}
+movement gruntsecond {
+    walk_down * 8
+    walk_left * 3
+    face_up
+    
+}
+movement bossgoesdown {
+    walk_down * 6
+    face_left
+    
+}
+
+movement gruntswhomovetheboss {
+    walk_up * 2
+    walk_left
+    face_down
+    
+}
+
+movement GRUNTDOWNCONTEST {
+    walk_down * 5
+    
+}
+
+
+
+movement playertofightcontestright {
+    walk_up
+    walk_left
+    walk_up
+    
+}
+movement playertofightcontestleft {
+   walk_up
+   walk_right
+   walk_up    
+}
+
+movement playertofightcontest {
+    walk_up * 2
+    
+}
+
+
+script TRAINER1CONTESHALL {
+    lockall
+    faceplayer
+    trainerbattle_single(AQUA_F_CONTEST_HALL, AQUA_F_CONTEST_HALL_INTRO_TEXT, AQUA_F_CONTEST_HALL_LOSE_TEXT, msgboxafterbattle)
+    end
+	releaseall
+}
+
+
+movement grunt33leave {
+    walk_left
+    walk_down * 7
+    
+}
+script TRAINER2CONTESHALL {
+    lockall
+    faceplayer
+    trainerbattle_single(AQUA_M_CONTEST_HALL, AQUA_M_CONTEST_HALL_INTRO_TEXT, AQUA_M_CONTEST_HALL_LOSE_TEXT, msgboxafterbattle1)
+    end
+	
+}
+script TRAINER3CONTESHALL {
+    lockall
+    faceplayer
+    trainerbattle_single(AQUA_BOSS_CONTEST_HALL, AQUA_BOSS_CONTEST_HALL_INTRO_TEXT, AQUA_BOSS_CONTEST_HALL_LOSE_TEXT, msgboxafterbattle2)
+    end
+	
+}
+script msgboxafterbattle2 {
+    lockall
+    msgbox(format("I must acknowledge your strength. You are free to leave... for now. But remember this we will meet again soon!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("Beheeyem use Teleport"), MSGBOX_AUTOCLOSE)
+    playfanfare(SE_M_TELEPORT)
+    removeobject(1)
+    setvar(VAR_TRICK_HOUSE_LEVEL, 2)
+    releaseall
+    
+
+}
+text AQUA_BOSS_CONTEST_HALL_LOSE_TEXT {
+    format("Tch... So, you really are strong. I’ll admit defeat for now. But don’t get comfortable... we will meet again.")
+    
+}
+
+text AQUA_BOSS_CONTEST_HALL_INTRO_TEXT {
+    format("So, you actually made it this far? Impressive. But your little streak ends here. I won’t hold back let’s see if you’re truly worthy!")
+    
+}
+text AQUA_M_CONTEST_HALL_LOSE_TEXT {
+    format("Ugh... How could I lose? Tch... fine, go ahead. But don’t think this is over!")
+    
+}
+
+text  AQUA_M_CONTEST_HALL_INTRO_TEXT{
+    format("Hah! You think you’re tough just because you won once? That was just a warm up. Now, let's see if you can handle me!")
+    
+}
+script msgboxafterbattle {
+    lockall
+    msgbox(format("You have proven yourself. You may now advance to the second ring."), MSGBOX_AUTOCLOSE)
+    msgbox(format("I am getting away!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("Natu use Teleport!"), MSGBOX_AUTOCLOSE)
+    playfanfare(SE_M_TELEPORT)
+    removeobject(2)
+    clearflag(FLAG_GRUNT_MALE)
+    releaseall
+    
+}
+script msgboxafterbattle1 {
+    lockall
+    msgbox(format("Oh no... I can't believe it. Fine, go on you've earned the right to face the boss!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("Cyaaaa!"))
+    msgbox(format("Spoink use Teleport!"), MSGBOX_AUTOCLOSE)
+    playfanfare(SE_M_TELEPORT)
+    removeobject(3)
+    setvar(VAR_ASH_GATHER_COUNT, 1)
+    releaseall
+    
+}
+
+movement grunt33leave1 {
+     walk_right
+    walk_down * 7
+
+    
+}
+
+
+script TRIGGERBOSSFINALFIGHT {
+    if(var(VAR_ASH_GATHER_COUNT) == 1){
+    lockall
+    msgbox(format("Guard, reply."), MSGBOX_AUTOCLOSE)
+    applymovement(5, guardreply)
+    waitmovement(5)
+    removeobject(5)
+    setvar(VAR_ASH_GATHER_COUNT, 2)
+    releaseall
+    
+
+}
+  else{
+
+  }
+}
+
+movement guardreply {
+    walk_down * 2
+    walk_left * 8
+    
+}
+
+movement  gruntrightleavethering {
+    walk_right * 3
+    
+}
+
+text AQUA_F_CONTEST_HALL_INTRO_TEXT {
+    format("I guess i will the one and only one crushing you! HAHAHAH")
+    
+}
+
+text AQUA_F_CONTEST_HALL_LOSE_TEXT{
+    format("What?? Well luck sometimes is certaintely amazing!")
+}
+
+
+
+
+
+
+movement playercantleave {
+    emote_exclamation_mark
+    walk_up
+    
+}
+movement playergoesup1tile {
+    walk_up
+    
+}
+
+movement goesdown33 {
+    walk_down
+    
+}
+
+
+
+script OTHERGRUNTCONTESHALL1 {
+    if(var(VAR_BIRCH_STATE) == 0){
+    lockall
+    faceplayer
+    msgbox(format("Are you trying to disrepect me? Are you? "), MSGBOX_YESNO)
+    
+    if(var(VAR_RESULT) == YES){
+        lockall
+        trainerbattle_single(GRUNTCONTESTHALLRANDOM, RANDOMINTRO_TEXT, RANDOMOUTRO_TEXT)
+        setvar(VAR_BIRCH_STATE, 1)
+        releaseall
+        end
+    }
+    
+    if(var(VAR_RESULT) == NO){
+        lockall
+        msgbox(format("Thats what i tought!"), MSGBOX_AUTOCLOSE)
+        releaseall
+    }
+}
+
+if(var(VAR_BIRCH_STATE) == 1){
+    lockall
+    faceplayer
+    msgbox(format("Dont think you are That good, you peasant!"), MSGBOX_AUTOCLOSE)
+    releaseall
+}
+}
+
+text RANDOMOUTRO_TEXT {
+    format("I had to go easy on you, requested by the boss")
+    
+}
+
+text RANDOMINTRO_TEXT {
+    format("Let see who is going to laugh. Ahahaha")
+    
+}
+
+script gruntcontesthall1 {
+    lockall
+    faceplayer
+    msgbox(format("You think you can just waltz into the Contest Hall like you own the place? Not so fast! Team Aqua has control here!"), MSGBOX_AUTOCLOSE)
+    releaseall    
+    
+}
+script gruntcontesthall2 {
+    lockall
+    faceplayer
+    msgbox(format("What are you doing here? This place is ours now, and you're just wasting your time."), MSGBOX_AUTOCLOSE)
+    releaseall    
+    
+}
+script gruntcontesthall3 {
+    lockall
+    faceplayer
+    msgbox(format("You think this is some kind of game? You should’ve stayed out of Team Aqua’s way."), MSGBOX_AUTOCLOSE)
+    releaseall    
+    
+}
+script gruntcontesthall4 {
+    lockall
+    faceplayer
+    msgbox(format("You won’t be making any progress here. You’re better off turning around and going home."), MSGBOX_AUTOCLOSE)
+    releaseall    
+    
+}
+script gruntcontesthall5 {
+    lockall
+    faceplayer
+    msgbox(format("You really think you’ll find what you're looking for here? Go ahead, waste your time."), MSGBOX_AUTOCLOSE)
+    releaseall    
+    
+}
+
+
+

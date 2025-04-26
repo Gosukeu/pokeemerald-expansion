@@ -356,6 +356,67 @@ const u32 gObjectEventPic_Lucy[] = INCBIN_U32("graphics/object_events/pics/peopl
 const u32 gObjectEventPic_Brandon[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/brandon.4bpp");
 const u32 gObjectEventPic_PokeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_poke.4bpp");
 
+// custom sprites
+
+// aegislash
+const u32 gObjectEventPic_AegislashOW[] = INCBIN_U32("graphics/pokemon/aegislash/overworld.4bpp");
+const u16 gObjectEventPalette_AegislashOW[] = INCBIN_U16("graphics/pokemon/aegislash/overworld_normal.gbapal");
+//swinub
+const u32 gObjectEventPic_SwinubOW[] = INCBIN_U32("graphics/pokemon/swinub/overworld.4bpp");
+const u16 gObjectEventPalette_SwinubOW[] = INCBIN_U16("graphics/pokemon/swinub/overworld_normal.gbapal");
+//Krokodile
+const u32 gObjectEventPic_KrookodileOW[] = INCBIN_U32("graphics/pokemon/krookodile/overworld.4bpp");
+const u16 gObjectEventPalette_KrookodileOW[] = INCBIN_U16("graphics/pokemon/krookodile/overworld_normal.gbapal");
+// Bidoof
+const u32 gObjectEventPic_BidoofOW[] = INCBIN_U32("graphics/pokemon/bidoof/overworld.4bpp");
+const u16 gObjectEventPalette_BidoofOW[] = INCBIN_U16("graphics/pokemon/bidoof/overworld_normal.gbapal");
+//Koraidon
+const u32 gObjectEventPic_KoraidonOW[] = INCBIN_U32("graphics/pokemon/koraidon/overworld.4bpp");
+const u16 gObjectEventPalette_KoraidonOW[] = INCBIN_U16("graphics/pokemon/koraidon/overworld_normal.gbapal");
+// absol
+const u32 gObjectEventPic_CelebiOW[] = INCBIN_U32("graphics/pokemon/celebi/overworld.4bpp");
+const u16 gObjectEventPalette_CelebiOW[] = INCBIN_U16("graphics/pokemon/celebi/overworld_normal.gbapal");
+//kraby
+const u32 gObjectEventPic_KrabbyOW[] = INCBIN_U32("graphics/pokemon/krabby/overworld.4bpp");
+const u16 gObjectEventPalette_KrabbyOW[] = INCBIN_U16("graphics/pokemon/krabby/overworld_normal.gbapal");
+//staryu
+const u32 gObjectEventPic_StaryuOW[] = INCBIN_U32("graphics/pokemon/staryu/overworld.4bpp");
+const u16 gObjectEventPalette_StaryuOW[] = INCBIN_U16("graphics/pokemon/staryu/overworld_normal.gbapal");
+// sandshrew
+const u32 gObjectEventPic_SandshrewOW[] = INCBIN_U32("graphics/pokemon/sandshrew/overworld.4bpp");
+const u16 gObjectEventPalette_SandshrewOW[] = INCBIN_U16("graphics/pokemon/sandshrew/overworld_normal.gbapal");
+// horsea
+const u32 gObjectEventPic_HorseawOW[] = INCBIN_U32("graphics/pokemon/horsea/overworld.4bpp");
+const u16 gObjectEventPalette_HorseawOW[] = INCBIN_U16("graphics/pokemon/horsea/overworld_normal.gbapal");
+// corsola
+const u32 gObjectEventPic_CorsolaOW[] = INCBIN_U32("graphics/pokemon/corsola/overworld.4bpp");
+const u16 gObjectEventPalette_CorsolawOW[] = INCBIN_U16("graphics/pokemon/corsola/overworld_normal.gbapal");
+// sandile
+const u32 gObjectEventPic_SandileOW[] = INCBIN_U32("graphics/pokemon/sandile/overworld.4bpp");
+const u16 gObjectEventPalette_SandileOW[] = INCBIN_U16("graphics/pokemon/sandile/overworld_normal.gbapal");
+//  rolling spheal
+const u32 gObjectEventPic_RollingSphealOW[] = INCBIN_U32("graphics/pokemon/rollingspheal/spheal.4bpp");
+const u16 gObjectEventPalette_RollingSphealOW[] = INCBIN_U16("graphics/pokemon/rollingspheal/spheal.gbapal");
+
+// cactus
+const u32 gObjectEventPic_CactusOW[] = INCBIN_U32("graphics/misc/cactus1.4bpp");
+const u16 gObjectEventPalette_CactusOW[] = INCBIN_U16("graphics/misc/cactus1.gbapal");
+// TREE_TABLE
+const u32 gObjectEventPic_TreeOW[] = INCBIN_U32("graphics/pokemon/tree/tree.4bpp");
+const u16 gObjectEventPalette_TreeOW[] = INCBIN_U16("graphics/pokemon/tree/tree.gbapal");
+// bulbizzare
+const u32 gObjectEventPic_Statue_BulbizzareOW[] = INCBIN_U32("graphics/pokemon/BulbizzareStatue/Bulbausar_Statue.4bpp");
+const u16 gObjectEventPalette_Statue_BulbizzareOW[] = INCBIN_U16("graphics/pokemon/BulbizzareStatue/Bulbausar_Statue.gbapal");
+//fontaine
+const u32 gObjectEventPic_FontaineOW[] = INCBIN_U32("graphics/pokemon/fontaine/fontaine.4bpp");
+const u16 gObjectEventPalette_FontaineOW[] = INCBIN_U16("graphics/pokemon/fontaine/fontaine.gbapal");
+// pot de fleur
+const u32 gObjectEventPic_potdefleurOW[] = INCBIN_U32("graphics/pokemon/potdefleur/potdefleur.4bpp");
+const u16 gObjectEventPalette_potdefleurOW[] = INCBIN_U16("graphics/pokemon/potdefleur/potdefleur.gbapal");
+// tyrantrum statue
+const u32 gObjectEventPic_TYRANTRUMSTATUEOW[] = INCBIN_U32("graphics/pokemon/tyrantrumstatue/tyrantrum_exhibit1.4bpp");
+const u16 gObjectEventPalette_TYRANTRUMSTATUEOW[] = INCBIN_U16("graphics/pokemon/tyrantrumstatue/tyrantrum_exhibit1.gbapal");
+// end of custom sprites
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
 const u32 gObjectEventPic_MewOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/mew.4bpp");
 const u32 gObjectEventPic_DusclopsOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/dusclops.4bpp");
